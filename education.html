@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Education Page</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <style>
+        body,
+        h1 {
+            font-family: "Raleway", Arial, sans-serif;
+        }
+
+        h1 {
+            letter-spacing: 6px;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column; /* Change to column direction for a vertical timeline */
+            align-items: flex-start;
+        }
+
+        .entry {
+    margin-bottom: 0px; /* Adjust the value as needed */
+    position: relative;
+    page-break-inside: avoid;
+}
+
+
+        .entry::before {
+            content: '';
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            left: 30px;
+            background-color: white;
+            border: 1px solid black;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .entry-content {
+    margin-left: 40px;
+    padding: 20px; /* Adjust the padding as needed */
+    border-left: 1px solid black;
+    position: relative;
+    text-align: justify;
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+
+
+
+
+        h3 {
+            color: black;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        ul li:before {
+            content: "\2022";
+            color: #2196F3;
+            font-size: 20px;
+            position: absolute;
+            left: 0;
+        }
+
+        .footer-icons a {
+    text-decoration: none;
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-content">
+
+        <!-- Header -->
+        <header class="w3-panel w3-center " style="padding:80px 16px">
+            <h1 class="w3-xlarge">Computer Science Student</h1>
+            <h1>Muhammad Zahiruddin</h1>
+
+            <div class="w3-padding-32">
+                <div class="w3-bar w3-border">
+                    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+                    <a href="about.html" class="w3-bar-item w3-button ">About</a>
+                    <a href="skill.html" class="w3-bar-item w3-button">Skill</a>
+                    <a href="experience.html" class="w3-bar-item w3-button">Experience</a>
+                    <a href="education.html" class="w3-bar-item w3-button w3-blue">Education</a>
+                    <a href="contact.html" class="w3-bar-item w3-button ">Contact</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Education Section -->
+        <section class="w3-container w3-center" style="margin-bottom: 50px;">
+            <h2>Education</h2>
+
+            <!-- Timeline -->
+            <div class="timeline">
+                <!-- Job 1 -->
+                <div class="entry">
+                    <div class="entry-content">
+                        <h3>Universiti Teknikal Malaysia Melaka</h3>
+                        <p>Bachelor Of Computer Science (Software Development) With Honours</p>
+                        <p>(2021 - Present)</p>
+                        <p>• Member of the JawatanKuasa Siswa (JAKSIS) of Kolej Kediaman Satria Jebat for 2022/2023 and 2023/2024 sessions.</p>
+                        <p>• Held the position as Biro Pengurusan Tenaga dan Alam Sekitar.</p>
+                        <p>• Achieved Dean's List honors for Semester 1, 2 and 4.</p>
+                        <p>• Current Cumulative Grade Point Average (CGPA) : 3.59</p>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="entry">
+                    <div class="entry-content">
+                        <h3>Kolej Matrikulasi Melaka
+                        </h3>
+                        <p>Science Stream
+                        </p>
+                        <p>(2019 - 2021)
+                        </p>
+                        <p>• Member of the Nadi Tarbiyah Pelajar (NTP) Club for 2020/2021 session.
+                        </p>
+                        <p>• Held the position as Bendahari for Syukbah Ekonomi.
+                        </p>
+                        <p>• Cumulative Grade Point Average (CGPA) : 3.75
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End Page Content -->
+    </div>
+
+    <!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-text-white w3-center w3-large" style="background-color:#004AAD">
+    <div class="footer-icons">
+        <a href="https://github.com/zahir248" class="fab fa-github w3-hover-opacity"></a>
+        <a href="https://www.linkedin.com/in/Zahir248" class="fab fa-linkedin w3-hover-opacity"></a>
+    </div>
+    <p>&copy; 2023 Muhammad Zahiruddin</p>
+
+    <style>
+        .footer-icons a {
+            margin-right: 10px; /* Adjust the value to increase or decrease the space between icons */
+        }
+    </style>
+</footer>
+
+
+</body>
+
+</html>

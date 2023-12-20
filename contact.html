@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<style>
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+/* Custom CSS for the form labels and input fields */
+.form-group label,
+.form-group input,
+.form-group textarea {
+  font-size: 16px;
+}
+
+/* Custom CSS for the form container */
+.w3-card {
+  display: inline-block;
+  width: 100%;
+}
+
+/* Custom CSS for the submit button */
+.btn-form {
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10px; /* Add some spacing between the form fields and the button */
+  margin-bottom: 10px;
+}
+
+  /* Add margin for the h2 "Get In Touch" */
+  .get-in-touch-heading {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .rounded-button {
+    border-radius: 5px;
+}
+
+.footer-icons a {
+    text-decoration: none;
+    margin-right: 10px; /* Adjust the value to increase or decrease the space between icons */
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<header class="w3-panel w3-center " style="padding:80px 16px">
+  <h1 class="w3-xlarge">Computer Science Student</h1>
+  <h1>Muhammad Zahiruddin</h1>
+  
+  <div class="w3-padding-32">
+    <div class="w3-bar w3-border">
+      <a href="index.html" class="w3-bar-item w3-button ">Home</a>
+      <a href="about.html" class="w3-bar-item w3-button">About</a>
+      <a href="skill.html" class="w3-bar-item w3-button">Skill</a>
+      <a href="experience.html" class="w3-bar-item w3-button">Experience</a>
+      <a href="education.html" class="w3-bar-item w3-button ">Education</a>
+      <a href="contact.html" class="w3-bar-item w3-button w3-blue">Contact</a>
+
+    </div>
+  </div>
+</header>
+
+<h2 class="w3-center">Contact</h2>
+
+<!-- Contact Section-->
+<div class="w3-content w3-justify w3-hover-text-black w3-padding-32 w3-auto w3-row-padding w3-center" id="contact" style="margin-bottom: 50px">    
+    <div class="w3-card w3-padding w3-round-large" style="max-width: 500px; margin: 0 auto;">
+        <form action="https://formspree.io/f/mrgwbaey" method="POST">
+            <h2 class="get-in-touch-heading" style="font-size: 22px; text-align: justify;">Get In Touch With Me</h2>
+
+            <div class="form-group" style="margin-bottom: 10px;">
+                <input type="email" class="form-control form-text" id="email" name="email" placeholder="Enter email" required style="width: 100%;">
+            </div>
+
+            <div class="form-group" style="margin-bottom: 10px;">
+                <input type="text" class="form-control form-text" id="name" name="name" placeholder="Your name" required style="width: 100%;">
+            </div>
+
+            <div class="form-group" style="margin-bottom: 10px;">
+                <textarea class="form-control form-text" id="message" name="message" rows="5" placeholder="Message" required style="width: 100%;"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-form rounded-button" style="background-color: #004AAD; color: white;">Send Message</button>
+        </form>
+    </div>
+</div>
+
+
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-text-white w3-center w3-large" style="background-color:#004AAD">
+    <div class="footer-icons">
+        <a href="https://github.com/zahir248" class="fab fa-github w3-hover-opacity"></a>
+        <a href="https://www.linkedin.com/in/Zahir248" class="fab fa-linkedin w3-hover-opacity"></a>
+    </div>
+    <p>&copy; 2023 Muhammad Zahiruddin</p>
+
+    <style>
+        .footer-icons a {
+            margin-right: 10px; /* Adjust the value to increase or decrease the space between icons */
+        }
+    </style>
+</footer>
+
+
+</body>
+</html>

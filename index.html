@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <style>
+    body,
+    h1 {
+      font-family: "Raleway", Arial, sans-serif
+    }
+
+    h1 {
+      letter-spacing: 6px
+    }
+
+    .w3-row-padding img {
+      margin-bottom: 12px
+    }
+
+    .footer-icons a {
+      text-decoration: none;
+    }
+
+    .typing-animation {
+      border-right: 2px solid white;
+      white-space: nowrap;
+      overflow: hidden;
+      margin: 0 auto;
+      letter-spacing: 6px;
+      font-size: 30px;
+    }
+
+    .additional-text {
+      margin-top: 20px;
+      font-size: 20px;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-content" style="max-width:1500px">
+
+    <!-- Header -->
+    <header class="w3-panel w3-center" style="padding:80px 16px">
+      <h1 class="w3-xlarge">Computer Science Student</h1>
+      <h1>Muhammad Zahiruddin</h1>
+
+      <div class="w3-padding-32">
+        <div class="w3-bar w3-border">
+          <a href="index.html" class="w3-bar-item w3-button w3-blue">Home</a>
+          <a href="about.html" class="w3-bar-item w3-button">About</a>
+          <a href="skill.html" class="w3-bar-item w3-button">Skill</a>
+          <a href="experience.html" class="w3-bar-item w3-button">Experience</a>
+          <a href="education.html" class="w3-bar-item w3-button ">Education</a>
+          <a href="contact.html" class="w3-bar-item w3-button ">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Image and Typing Animation Row -->
+    <div class="w3-row w3-center" style="max-width: 1300px; margin: 0 auto; margin-bottom: 50px">
+
+      <!-- Column for Image and Navigation Bar -->
+      <div class="w3-col m6" style="text-align: center;" >
+        <!-- Add your image source and styling here -->
+        <img src="header.jpg" alt="Image" style="width:70%; display: block; margin: auto;">
+      </div>
+
+      <!-- Column for Typing Animation -->
+<div class="w3-col m6" style="max-width: 600px; margin: 0 auto;">
+  <h1 class="w3-xlarge">
+    <span id="typing-header" class="typing-animation"></span>
+  </h1>
+  <div class="additional-text">Explore my skills, experiences,
+    and education to get to know me better. Feel free to connect with me!</div>
+
+    <!-- Download Resume Button -->
+    <a href="ZahirResume.pdf" download="Muhammad_Zahiruddin_Resume.pdf" class="w3-button w3-blue w3-margin-top w3-round">
+      <i class="fas fa-download"></i> Download Resume
+    </a></div>
+
+
+    </div>
+
+    <!-- End Page Content -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-text-white w3-center w3-large" style="background-color:#004AAD">
+    <div class="footer-icons">
+      <a href="https://github.com/zahir248" class="fab fa-github w3-hover-opacity"></a>
+      <a href="https://www.linkedin.com/in/Zahir248" class="fab fa-linkedin w3-hover-opacity"></a>
+    </div>
+    <p>&copy; 2023 Muhammad Zahiruddin</p>
+
+    <style>
+      .footer-icons a {
+        margin-right: 10px;
+        /* Adjust the value to increase or decrease the space between icons */
+      }
+    </style>
+  </footer>
+
+  <script>
+    const headerText = [
+      "Hello!",
+      "வணக்கம்!",
+      "你好!",
+    ];
+  
+    let currentTextIndex = 0;
+    let currentCharIndex = 0;
+    let isCursorVisible = true;
+    const typingHeader = document.getElementById("typing-header");
+  
+    function type() {
+  if (currentCharIndex < headerText[currentTextIndex].length) {
+    let currentText = headerText[currentTextIndex].substring(0, currentCharIndex + 1);
+    let textColor = '';
+
+    switch (currentTextIndex) {
+      case 0:
+        textColor = 'green';
+        break;
+      case 1:
+        textColor = 'blue';
+        break;
+      case 2:
+        textColor = 'red';
+        break;
+      default:
+        textColor = 'white'; // Default color
+    }
+
+    typingHeader.innerHTML =
+      `<span style="color: ${textColor};">${currentText}</span>` +
+      (isCursorVisible ? "|" : "&nbsp;"); // Use &nbsp; for non-breaking space
+
+    isCursorVisible = !isCursorVisible;
+    currentCharIndex++;
+    setTimeout(type, 100); // Adjust typing speed (in milliseconds)
+  } else {
+    setTimeout(erase, 2000); // Wait before erasing
+  }
+}
+
+  
+    function erase() {
+      if (currentCharIndex > 0) {
+        typingHeader.innerHTML =
+          headerText[currentTextIndex].substring(0, currentCharIndex - 1) +
+          (isCursorVisible ? "|" : "&nbsp;");
+        isCursorVisible = !isCursorVisible;
+        currentCharIndex--;
+        setTimeout(erase, 50); // Adjust erasing speed (in milliseconds)
+      } else {
+        currentTextIndex = (currentTextIndex + 1) % headerText.length;
+        setTimeout(type, 500); // Wait before typing the next phrase
+      }
+    }
+  
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(type, 1000); // Start typing after 1 second
+    });
+  </script>
+  
+
+</body>
+
+</html>
