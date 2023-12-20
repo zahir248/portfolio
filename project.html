@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Contact Page</title>
+<title>Project Page</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,9 +46,19 @@ h1 {letter-spacing: 6px}
 .footer-icons a {
     text-decoration: none;
     margin-right: 10px; /* Adjust the value to increase or decrease the space between icons */
-
 }
 
+/* Style for project cards */
+.project-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.project-card h3 {
+    color: black;
+}
 </style>
 </head>
 <body>
@@ -66,41 +76,54 @@ h1 {letter-spacing: 6px}
       <a href="index.html" class="w3-bar-item w3-button ">Home</a>
       <a href="about.html" class="w3-bar-item w3-button">About</a>
       <a href="skill.html" class="w3-bar-item w3-button">Skill</a>
-      <a href="project.html" class="w3-bar-item w3-button">Project</a>
+      <a href="project.html" class="w3-bar-item w3-button w3-blue">Project</a>
       <a href="experience.html" class="w3-bar-item w3-button">Experience</a>
       <a href="education.html" class="w3-bar-item w3-button ">Education</a>
-      <a href="contact.html" class="w3-bar-item w3-button w3-blue">Contact</a>
-
+      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
     </div>
   </div>
 </header>
 
-<h2 class="w3-center">Contact</h2>
+<h2 class="w3-center">Project</h2>
 
-<!-- Contact Section-->
-<div class="w3-content w3-justify w3-hover-text-black w3-padding-32 w3-auto w3-row-padding w3-center" id="contact" style="margin-bottom: 50px">    
-    <div class="w3-card w3-padding w3-round-large" style="max-width: 500px; margin: 0 auto;">
-        <form action="https://formspree.io/f/mrgwbaey" method="POST">
-            <h2 class="get-in-touch-heading" style="font-size: 22px; text-align: justify;">Get In Touch With Me</h2>
-
-            <div class="form-group" style="margin-bottom: 10px;">
-                <input type="email" class="form-control form-text" id="email" name="email" placeholder="Enter email" required style="width: 100%;">
-            </div>
-
-            <div class="form-group" style="margin-bottom: 10px;">
-                <input type="text" class="form-control form-text" id="name" name="name" placeholder="Your name" required style="width: 100%;">
-            </div>
-
-            <div class="form-group" style="margin-bottom: 10px;">
-                <textarea class="form-control form-text" id="message" name="message" rows="5" placeholder="Message" required style="width: 100%;"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-form rounded-button" style="background-color: #004AAD; color: white;">Send Message</button>
-        </form>
+<!-- Project Section -->
+<section class="w3-content">
+    <!-- Project Card 1 -->
+    <div class="w3-card project-card">
+        <h3>ePortfolio</h3>
+        <img src="portfolio.JPG" alt="ePortfolio Image" style="max-width: 50%;">
+        <p>ePortfolio is an online portfolio to display myself. The website showcases my personal information, skills, projects, education background, work experience, and contact information.</p>
+        <p>• Programming Language: HTML, CSS, JavaScript</p>
+        <p>• Framework: Bootstrap, W3</p>
+        <p>• Tool: Microsoft Visual Studio Code</p>
+        <a href="https://zahir248.github.io/portfolio/" class="w3-button w3-blue w3-round">Live Site</a>
     </div>
-</div>
 
+    <!-- Project Card 2 -->
+    <div class="w3-card project-card">
+        <h3>TaskTracker</h3>
+        <img src="tasktracker.JPG" alt="tasktracker Image" style="max-width: 50%;">
+        <p>TaskTracker is a comprehensive task management web service meticulously crafted to empower developers in seamlessly integrating efficient task management capabilities into their applications and websites. Leveraging this robust API, you can effortlessly create, update, and manage tasks programmatically, ensuring optimal productivity and organization. With TaskTracker, stay in control of your tasks and projects, providing an intuitive user experience for both individuals and teams alike.</p>
+        <p>• Programming Language: Java</p>
+        <p>• Framework: Spring Boot, Thymeleaf</p>
+        <p>• Database: MySQL</p>
+        <p>• Tool: Spring Tool Suite 4, Docker</p>
+        <a href="https://task-tracker-4mdg.onrender.com/" class="w3-button w3-blue w3-round">Live Site</a>
+    </div>
 
+    <!-- Project Card 3 -->
+    <div class="w3-card project-card" style="margin-bottom: 50px;">
+        <h3>FundFlow</h3>
+        <img src="fundflow.JPG" alt="fundflow Image" style="max-width: 50%;">
+        <p>FundFlow is a PHP-based web application for managing financial commitments and goals. The application allows users to log in, view their commitments and goals, and log out.</p>
+        <p>• Programming Language: PHP</p>
+        <p>• Framework: Bootstrap</p>
+        <p>• Database: MySQL</p>
+        <p>• Tool: Microsoft Visual Studio Code</p>
+        <a href="https://fraudful-plane.000webhostapp.com/" class="w3-button w3-blue w3-round">Live Site</a>
+    </div>
+
+</section>
 
 <!-- End Page Content -->
 </div>
