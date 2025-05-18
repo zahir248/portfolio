@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahir | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="images/favicon.ico" rel="icon">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#cv" class="nav-link">CV</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="home">
+            <div class="hero-content fade-in">
+                <h1>Muhammad Zahiruddin</h1>
+                <h2>Full Stack Developer</h2>
+                <p>Passionate about creating innovative web solutions and bringing ideas to life through code.</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2 class="section-title fade-in">About Me</h2>
+            <div class="about-content">
+                <img src="https://a.storyblok.com/f/178900/1000x563/1ecd15fead/f4a37a9c0a721f5d8a5c6df656f7cd4f1679718173_main.jpg/m/filters:quality(95)format(webp)" alt="Profile" class="about-img fade-in">
+                <div class="about-text fade-in">
+                    <h3>Hello, I'm Zahir</h3>
+                    <p>Computer Science Graduate with a strong foundation in mobile, web, and software development, gained through academic projects and hands-on internship experience. Proficient in Laravel, Flutter, PHP, MySQL, and API integration, with a passion for developing scalable and user-friendly applications.</p>
+                    <p>A collaborative team player and problem-solver, skilled in troubleshooting, performance optimization, and database management.</p>
+                    <p>Seeking a junior developer role in a reputable company to apply technical expertise, grow professionally, and contribute to innovative projects.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2 class="section-title fade-in">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item fade-in">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-width="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-width="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="fab fa-js-square"></i>
+                    <h3>JavaScript</h3>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-width="80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="fab fa-php"></i>
+                    <h3>PHP</h3>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-width="70%"></div>
+                    </div>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="devicon-cplusplus-plain colored"></i>
+                    <h3 style="margin-top: 17px">C++</h3>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-width="50%"></div>
+                    </div>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="fab fa-laravel"></i>
+                    <h3>Laravel</h3>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-width="60%"></div>
+                    </div>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="devicon-flutter-plain colored"></i>
+                    <h3 style="margin-top: 17px">Flutter</h3>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-width="60%"></div>
+                    </div>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-width="40%"></div>
+                    </div>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="devicon-mysql-plain colored"></i>
+                    <h3 style="margin-top: 17px">MySQL</h3>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-width="80%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2 class="section-title fade-in">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <img src="https://phpgurukul.com/wp-content/uploads/2019/04/Vehicle-Service-Management-System-1-1024x935.png" alt="Vehicle Service Management App" class="project-img">
+                    <div class="project-content">
+                        <h3>Vehicle Service Record Management System</h3>
+                        <p>Store information about vehicles and maintain detailed records of all service work performed.</p>
+                        <p>Technologies: React, Laravel, MySQL</p>
+                        <div class="project-links">
+                            <a href="https://github.com/zahir248/servicelog.git" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://zahir248.github.io/servicelog/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cv" class="cv">
+            <h2 class="section-title fade-in">Curriculum Vitae</h2>
+            <div class="cv-container">
+                <div class="cv-content">
+                    <h3 class="cv-section-title fade-in">Experience</h3>
+                    <div class="timeline fade-in">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <img src="images/acs.png" alt="ACS Logo" class="timeline-logo">
+                                <div class="timeline-text">
+                                    <h3>Software Developer</h3>
+                                    <h4>ACS Engineering & Services SDN BHD</h4>
+                                    <div class="timeline-date">April 2025 - May 2025</div>
+                                    <p>Developed and maintained web applications using React, Node.js, and MongoDB. Collaborated with cross-functional teams to deliver features on time.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <img src="images/vx.png" alt="VX Logo" class="timeline-logo">
+                                <div class="timeline-text">
+                                    <h3>Web Developer (Internship)</h3>
+                                    <h4>VX Ventures SDN BHD</h4>
+                                    <div class="timeline-date">October 2024 - March 2025</div>
+                                    <p>Maintained and enhanced web development projects, improving functionality and user experience using Laravel.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cv-content">
+                    <h3 class="cv-section-title fade-in">Education</h3>
+                    <div class="timeline fade-in">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <img src="images/utem.png" alt="UTeM Logo" class="timeline-logo">
+                                <div class="timeline-text">
+                                    <h3>Bachelor Of Computer Science (Software Development) With Honours</h3>
+                                    <h4>Universiti Teknikal Malaysia Melaka (UTeM)</h4>
+                                    <div class="timeline-date">2021 - 2025</div>
+                                    <p>CGPA: 3.68</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <img src="images/kmm.png" alt="KMM Logo" class="timeline-logo">
+                                <div class="timeline-text">
+                                    <h3>Science Stream (Module II)</h3>
+                                    <h4>Kolej Matrikulasi Melaka (KMM)</h4>
+                                    <div class="timeline-date">2019 - 2021</div>
+                                    <p>CGPA: 3.75</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cv-download">
+                    <a href="file/CV_Muhammad Zahiruddin.pdf" class="btn" download="John_Doe_CV.pdf" target="_blank">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2 class="section-title fade-in">Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info fade-in">
+                    <h3 style="margin-bottom: 15px;">Get In Touch</h3>
+                    <p style="margin-bottom: 30px;">I'm always interested in hearing about new opportunities and interesting projects. Let's connect!</p>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>muhdzahir248@email.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+60 149947806</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Petaling Jaya, Selangor</span>
+                    </div>
+                </div>
+                <form action="https://formspree.io/f/mrgwbaey" method="POST"class="contact-form fade-in">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://github.com/zahir248" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/zahir248" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/share/18isnMHqij/" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+        <p>&copy; 2025 Zahir. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const themeIcon = themeToggle.querySelector('i');
+
+        // Check for saved theme preference or default to 'light'
+        const currentTheme = localStorage.getItem('theme') ?? 'light';
+        if (currentTheme === 'dark') {
+            body.setAttribute('data-theme', 'dark');
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            // Get current theme
+            const currentTheme = body.getAttribute('data-theme');
+            
+            if (currentTheme === 'dark') {
+                body.removeAttribute('data-theme');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.querySelector('.nav-menu');
+        const menuIcon = mobileMenuBtn.querySelector('i');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuIcon.classList.toggle('fa-bars');
+            menuIcon.classList.toggle('fa-times');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                menuIcon.classList.add('fa-bars');
+                menuIcon.classList.remove('fa-times');
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    const offsetTop = targetSection.offsetTop - 70; // Account for navbar height
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Active navigation link highlighting
+        function highlightActiveSection() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                
+                if (window.pageYOffset >= sectionTop && 
+                    window.pageYOffset < sectionTop + sectionHeight) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    // Animate skill progress bars when they come into view
+                    if (entry.target.classList.contains('skill-item')) {
+                        const progressBar = entry.target.querySelector('.skill-progress-bar');
+                        if (progressBar) {
+                            const width = progressBar.getAttribute('data-width');
+                            setTimeout(() => {
+                                progressBar.style.width = width;
+                            }, 200);
+                        }
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.backdropFilter = 'blur(10px)';
+                if (body.getAttribute('data-theme') === 'dark') {
+                    navbar.style.backgroundColor = 'rgba(26, 26, 26, 0.95)';
+                }
+            } else {
+                navbar.style.backgroundColor = 'var(--bg-color)';
+                navbar.style.backdropFilter = 'none';
+            }
+            
+            // Highlight active section
+            highlightActiveSection();
+        });
+
+        // Add typing animation to hero text
+        const heroText = "Full Stack Developer";
+        const heroSubtitle = document.querySelector('.hero-content h2');
+        let i = 0;
+        
+        function typeWriter() {
+            if (i < heroText.length) {
+                heroSubtitle.textContent = heroText.substring(0, i + 1);
+                i++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+        
+        // Start typing animation when page loads
+        window.addEventListener('load', () => {
+            heroSubtitle.textContent = '';
+            setTimeout(typeWriter, 500);
+        });
+
+        // Add smooth hover effects for project cards
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-10px)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Add parallax effect to hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * -0.5;
+            
+            if (window.innerWidth > 768) { // Only on desktop
+                document.querySelector('.hero-content').style.transform = 
+                    `translateY(${rate}px)`;
+            }
+        });
+
+        // Add click animation to buttons
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                // Create ripple effect
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                ripple.style.position = 'absolute';
+                ripple.style.borderRadius = '50%';
+                ripple.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
+                ripple.style.transform = 'scale(0)';
+                ripple.style.animation = 'ripple-effect 0.6s linear';
+                ripple.style.pointerEvents = 'none';
+                
+                this.style.position = 'relative';
+                this.style.overflow = 'hidden';
+                this.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+
+        // Add CSS for ripple effect
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple-effect {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Add loading animation
+        window.addEventListener('load', () => {
+            // Remove any loading screen if present
+            const loader = document.querySelector('.loader');
+            if (loader) {
+                loader.style.opacity = '0';
+                setTimeout(() => {
+                    loader.remove();
+                }, 300);
+            }
+            
+            // Trigger initial animations
+            document.querySelectorAll('.fade-in').forEach((element, index) => {
+                if (element.getBoundingClientRect().top < window.innerHeight) {
+                    setTimeout(() => {
+                        element.classList.add('visible');
+                    }, index * 100);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
