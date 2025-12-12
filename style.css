@@ -193,12 +193,20 @@ section {
     justify-content: center;
     text-align: center;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%),
-                url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center center/cover no-repeat fixed;
+                url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center center/cover no-repeat;
+    background-attachment: scroll;
     position: relative;
     margin: 0;
     padding: 0;
     padding-left: 0;
     padding-right: 0;
+}
+
+/* Fix for iOS Safari - background-attachment: fixed doesn't work */
+@supports (-webkit-touch-callout: none) {
+    .home {
+        background-attachment: scroll;
+    }
 }
 
 .hero-content h1 {
