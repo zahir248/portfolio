@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">Portfolio</div>
+            <div class="logo"></div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -21,9 +21,6 @@
                 <li><a href="#cv" class="nav-link">CV</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <button class="theme-toggle" id="themeToggle">
-                <i class="fas fa-moon"></i>
-            </button>
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <i class="fas fa-bars"></i>
             </button>
@@ -34,7 +31,7 @@
         <section id="home" class="home">
             <div class="hero-content fade-in">
                 <h1>Muhammad Zahiruddin</h1>
-                <h2>Full Stack Developer</h2>
+                <h2>Software Developer</h2>
                 <p>Passionate about creating innovative web solutions and bringing ideas to life through code.</p>
                 <a href="#projects" class="btn">View My Work</a>
             </div>
@@ -43,12 +40,12 @@
         <section id="about" class="about">
             <h2 class="section-title fade-in">About Me</h2>
             <div class="about-content">
-                <img src="https://a.storyblok.com/f/178900/1000x563/1ecd15fead/f4a37a9c0a721f5d8a5c6df656f7cd4f1679718173_main.jpg/m/filters:quality(95)format(webp)" alt="Profile" class="about-img fade-in">
+                <img src="images/zahir.jpg" alt="Profile" class="about-img fade-in">
                 <div class="about-text fade-in">
                     <h3>Hello, I'm Zahir</h3>
-                    <p>Computer Science Graduate with a strong foundation in mobile, web, and software development, gained through academic projects and hands-on internship experience. Proficient in Laravel, Flutter, PHP, MySQL, and API integration, with a passion for developing scalable and user-friendly applications.</p>
-                    <p>A collaborative team player and problem-solver, skilled in troubleshooting, performance optimization, and database management.</p>
-                    <p>Seeking a junior developer role in a reputable company to apply technical expertise, grow professionally, and contribute to innovative projects.</p>
+                    <p style="text-align: justify;">Computer Science Graduate and Software Developer with a strong foundation in mobile, web, and software development. Passionate about developing scalable and user-friendly applications.</p>
+                    <p style="text-align: justify;">A collaborative team player and problem-solver, skilled in troubleshooting, performance optimization, and database management.</p>
+                    <p style="text-align: justify;">Committed to continuous learning and delivering high-quality solutions that meet business requirements while maintaining best practices in software development.</p>
                 </div>
             </div>
         </section>
@@ -99,10 +96,10 @@
                     </div>
                 </div>
                 <div class="skill-item fade-in">
-                    <i class="fab fa-react"></i>
-                    <h3>React</h3>
+                    <i class="devicon-firebase-plain"></i>
+                    <h3 style="margin-top: 17px">Firebase</h3>
                     <div class="skill-progress">
-                        <div class="skill-progress-bar" data-width="40%"></div>
+                        <div class="skill-progress-bar" data-width="50%"></div>
                     </div>
                 </div>
                 <div class="skill-item fade-in">
@@ -119,15 +116,35 @@
             <h2 class="section-title fade-in">Projects</h2>
             <div class="projects-grid">
                 <div class="project-card fade-in">
-                    <img src="https://phpgurukul.com/wp-content/uploads/2019/04/Vehicle-Service-Management-System-1-1024x935.png" alt="Vehicle Service Management App" class="project-img">
+                    <img src="images/bina-cidbibs.png" alt="BINA CIDB IBS Platform" class="project-img">
                     <div class="project-content">
-                        <h3>ZhirTech - App Development Ordering Platform</h3>
-                        <p>A service platform where clients can book and pay for app development upfront. Includes an admin panel to manage services, monitor orders, and track transactions.</p>
+                        <h3>BINA 2025 - E-Ticketing Platform</h3>
+                        <p style="text-align: justify;">An e-ticketing platform for construction industry events and conferences. The system enables users to purchase tickets, manage registrations, and access event information for BINA 2025, Facility Management Engagement Day, Modular Asia Forum & Exhibition, and other industry events. Features include user authentication, secure ticket purchasing, order lookup, and business matching capabilities.</p>
                         <p>Technologies: Laravel, MySQL</p>
-                        <p>Integration (Payment Gateway): toyyibPay</p>
                         <div class="project-links">
-                            <a href="https://github.com/zahir248/zhirtech.git" target="_blank"><i class="fab fa-github"></i> Code</a>
-                            <a href="https://zahir248.github.io/servicelog/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://bina-cidbibs.my/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <img src="images/mygooners.png" alt="MyGooners Platform" class="project-img">
+                    <div class="project-content">
+                        <h3>MyGooners - Arsenal Fan Community Platform</h3>
+                        <p style="text-align: justify;">A comprehensive community platform for Arsenal fans featuring latest news, exclusive videos, podcast content, and match reports. The platform includes a trusted services marketplace where verified community members can offer services, and an e-commerce section for authentic Arsenal merchandise. Features include user authentication, community engagement tools, content management, and integrated marketplace functionality.</p>
+                        <p>Technologies: Laravel, MySQL</p>
+                        <div class="project-links">
+                            <a href="https://mygooners.my/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <img src="images/nujum.png" alt="NUJUM Prediction AI Platform" class="project-img">
+                    <div class="project-content">
+                        <h3>NUJUM - Prediction AI Platform</h3>
+                        <p style="text-align: justify;">An AI-powered prediction platform that leverages artificial intelligence to provide predictive analytics and insights. The system features prediction analysis and social media analysis capabilities, enabling users to gain valuable insights from data patterns and social media trends. The platform includes secure user authentication, login management, and advanced AI-driven analytics through a secure, user-friendly interface.</p>
+                        <p>Technologies: Laravel, MySQL</p>
+                        <div class="project-links">
+                            <a href="https://iesb.com.my/prediction-ai/login" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
                         </div>
                     </div>
                 </div>
@@ -142,12 +159,12 @@
                     <div class="timeline fade-in">
                         <div class="timeline-item">
                             <div class="timeline-content">
-                                <img src="images/acs.png" alt="ACS Logo" class="timeline-logo">
+                                <img src="images/iesb.png" alt="Intensiti Elemen Logo" class="timeline-logo">
                                 <div class="timeline-text">
                                     <h3>Software Developer</h3>
-                                    <h4>ACS Engineering & Services SDN BHD</h4>
-                                    <div class="timeline-date">April 2025 - May 2025</div>
-                                    <p>Developed and maintained web applications using React, Node.js, and MongoDB. Collaborated with cross-functional teams to deliver features on time.</p>
+                                    <h4>Intensiti Elemen SDN BHD</h4>
+                                    <div class="timeline-date">May 2025 - Present</div>
+                                    <p style="text-align: justify;">Develop and maintain web applications using Laravel framework. Work on projects ranging from client-facing solutions to internal systems, ensuring high-quality code and timely delivery.</p>
                                 </div>
                             </div>
                         </div>
@@ -158,7 +175,7 @@
                                     <h3>Web Developer (Internship)</h3>
                                     <h4>VX Ventures SDN BHD</h4>
                                     <div class="timeline-date">October 2024 - March 2025</div>
-                                    <p>Maintained and enhanced web development projects, improving functionality and user experience using Laravel.</p>
+                                    <p style="text-align: justify;">Maintained and enhanced web development projects, improving functionality and user experience using Laravel.</p>
                                 </div>
                             </div>
                         </div>
@@ -237,7 +254,7 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message" required></textarea>
                     </div>
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Send Message</button>
                 </form>
             </div>
         </section>
@@ -252,33 +269,15 @@
         <p>&copy; 2025 Zahir. All rights reserved.</p>
     </footer>
 
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script>
-        // Theme toggle functionality
-        const themeToggle = document.getElementById('themeToggle');
+        // Always apply dark mode
         const body = document.body;
-        const themeIcon = themeToggle.querySelector('i');
-
-        // Check for saved theme preference or default to 'light'
-        const currentTheme = localStorage.getItem('theme') ?? 'light';
-        if (currentTheme === 'dark') {
-            body.setAttribute('data-theme', 'dark');
-            themeIcon.classList.replace('fa-moon', 'fa-sun');
-        }
-
-        themeToggle.addEventListener('click', () => {
-            // Get current theme
-            const currentTheme = body.getAttribute('data-theme');
-            
-            if (currentTheme === 'dark') {
-                body.removeAttribute('data-theme');
-                themeIcon.classList.replace('fa-sun', 'fa-moon');
-                localStorage.setItem('theme', 'light');
-            } else {
-                body.setAttribute('data-theme', 'dark');
-                themeIcon.classList.replace('fa-moon', 'fa-sun');
-                localStorage.setItem('theme', 'dark');
-            }
-        });
+        body.setAttribute('data-theme', 'dark');
 
         // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
@@ -372,26 +371,40 @@
             observer.observe(element);
         });
 
-        // Navbar background on scroll
+        // Navbar hide/show on scroll
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.navbar');
+        
         window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 100) {
-                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
-                navbar.style.backdropFilter = 'blur(10px)';
-                if (body.getAttribute('data-theme') === 'dark') {
-                    navbar.style.backgroundColor = 'rgba(26, 26, 26, 0.95)';
-                }
-            } else {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Always show navbar at the top
+            if (scrollTop < 100) {
+                navbar.style.top = '0';
                 navbar.style.backgroundColor = 'var(--bg-color)';
                 navbar.style.backdropFilter = 'none';
+            } else {
+                navbar.style.backgroundColor = 'rgba(26, 26, 26, 0.95)';
+                navbar.style.backdropFilter = 'blur(10px)';
+                
+                // Hide navbar when scrolling down, show when scrolling up
+                if (scrollTop > lastScrollTop) {
+                    // Scrolling down
+                    navbar.style.top = '-70px';
+                } else {
+                    // Scrolling up
+                    navbar.style.top = '0';
+                }
             }
+            
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
             
             // Highlight active section
             highlightActiveSection();
         });
 
         // Add typing animation to hero text
-        const heroText = "Full Stack Developer";
+        const heroText = "Software Developer";
         const heroSubtitle = document.querySelector('.hero-content h2');
         let i = 0;
         
@@ -417,6 +430,28 @@
             
             card.addEventListener('mouseleave', () => {
                 card.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Add smooth hover effects for skill items
+        document.querySelectorAll('.skill-item').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                item.style.transform = 'translateY(-10px)';
+            });
+            
+            item.addEventListener('mouseleave', () => {
+                item.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Add smooth hover effects for CV timeline items
+        document.querySelectorAll('.timeline-content').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                item.style.transform = 'translateY(-10px)';
+            });
+            
+            item.addEventListener('mouseleave', () => {
+                item.style.transform = 'translateY(0)';
             });
         });
 
@@ -491,6 +526,26 @@
                         element.classList.add('visible');
                     }, index * 100);
                 }
+            });
+        });
+
+        // Scroll to Top Button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        // Show/hide button based on scroll position
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+
+        // Scroll to top when button is clicked
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
             });
         });
     </script>
