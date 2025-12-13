@@ -242,6 +242,22 @@ section {
     margin-bottom: 30px;
 }
 
+.typing-cursor {
+    display: inline-block;
+    margin-left: 3px;
+    animation: blink 1s infinite;
+    color: var(--secondary-color);
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 40px;
@@ -286,6 +302,10 @@ section {
     font-size: 1.8rem;
     margin-bottom: 20px;
     color: var(--primary-color);
+}
+
+.greeting-break {
+    display: none;
 }
 
 .about-text p {
@@ -873,8 +893,13 @@ section {
         text-align: center;
     }
 
+    .greeting-break {
+        display: block;
+    }
+
     .skills-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 
     .projects-grid {

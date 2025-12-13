@@ -43,7 +43,7 @@
             <div class="about-content">
                 <img src="images/dummy.png" alt="Profile" class="about-img fade-in">
                 <div class="about-text fade-in">
-                    <h3>Hello, I'm Zahir</h3>
+                    <h3><span id="greetingText"></span><br class="greeting-break"><span class="greeting-name"> I'm Zahir</span></h3>
                     <p style="text-align: justify;">Computer Science Graduate and Software Developer with a strong foundation in mobile, web, and software development. Passionate about developing scalable and user-friendly applications.</p>
                     <p style="text-align: justify;">A collaborative team player and problem-solver, skilled in troubleshooting, performance optimization, and database management.</p>
                     <p style="text-align: justify;">Committed to continuous learning and delivering high-quality solutions that meet business requirements while maintaining best practices in software development.</p>
@@ -227,7 +227,7 @@
                     <p style="margin-bottom: 30px; text-align: justify;">I'm always interested in hearing about new opportunities and interesting projects. Let's connect!</p>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>muhdzahir248@email.com</span>
+                        <span>muhdzahir248@gmail.com</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
@@ -404,16 +404,35 @@
             highlightActiveSection();
         });
 
-        // Add typing animation to hero text
+        // Add typing animation to hero text with blinking cursor (continuous loop)
         const heroText = "Software Developer";
         const heroSubtitle = document.querySelector('.hero-content h2');
         let i = 0;
+        let isDeleting = false;
         
         function typeWriter() {
-            if (i < heroText.length) {
-                heroSubtitle.textContent = heroText.substring(0, i + 1);
+            const currentText = heroSubtitle.textContent.replace('|', '');
+            
+            if (!isDeleting && i < heroText.length) {
+                // Typing forward
+                heroSubtitle.innerHTML = heroText.substring(0, i + 1) + '<span class="typing-cursor">|</span>';
                 i++;
                 setTimeout(typeWriter, 100);
+            } else if (!isDeleting && i === heroText.length) {
+                // Finished typing, wait then start deleting
+                setTimeout(() => {
+                    isDeleting = true;
+                    typeWriter();
+                }, 2000); // Wait 2 seconds before deleting
+            } else if (isDeleting && i > 0) {
+                // Deleting backward
+                i--;
+                heroSubtitle.innerHTML = heroText.substring(0, i) + '<span class="typing-cursor">|</span>';
+                setTimeout(typeWriter, 50); // Faster when deleting
+            } else if (isDeleting && i === 0) {
+                // Finished deleting, start typing again
+                isDeleting = false;
+                setTimeout(typeWriter, 500);
             }
         }
         
@@ -421,6 +440,55 @@
         window.addEventListener('load', () => {
             heroSubtitle.textContent = '';
             setTimeout(typeWriter, 500);
+        });
+
+        // Add typing animation for greeting in About section (continuous loop)
+        const greetings = ["Assalamualaikum!", "你好!", "வணக்கம்!", "Hello!"];
+        const greetingColors = {
+            "Assalamualaikum!": "#228B22", // Green - Islamic culture
+            "你好!": "#DC143C", // Red - Chinese culture
+            "வணக்கம்!": "#FF8C00", // Orange/Saffron - Indian/Tamil culture
+            "Hello!": "#4169E1" // Blue - Western culture
+        };
+        const greetingElement = document.getElementById('greetingText');
+        let greetingIndex = 0;
+        let greetingI = 0;
+        let isDeletingGreeting = false;
+        
+        function typeGreeting() {
+            const currentGreeting = greetings[greetingIndex];
+            const currentColor = greetingColors[currentGreeting];
+            
+            if (!isDeletingGreeting && greetingI < currentGreeting.length) {
+                // Typing forward
+                greetingElement.innerHTML = '<span style="color: ' + currentColor + ';">' + currentGreeting.substring(0, greetingI + 1) + '</span><span class="typing-cursor" style="color: white;">|</span>';
+                greetingI++;
+                setTimeout(typeGreeting, 100);
+            } else if (!isDeletingGreeting && greetingI === currentGreeting.length) {
+                // Finished typing, wait then start deleting
+                setTimeout(() => {
+                    isDeletingGreeting = true;
+                    typeGreeting();
+                }, 2000); // Wait 2 seconds before deleting
+            } else if (isDeletingGreeting && greetingI > 0) {
+                // Deleting backward
+                greetingI--;
+                greetingElement.innerHTML = '<span style="color: ' + currentColor + ';">' + currentGreeting.substring(0, greetingI) + '</span><span class="typing-cursor" style="color: white;">|</span>';
+                setTimeout(typeGreeting, 50); // Faster when deleting
+            } else if (isDeletingGreeting && greetingI === 0) {
+                // Finished deleting, move to next greeting
+                isDeletingGreeting = false;
+                greetingIndex = (greetingIndex + 1) % greetings.length; // Cycle through greetings
+                setTimeout(typeGreeting, 500);
+            }
+        }
+        
+        // Start greeting animation when page loads
+        window.addEventListener('load', () => {
+            if (greetingElement) {
+                greetingElement.textContent = '';
+                setTimeout(typeGreeting, 1000); // Start after hero animation
+            }
         });
 
         // Add smooth hover effects for project cards
