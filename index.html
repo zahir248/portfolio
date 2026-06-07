@@ -30,6 +30,7 @@
 
     <main>
         <section id="home" class="home">
+            <div class="hero-bg" aria-hidden="true"></div>
             <div class="hero-content fade-in">
                 <h1>Muhammad Zahiruddin</h1>
                 <h2>Software Developer</h2>
@@ -41,10 +42,12 @@
         <section id="about" class="about">
             <h2 class="section-title fade-in">About Me</h2>
             <div class="about-content">
-                <img src="images/dummy.png" alt="Profile" class="about-img fade-in">
+                <div class="about-img-wrapper fade-in">
+                    <img src="images/zahir.jpg" alt="Profile" class="about-img" draggable="false">
+                </div>
                 <div class="about-text fade-in">
                     <h3><span id="greetingText"></span><br class="greeting-break"><span class="greeting-name"> I'm Zahir</span></h3>
-                    <p style="text-align: justify;">Computer Science Graduate and Software Developer with a strong foundation in mobile, web, and software development. Passionate about developing scalable and user-friendly applications.</p>
+                    <p style="text-align: justify;">Software Developer with a strong foundation in mobile, web, and software development. Passionate about developing scalable and user-friendly applications.</p>
                     <p style="text-align: justify;">A collaborative team player and problem-solver, skilled in troubleshooting, performance optimization, and database management.</p>
                     <p style="text-align: justify;">Committed to continuous learning and delivering high-quality solutions that meet business requirements while maintaining best practices in software development.</p>
                 </div>
@@ -55,97 +58,201 @@
             <h2 class="section-title fade-in">Skills</h2>
             <div class="skills-grid">
                 <div class="skill-item fade-in">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML5</h3>
-                    <div class="skill-progress">
-                        <div class="skill-progress-bar" data-width="90%"></div>
-                    </div>
+                    <i class="fab fa-laravel"></i>
+                    <h3>Laravel</h3>
                 </div>
                 <div class="skill-item fade-in">
-                    <i class="fab fa-css3-alt"></i>
-                    <h3>CSS3</h3>
-                    <div class="skill-progress">
-                        <div class="skill-progress-bar" data-width="90%"></div>
-                    </div>
+                    <i class="devicon-spring-plain colored"></i>
+                    <h3>Spring Boot</h3>
                 </div>
                 <div class="skill-item fade-in">
-                    <i class="fab fa-js-square"></i>
-                    <h3>JavaScript</h3>
-                    <div class="skill-progress">
-                        <div class="skill-progress-bar" data-width="80%"></div>
-                    </div>
+                    <i class="devicon-flutter-plain colored"></i>
+                    <h3>Flutter</h3>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="devicon-mysql-plain colored"></i>
+                    <h3>MySQL</h3>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="devicon-postgresql-plain colored"></i>
+                    <h3>PostgreSQL</h3>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="devicon-firebase-plain"></i>
+                    <h3>Firebase</h3>
                 </div>
                 <div class="skill-item fade-in">
                     <i class="fab fa-php"></i>
                     <h3>PHP</h3>
-                    <div class="skill-progress">
-                        <div class="skill-progress-bar" data-width="70%"></div>
-                    </div>
                 </div>
                 <div class="skill-item fade-in">
-                    <i class="fab fa-laravel"></i>
-                    <h3>Laravel</h3>
-                    <div class="skill-progress">
-                        <div class="skill-progress-bar" data-width="60%"></div>
-                    </div>
+                    <i class="devicon-java-plain colored"></i>
+                    <h3>Java</h3>
                 </div>
                 <div class="skill-item fade-in">
-                    <i class="devicon-flutter-plain colored"></i>
-                    <h3 style="margin-top: 17px">Flutter</h3>
-                    <div class="skill-progress">
-                        <div class="skill-progress-bar" data-width="60%"></div>
-                    </div>
+                    <i class="devicon-cplusplus-plain colored"></i>
+                    <h3>C++</h3>
                 </div>
                 <div class="skill-item fade-in">
-                    <i class="devicon-firebase-plain"></i>
-                    <h3 style="margin-top: 17px">Firebase</h3>
-                    <div class="skill-progress">
-                        <div class="skill-progress-bar" data-width="50%"></div>
-                    </div>
+                    <i class="fab fa-js-square"></i>
+                    <h3>JavaScript</h3>
                 </div>
                 <div class="skill-item fade-in">
-                    <i class="devicon-mysql-plain colored"></i>
-                    <h3 style="margin-top: 17px">MySQL</h3>
-                    <div class="skill-progress">
-                        <div class="skill-progress-bar" data-width="80%"></div>
-                    </div>
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="devicon-docker-plain colored"></i>
+                    <h3>Docker</h3>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="devicon-ubuntu-plain colored"></i>
+                    <h3>Ubuntu</h3>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="devicon-amazonwebservices-plain colored"></i>
+                    <h3>AWS</h3>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="fas fa-brain"></i>
+                    <h3 class="skill-name-long">AI Integration (Google, OpenAI)</h3>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="fas fa-credit-card"></i>
+                    <h3 class="skill-name-long">Payment Gateway Integration (Stripe, ToyyibPay)</h3>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Moodle</h3>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="projects">
             <h2 class="section-title fade-in">Projects</h2>
+            <div class="project-filters fade-in">
+                <button class="project-filter active" data-filter="all" type="button">All</button>
+                <button class="project-filter" data-filter="web" type="button">Web</button>
+                <button class="project-filter" data-filter="mobile" type="button">Mobile</button>
+            </div>
             <div class="projects-grid">
-                <div class="project-card fade-in">
-                    <img src="images/bina-cidbibs.png" alt="BINA CIDB IBS Platform" class="project-img">
-                    <div class="project-content">
-                        <h3>BINA 2025 - E-Ticketing Platform</h3>
-                        <p style="text-align: justify;">An e-ticketing platform for construction industry events and conferences. The system enables users to purchase tickets, manage registrations, and access event information for BINA 2025, Facility Management Engagement Day, Modular Asia Forum & Exhibition, and other industry events. Features include user authentication, secure ticket purchasing, order lookup, and business matching capabilities.</p>
-                        <p>Technologies: Laravel, MySQL</p>
-                        <div class="project-links">
-                            <a href="https://bina-cidbibs.my/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+                <div class="project-card fade-in" data-platforms="web mobile">
+                    <div class="project-image-wrapper">
+                        <img src="images/nujum.png" alt="Nujum" class="project-img" draggable="false">
+                        <div class="project-overlay">
+                            <div class="project-overlay-description">
+                                <p>A SaaS platform that uses AI to help businesses analyse predictions, social media, data, and sentiment, with subscription plans and account management available through a web portal and mobile app.</p>
+                            </div>
+                            <div class="project-overlay-info">
+                                <h3>Nujum</h3>
+                                <div class="project-links">
+                                    <a href="https://iesb.com.my/nujum/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="project-card fade-in">
-                    <img src="images/mygooners.png" alt="MyGooners Platform" class="project-img">
-                    <div class="project-content">
-                        <h3>MyGooners - Arsenal Fan Community Platform</h3>
-                        <p style="text-align: justify;">A comprehensive community platform for Arsenal fans featuring latest news, exclusive videos, podcast content, and match reports. The platform includes a trusted services marketplace where verified community members can offer services, and an e-commerce section for authentic Arsenal merchandise. Features include user authentication, community engagement tools, content management, and integrated marketplace functionality.</p>
-                        <p>Technologies: Laravel, MySQL</p>
-                        <div class="project-links">
-                            <a href="https://mygooners.my/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+                <div class="project-card fade-in" data-platforms="web mobile">
+                    <div class="project-image-wrapper">
+                        <img src="images/mygooners.png" alt="MyGooners" class="project-img" draggable="false">
+                        <div class="project-overlay">
+                            <div class="project-overlay-description">
+                                <p>An e-commerce platform for company products, enabling product browsing, checkout, order management, and payments, while providing football fans with news, video updates, and community features through a customer web portal and cross-platform mobile app.</p>
+                            </div>
+                            <div class="project-overlay-info">
+                                <h3>MyGooners</h3>
+                                <div class="project-links">
+                                    <a href="https://mygooners.my/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="project-card fade-in">
-                    <img src="images/nujum.png" alt="NUJUM Prediction AI Platform" class="project-img">
-                    <div class="project-content">
-                        <h3>NUJUM - Prediction AI Platform</h3>
-                        <p style="text-align: justify;">An AI-powered prediction platform that leverages artificial intelligence to provide predictive analytics and insights. The system features prediction analysis and social media analysis capabilities, enabling users to gain valuable insights from data patterns and social media trends. The platform includes secure user authentication, login management, and advanced AI-driven analytics through a secure, user-friendly interface.</p>
-                        <p>Technologies: Laravel, MySQL</p>
-                        <div class="project-links">
-                            <a href="https://iesb.com.my/prediction-ai/login" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+                <div class="project-card fade-in" data-platforms="web">
+                    <div class="project-image-wrapper">
+                        <img src="images/bina.png" alt="BINA E-Ticketing System" class="project-img" draggable="false">
+                        <div class="project-overlay">
+                            <div class="project-overlay-description">
+                                <p>An event ticketing platform for CIDB IBS, enabling online event browsing, checkout, and payment processing for a national IBS conference, with digital tickets and purchase history available for attendees via a customer web portal.</p>
+                            </div>
+                            <div class="project-overlay-info">
+                                <h3>BINA E-Ticketing System</h3>
+                                <div class="project-links">
+                                    <a href="https://iesb.com.my/Bina2026/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in" data-platforms="web">
+                    <div class="project-image-wrapper">
+                        <img src="images/aras.png" alt="ARAS" class="project-img" draggable="false">
+                        <div class="project-overlay">
+                            <div class="project-overlay-description">
+                                <p>An asset management platform used by HR and accounts staff to track assets and handle internal requests such as maintenance, usage, purchases, and leave in one portal, with email and in-app approvals for staff and admin controls for users and workflows.</p>
+                            </div>
+                            <div class="project-overlay-info">
+                                <h3>ARAS</h3>
+                                <div class="project-links">
+                                    <a href="https://iesb.com.my/aras/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in" data-platforms="web">
+                    <div class="project-image-wrapper">
+                        <img src="images/est.png" alt="EST Group Website" class="project-img" draggable="false">
+                        <div class="project-overlay">
+                            <div class="project-overlay-description">
+                                <p>A corporate website for EST Group, a renewable energy company, showcasing solar EPCC services to the public, with an admin dashboard for content management.</p>
+                            </div>
+                            <div class="project-overlay-info">
+                                <h3>EST Group Website</h3>
+                                <div class="project-links">
+                                    <a href="https://estgroup.com.my/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in" data-platforms="web">
+                    <div class="project-image-wrapper">
+                        <img src="images/smks3.png" alt="SMK Seremban 3 Website" class="project-img" draggable="false">
+                        <div class="project-overlay">
+                            <div class="project-overlay-description">
+                                <p>A school portal for SMK Seremban 3, giving students, parents, and the public access to school information, academic resources, and announcements.</p>
+                            </div>
+                            <div class="project-overlay-info">
+                                <h3>SMK Seremban 3 Website</h3>
+                                <div class="project-links">
+                                    <a href="https://iesb.com.my/smks3/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in" data-platforms="web">
+                    <div class="project-image-wrapper">
+                        <img src="images/lms.png" alt="IESB LMS" class="project-img" draggable="false">
+                        <div class="project-overlay">
+                            <div class="project-overlay-description">
+                                <p>A Moodle LMS with AI grading and quiz generation, complete course and user management for students, teachers, and admins.</p>
+                            </div>
+                            <div class="project-overlay-info">
+                                <h3>IESB LMS</h3>
+                                <div class="project-links">
+                                    <a href="https://iesb.com.my/moodle" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -165,7 +272,7 @@
                                     <h3>Software Developer</h3>
                                     <h4>Intensiti Elemen SDN BHD</h4>
                                     <div class="timeline-date">May 2025 - Present</div>
-                                    <p style="text-align: justify;">Develop and maintain web applications using Laravel framework. Work on projects ranging from client-facing solutions to internal systems, ensuring high-quality code and timely delivery.</p>
+                                    <p style="text-align: justify;">Designed and developed web and mobile applications for client and internal projects using modern frameworks.</p>
                                 </div>
                             </div>
                         </div>
@@ -176,7 +283,7 @@
                                     <h3>Web Developer (Internship)</h3>
                                     <h4>VX Ventures SDN BHD</h4>
                                     <div class="timeline-date">October 2024 - March 2025</div>
-                                    <p style="text-align: justify;">Maintained and enhanced web development projects, improving functionality and user experience using Laravel.</p>
+                                    <p style="text-align: justify;">Maintained and enhanced web development projects, improving functionality and user experience.</p>
                                 </div>
                             </div>
                         </div>
@@ -212,8 +319,8 @@
                 </div>
                 
                 <div class="cv-download">
-                    <a href="file/CV_Muhammad Zahiruddin.pdf" class="btn" download="CV_Muhammad Zahiruddin.pdf" target="_blank">
-                        <i class="fas fa-download"></i> Download CV
+                    <a href="file/Resume_Muhammad Zahiruddin.pdf" class="btn" download="Resume_Muhammad Zahiruddin.pdf" target="_blank">
+                        <i class="fas fa-download"></i> Download Resume
                     </a>
                 </div>
             </div>
@@ -228,10 +335,6 @@
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <span>muhdzahir248@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+60 149947806</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
@@ -265,9 +368,8 @@
         <div class="social-links">
             <a href="https://github.com/zahir248" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/zahir248" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.facebook.com/share/18isnMHqij/" target="_blank"><i class="fab fa-facebook"></i></a>
         </div>
-        <p>&copy; 2025 Zahir. All rights reserved.</p>
+        <p>&copy; <span id="copyrightYear"></span> Zahir. All rights reserved.</p>
     </footer>
 
     <!-- Scroll to Top Button -->
@@ -279,6 +381,12 @@
         // Always apply dark mode
         const body = document.body;
         body.setAttribute('data-theme', 'dark');
+
+        // Auto-update copyright year
+        const copyrightYear = document.getElementById('copyrightYear');
+        if (copyrightYear) {
+            copyrightYear.textContent = new Date().getFullYear();
+        }
 
         // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
@@ -352,17 +460,6 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
-                    
-                    // Animate skill progress bars when they come into view
-                    if (entry.target.classList.contains('skill-item')) {
-                        const progressBar = entry.target.querySelector('.skill-progress-bar');
-                        if (progressBar) {
-                            const width = progressBar.getAttribute('data-width');
-                            setTimeout(() => {
-                                progressBar.style.width = width;
-                            }, 200);
-                        }
-                    }
                 }
             });
         }, observerOptions);
@@ -491,25 +588,128 @@
             }
         });
 
-        // Add smooth hover effects for project cards
-        document.querySelectorAll('.project-card').forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                card.style.transform = 'translateY(-10px)';
-            });
-            
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'translateY(0)';
+        // Project platform filters
+        const projectFilters = document.querySelectorAll('.project-filter');
+        const projectCards = document.querySelectorAll('.project-card[data-platforms]');
+
+        projectFilters.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.dataset.filter;
+
+                projectFilters.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                projectCards.forEach(card => {
+                    const platforms = card.dataset.platforms.split(' ');
+                    const show = filter === 'all' || platforms.includes(filter);
+                    card.classList.toggle('project-hidden', !show);
+                });
             });
         });
 
-        // Add smooth hover effects for skill items
-        document.querySelectorAll('.skill-item').forEach(item => {
-            item.addEventListener('mouseenter', () => {
-                item.style.transform = 'translateY(-10px)';
+        // Prevent easy download of project screenshots
+        document.querySelectorAll('.project-image-wrapper').forEach(wrapper => {
+            wrapper.addEventListener('contextmenu', (e) => e.preventDefault());
+
+            const img = wrapper.querySelector('.project-img');
+            if (img) {
+                img.addEventListener('dragstart', (e) => e.preventDefault());
+            }
+        });
+
+        // Project overlay — JS-controlled so it closes when user returns via back button
+        function closeProjectOverlays() {
+            projectCards.forEach(card => card.classList.remove('is-hovered'));
+        }
+
+        const useProjectTap = window.matchMedia('(hover: none), (max-width: 768px)').matches;
+
+        projectCards.forEach(card => {
+            if (useProjectTap) {
+                let tapLocked = false;
+
+                card.addEventListener('click', (e) => {
+                    if (e.target.closest('.project-links a')) return;
+                    if (tapLocked) return;
+
+                    e.stopPropagation();
+                    tapLocked = true;
+                    setTimeout(() => {
+                        tapLocked = false;
+                    }, 350);
+
+                    if (card.classList.contains('is-hovered')) {
+                        card.classList.remove('is-hovered');
+                    } else {
+                        closeProjectOverlays();
+                        card.classList.add('is-hovered');
+                    }
+                });
+            } else {
+                card.addEventListener('mouseenter', () => card.classList.add('is-hovered'));
+                card.addEventListener('mouseleave', () => card.classList.remove('is-hovered'));
+            }
+
+            const liveLink = card.querySelector('.project-links a');
+            if (liveLink) {
+                liveLink.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    card.classList.remove('is-hovered');
+                });
+            }
+        });
+
+        if (useProjectTap) {
+            document.addEventListener('click', () => {
+                closeProjectOverlays();
             });
-            
+        }
+
+        window.addEventListener('pageshow', () => {
+            closeProjectOverlays();
+        });
+
+        document.addEventListener('visibilitychange', () => {
+            if (document.visibilityState === 'visible') {
+                closeProjectOverlays();
+            }
+        });
+
+        // Interactive 3D tilt on about profile image
+        const aboutImgWrapper = document.querySelector('.about-img-wrapper');
+        const aboutImg = document.querySelector('.about-img');
+
+        if (aboutImgWrapper && aboutImg) {
+            aboutImgWrapper.addEventListener('contextmenu', (e) => e.preventDefault());
+            aboutImg.addEventListener('dragstart', (e) => e.preventDefault());
+
+            aboutImgWrapper.addEventListener('mousemove', (e) => {
+                const rect = aboutImgWrapper.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const rotateX = ((y - rect.height / 2) / (rect.height / 2)) * -10;
+                const rotateY = ((x - rect.width / 2) / (rect.width / 2)) * 10;
+
+                aboutImg.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.04)`;
+            });
+
+            aboutImgWrapper.addEventListener('mouseleave', () => {
+                aboutImg.style.transform = '';
+            });
+        }
+
+        // Interactive 3D tilt on skill cards (same motion style as about image)
+        document.querySelectorAll('.skill-item').forEach(item => {
+            item.addEventListener('mousemove', (e) => {
+                const rect = item.getBoundingClientRect();
+                const rotateX = ((e.clientY - rect.top - rect.height / 2) / (rect.height / 2)) * -10;
+                const rotateY = ((e.clientX - rect.left - rect.width / 2) / (rect.width / 2)) * 10;
+
+                item.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.04)`;
+            });
+
             item.addEventListener('mouseleave', () => {
-                item.style.transform = 'translateY(0)';
+                item.style.transform = '';
             });
         });
 
@@ -524,16 +724,26 @@
             });
         });
 
-        // Add parallax effect to hero section
-        window.addEventListener('scroll', () => {
+        // Fixed wallpaper — image stays in place while page scrolls over it
+        const heroBg = document.querySelector('.hero-bg');
+        const homeSection = document.querySelector('.home');
+
+        function updateHeroParallax() {
             const scrolled = window.pageYOffset;
-            const rate = scrolled * -0.5;
-            
-            if (window.innerWidth > 768) { // Only on desktop
-                document.querySelector('.hero-content').style.transform = 
-                    `translateY(${rate}px)`;
+            const homeHeight = homeSection.offsetHeight;
+
+            if (scrolled < homeHeight) {
+                heroBg.style.visibility = 'visible';
+                heroBg.style.opacity = String(1 - (scrolled / homeHeight) * 0.6);
+            } else {
+                heroBg.style.visibility = 'hidden';
+                heroBg.style.opacity = '0';
             }
-        });
+        }
+
+        window.addEventListener('scroll', updateHeroParallax, { passive: true });
+        window.addEventListener('resize', updateHeroParallax);
+        updateHeroParallax();
 
         // Add click animation to buttons
         document.querySelectorAll('.btn').forEach(btn => {
