@@ -489,16 +489,20 @@ section {
     color: #336791;
 }
 
+.skill-item .devicon-redis-plain {
+    color: #DC382D;
+}
+
 .skill-item .devicon-java-plain {
     color: #EA2D2E;
 }
 
-.skill-item .devicon-cplusplus-plain {
-    color: #00599C;
-}
-
 .skill-item .devicon-docker-plain {
     color: #2496ED;
+}
+
+.skill-item .devicon-git-plain {
+    color: #F05032;
 }
 
 .skill-item .devicon-ubuntu-plain {
@@ -831,6 +835,37 @@ section {
 .timeline-text p {
     line-height: 1.6;
     color: var(--text-color);
+}
+
+.timeline-details {
+    list-style: disc;
+    padding-left: 1.25rem;
+    margin: 0;
+}
+
+.timeline-details li {
+    line-height: 1.6;
+    color: var(--text-color);
+    text-align: left;
+    margin-bottom: 0.65rem;
+}
+
+.timeline-details li:last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+    .cv-container {
+        max-width: 1200px;
+    }
+
+    .timeline-item {
+        padding: 0 40px;
+    }
+
+    .timeline-content {
+        padding: 32px 36px;
+    }
 }
 
 .cv-section-title {
