@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20260726d">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="images/favicon.ico" rel="icon">
 </head>
@@ -100,11 +100,13 @@
             </div>
             <div class="about-content">
                 <div class="about-img-wrapper fade-in">
-                    <img src="images/zahir.jpg" alt="Muhammad Zahiruddin Bin Mustaza" class="about-img" draggable="false">
+                    <img src="images/zahir.jpg" alt="Zahir" class="about-img" draggable="false">
                 </div>
                 <div class="about-text fade-in">
-                    <h3><span id="greetingText"></span><br class="greeting-break"><span class="greeting-name"> I'm Zahir</span></h3>
-                    <p class="about-fullname">Muhammad Zahiruddin Bin Mustaza</p>
+                    <h3 class="about-greeting">
+                        <span id="greetingText" class="greeting-message"></span>
+                        <span class="greeting-name">I'm Zahir</span>
+                    </h3>
                     <p>I build and maintain production applications across the full lifecycle — requirements, implementation, deployment, and support. My recent work covers SaaS, ecommerce, LMS, ticketing, and internal tools, with a focus on reliable delivery and practical problem-solving.</p>
                     <div class="about-stats">
                         <div class="stat-pill">
@@ -118,14 +120,6 @@
                         <div class="stat-pill">
                             <strong>Full-stack</strong>
                             <span>Web &amp; mobile</span>
-                        </div>
-                        <div class="stat-pill">
-                            <strong>Meta</strong>
-                            <span>Front-End &amp; Back-End</span>
-                        </div>
-                        <div class="stat-pill">
-                            <strong>UTeM</strong>
-                            <span>BCS · Software Dev</span>
                         </div>
                     </div>
                 </div>
@@ -277,30 +271,44 @@
                 <button class="project-filter" data-filter="mobile" type="button">Mobile</button>
             </div>
             <div class="projects-grid">
-                <div class="project-card fade-in" data-platforms="web mobile">
+                <div class="project-card project-card-detailed project-reveal" data-platforms="web mobile" data-reveal="left">
                     <div class="project-image-wrapper">
                         <img
                             src="https://api.microlink.io/?url=https%3A%2F%2Fiesb.com.my%2Fnujum%2F&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800"
                             data-fallback="images/nujum.png"
-                            alt="Nujum"
+                            alt="NUJUM — AI Prediction Analysis System"
                             class="project-img is-loading"
                             loading="lazy"
                             draggable="false"
                         >
-                        <div class="project-overlay">
-                            <p><strong>Role:</strong> Full-stack development for web + mobile.</p>
-                            <p><strong>Impact:</strong> Shipped an AI SaaS platform with subscriptions, sentiment analysis, and account management in production.</p>
-                        </div>
                     </div>
                     <div class="project-meta">
                         <div>
-                            <h3>Nujum</h3>
-                            <div class="project-badges"><span>Web</span><span>Mobile</span><span>AI</span></div>
+                            <h3>NUJUM</h3>
+                            <p class="project-subtitle">AI Prediction Analysis System</p>
+                            <div class="project-badges">
+                                <span>Web</span><span>Mobile</span><span>AI</span><span>SaaS</span><span>Laravel</span><span>Flutter</span><span>MySQL</span><span>ToyyibPay</span>
+                            </div>
                         </div>
                         <a href="https://iesb.com.my/nujum/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
                     </div>
+                    <div class="project-overlay project-overlay-rich">
+                        <p class="project-overlay-lead">An AI tool that helps the team turn data, files, and social media posts into clear forecasts and advice — in minutes, not weeks.</p>
+                        <p><strong>Role:</strong> Full-stack · Solo</p>
+                        <p><strong>Problem:</strong> Checking data by hand took too long, so risks and useful advice often came too late.</p>
+                        <p><strong>Impact:</strong> Staff can spot issues earlier and make decisions faster, with clearer next steps instead of digging through raw data.</p>
+                        <ul>
+                            <li>Website and mobile app for everyday use</li>
+                            <li>Four AI tools for forecasts, profiles, files, and opinions from text</li>
+                            <li>Online subscriptions, usage limits, and downloadable reports</li>
+                            <li>Chat and notifications to keep the team updated</li>
+                        </ul>
+                        <p><strong>Timeline:</strong> Aug 2025 – Jul 2026</p>
+                        <p><strong>Client:</strong> Intensiti Elemen SDN BHD</p>
+                        <a href="https://iesb.com.my/nujum/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
+                    </div>
                 </div>
-                <div class="project-card fade-in" data-platforms="web mobile">
+                <div class="project-card project-card-detailed project-reveal" data-platforms="web mobile" data-reveal="right">
                     <div class="project-image-wrapper">
                         <img
                             src="https://api.microlink.io/?url=https%3A%2F%2Fmygooners.my%2F&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800"
@@ -310,20 +318,34 @@
                             loading="lazy"
                             draggable="false"
                         >
-                        <div class="project-overlay">
-                            <p><strong>Role:</strong> Ecommerce + mobile feature development.</p>
-                            <p><strong>Impact:</strong> Delivered checkout, payments, and fan content flows across web portal and Flutter app.</p>
-                        </div>
                     </div>
                     <div class="project-meta">
                         <div>
                             <h3>MyGooners</h3>
-                            <div class="project-badges"><span>Web</span><span>Mobile</span><span>E-commerce</span></div>
+                            <p class="project-subtitle">Company store &amp; football news platform</p>
+                            <div class="project-badges">
+                                <span>Web</span><span>Mobile</span><span>E-commerce</span><span>Laravel</span><span>Flutter</span><span>MySQL</span><span>ToyyibPay</span><span>Stripe</span>
+                            </div>
                         </div>
                         <a href="https://mygooners.my/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
                     </div>
+                    <div class="project-overlay project-overlay-rich">
+                        <p class="project-overlay-lead">A website and mobile app to sell company products and share the latest football news with fans.</p>
+                        <p><strong>Role:</strong> Full-stack · Focused on web · Small team (2 people)</p>
+                        <p><strong>Problem:</strong> The company needed one place to sell products online, manage orders, and keep fans updated with football news.</p>
+                        <p><strong>Impact:</strong> Customers can browse, pay, and order online — while the team manages sales and news from one system, including on mobile.</p>
+                        <ul>
+                            <li>Online shop for company products and services</li>
+                            <li>Football news for fans to read and follow</li>
+                            <li>Safe online payments and email receipts</li>
+                            <li>Mobile app in English and Malay</li>
+                        </ul>
+                        <p><strong>Timeline:</strong> Jul 2025 – Jun 2026</p>
+                        <p><strong>Client:</strong> Intensiti Elemen SDN BHD</p>
+                        <a href="https://mygooners.my/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
+                    </div>
                 </div>
-                <div class="project-card fade-in" data-platforms="web">
+                <div class="project-card project-card-detailed project-reveal" data-platforms="web" data-reveal="left">
                     <div class="project-image-wrapper">
                         <img
                             src="https://api.microlink.io/?url=https%3A%2F%2Fiesb.com.my%2FBina2026%2F&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800"
@@ -333,108 +355,178 @@
                             loading="lazy"
                             draggable="false"
                         >
-                        <div class="project-overlay">
-                            <p><strong>Role:</strong> Ticketing platform development.</p>
-                            <p><strong>Impact:</strong> Enabled online registration and payment for a national IBS conference with digital tickets and purchase history.</p>
-                        </div>
                     </div>
                     <div class="project-meta">
                         <div>
                             <h3>BINA E-Ticketing</h3>
-                            <div class="project-badges"><span>Web</span><span>Payments</span></div>
+                            <p class="project-subtitle">Online ticketing for a national conference</p>
+                            <div class="project-badges">
+                                <span>Web</span><span>Laravel</span><span>MySQL</span><span>ToyyibPay</span><span>Stripe</span>
+                            </div>
                         </div>
                         <a href="https://iesb.com.my/Bina2026/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
                     </div>
+                    <div class="project-overlay project-overlay-rich">
+                        <p class="project-overlay-lead">An online ticketing system for a national conference — so attendees can register, pay online, and get their tickets digitally.</p>
+                        <p><strong>Role:</strong> Full-stack · Solo</p>
+                        <p><strong>Problem:</strong> Conference registration and payment were done by hand, which was slow and hard to manage for many attendees.</p>
+                        <p><strong>Impact:</strong> Organisers can sell tickets online with less manual work, and attendees get digital tickets plus a clear purchase history.</p>
+                        <ul>
+                            <li>Online registration and ticket buying</li>
+                            <li>Safe online payment for attendees</li>
+                            <li>Digital tickets and purchase history for buyers</li>
+                            <li>Admin tools to manage orders and ticket records</li>
+                        </ul>
+                        <p><strong>Timeline:</strong> May 2025 – Oct 2025</p>
+                        <p><strong>Client:</strong> CIDB IBS SDN BHD</p>
+                        <a href="https://iesb.com.my/Bina2026/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
+                    </div>
                 </div>
-                <div class="project-card fade-in" data-platforms="web">
+                <div class="project-card project-card-detailed project-reveal" data-platforms="web" data-reveal="right">
                     <div class="project-image-wrapper">
                         <img
                             src="https://api.microlink.io/?url=https%3A%2F%2Fiesb.com.my%2Faras%2F&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800"
                             data-fallback="images/aras.png"
-                            alt="ARAS"
+                            alt="ARAS — Asset Management System"
                             class="project-img is-loading"
                             loading="lazy"
                             draggable="false"
                         >
-                        <div class="project-overlay">
-                            <p><strong>Role:</strong> Internal tools development.</p>
-                            <p><strong>Impact:</strong> Centralised asset tracking and approval workflows for HR and accounts in one portal.</p>
-                        </div>
                     </div>
                     <div class="project-meta">
                         <div>
                             <h3>ARAS</h3>
-                            <div class="project-badges"><span>Web</span><span>Internal</span></div>
+                            <p class="project-subtitle">Company asset &amp; approval system</p>
+                            <div class="project-badges">
+                                <span>Web</span><span>Laravel</span><span>MySQL</span>
+                            </div>
                         </div>
                         <a href="https://iesb.com.my/aras/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
                     </div>
+                    <div class="project-overlay project-overlay-rich">
+                        <p class="project-overlay-lead">An internal website to track company assets and approve requests — like maintenance, purchases, and leave — all in one place.</p>
+                        <p><strong>Role:</strong> Full-stack · Small team (2 people)</p>
+                        <p><strong>Problem:</strong> Staff tracked assets and approvals in different tools and emails, so work was slow and easy to miss.</p>
+                        <p><strong>Impact:</strong> One shared system — less email chasing, clearer approvals, and easier asset records.</p>
+                        <ul>
+                            <li>Approve or reject requests in the app or by email</li>
+                            <li>Asset list, categories, value tracking, and Excel download</li>
+                            <li>Different access for admins and staff, in English and Malay</li>
+                            <li>Approved purchases can add new assets automatically, with simple overview screens</li>
+                        </ul>
+                        <p><strong>Timeline:</strong> Jan 2026 – Jun 2026</p>
+                        <p><strong>Client:</strong> Intensiti Elemen SDN BHD</p>
+                        <a href="https://iesb.com.my/aras/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
+                    </div>
                 </div>
-                <div class="project-card fade-in" data-platforms="web">
+                <div class="project-card project-card-detailed project-reveal" data-platforms="web" data-reveal="left">
                     <div class="project-image-wrapper">
                         <img
                             src="https://api.microlink.io/?url=https%3A%2F%2Festgroup.com.my%2F&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800"
                             data-fallback="images/est.png"
-                            alt="EST Group Website"
+                            alt="EST Group website"
                             class="project-img is-loading"
                             loading="lazy"
                             draggable="false"
                         >
-                        <div class="project-overlay">
-                            <p><strong>Role:</strong> Corporate website + CMS.</p>
-                            <p><strong>Impact:</strong> Launched a public-facing site for solar EPCC services with an admin content dashboard.</p>
-                        </div>
                     </div>
                     <div class="project-meta">
                         <div>
                             <h3>EST Group</h3>
-                            <div class="project-badges"><span>Web</span><span>CMS</span></div>
+                            <p class="project-subtitle">Company website</p>
+                            <div class="project-badges">
+                                <span>Web</span><span>Laravel</span><span>MySQL</span>
+                            </div>
                         </div>
                         <a href="https://estgroup.com.my/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
                     </div>
+                    <div class="project-overlay project-overlay-rich">
+                        <p class="project-overlay-lead">A company website to showcase solar and EV charging services — with a simple staff login so the team can update content and receive contact messages.</p>
+                        <p><strong>Role:</strong> Full-stack · Solo</p>
+                        <p><strong>Problem:</strong> The company needed a professional website and a way for staff to update partners, team, and contact info on their own.</p>
+                        <p><strong>Impact:</strong> Staff can update the website themselves whenever needed, and visitor inquiries reach the team by email right away.</p>
+                        <ul>
+                            <li>Public pages for Home, About, Services, Partners, and Contact</li>
+                            <li>Staff login to manage partners, team, and contact details</li>
+                            <li>Contact form that sends messages to the company email</li>
+                            <li>Option to temporarily hide the site from visitors when needed</li>
+                        </ul>
+                        <p><strong>Timeline:</strong> Feb 2026 – Jun 2026</p>
+                        <p><strong>Client:</strong> EST Group</p>
+                        <a href="https://estgroup.com.my/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
+                    </div>
                 </div>
-                <div class="project-card fade-in" data-platforms="web">
+                <div class="project-card project-card-detailed project-reveal" data-platforms="web" data-reveal="right">
                     <div class="project-image-wrapper">
                         <img
                             src="https://api.microlink.io/?url=https%3A%2F%2Fiesb.com.my%2Fsmks3%2F&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800"
                             data-fallback="images/smks3.png"
-                            alt="SMK Seremban 3 Website"
+                            alt="SMK Seremban 3 website"
                             class="project-img is-loading"
                             loading="lazy"
                             draggable="false"
                         >
-                        <div class="project-overlay">
-                            <p><strong>Role:</strong> School portal development.</p>
-                            <p><strong>Impact:</strong> Gave students, parents, and the public a single place for school info, resources, and announcements.</p>
-                        </div>
                     </div>
                     <div class="project-meta">
                         <div>
                             <h3>SMK Seremban 3</h3>
-                            <div class="project-badges"><span>Web</span><span>Education</span></div>
+                            <p class="project-subtitle">Official school website</p>
+                            <div class="project-badges">
+                                <span>Web</span><span>PHP</span><span>MySQL</span>
+                            </div>
                         </div>
                         <a href="https://iesb.com.my/smks3/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
                     </div>
+                    <div class="project-overlay project-overlay-rich">
+                        <p class="project-overlay-lead">An official school website — news and school info for parents, students, and teachers, with an easy way for staff to update pages.</p>
+                        <p><strong>Role:</strong> Full-stack · Small team (2 people)</p>
+                        <p><strong>Problem:</strong> School updates were stuck in old fixed pages and shared files, so staff couldn’t update news and info on their own.</p>
+                        <p><strong>Impact:</strong> Staff can update their own pages safely, and parents can find news and school info in one place instead of scattered files.</p>
+                        <ul>
+                            <li>School pages for profile, news, staff, courses, and more</li>
+                            <li>Staff login to edit content and upload files</li>
+                            <li>Each unit only edits the pages they are allowed to manage</li>
+                            <li>Pages that make school news easier to find online</li>
+                        </ul>
+                        <p><strong>Timeline:</strong> Mar 2026 – Jul 2026</p>
+                        <p><strong>Client:</strong> SMK Seremban 3</p>
+                        <a href="https://iesb.com.my/smks3/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
+                    </div>
                 </div>
-                <div class="project-card fade-in" data-platforms="web">
+                <div class="project-card project-card-detailed project-reveal" data-platforms="web" data-reveal="left">
                     <div class="project-image-wrapper">
                         <img
                             src="https://api.microlink.io/?url=https%3A%2F%2Fiesb.com.my%2Fmoodle&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800"
                             data-fallback="images/lms.png"
-                            alt="IESB LMS"
+                            alt="IESB LMS — AI-enhanced learning platform"
                             class="project-img is-loading"
                             loading="lazy"
                             draggable="false"
                         >
-                        <div class="project-overlay">
-                            <p><strong>Role:</strong> Moodle LMS customisation + AI features.</p>
-                            <p><strong>Impact:</strong> Added AI grading/quiz generation and full course management for students, teachers, and admins.</p>
-                        </div>
                     </div>
                     <div class="project-meta">
                         <div>
                             <h3>IESB LMS</h3>
-                            <div class="project-badges"><span>Web</span><span>Moodle</span><span>AI</span></div>
+                            <p class="project-subtitle">Online learning with AI tools</p>
+                            <div class="project-badges">
+                                <span>Web</span><span>Moodle</span><span>AI</span><span>PHP</span><span>MySQL</span>
+                            </div>
                         </div>
+                        <a href="https://iesb.com.my/moodle" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
+                    </div>
+                    <div class="project-overlay project-overlay-rich">
+                        <p class="project-overlay-lead">An online learning platform with courses, quizzes, and AI tools that help teachers and learners.</p>
+                        <p><strong>Role:</strong> Full-stack · Solo</p>
+                        <p><strong>Problem:</strong> The company needed a learning system with AI to help teachers mark work and create questions faster.</p>
+                        <p><strong>Impact:</strong> Teachers spend less time marking work and creating quizzes with AI help, while learners get courses and tests in one place.</p>
+                        <ul>
+                            <li>Learning platform for courses, users, and quizzes</li>
+                            <li>AI chat, AI marking, and AI quiz-question help for teachers</li>
+                            <li>Better tools for admins to manage the day-to-day system</li>
+                            <li>Clear course and homework steps for teachers and learners</li>
+                        </ul>
+                        <p><strong>Timeline:</strong> Jan 2026 – Jun 2026</p>
+                        <p><strong>Client:</strong> Intensiti Elemen SDN BHD</p>
                         <a href="https://iesb.com.my/moodle" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
                     </div>
                 </div>
@@ -448,7 +540,7 @@
             </div>
             <div class="cv-container">
                 <div class="cv-content">
-                    <h3 class="cv-section-title fade-in">Experience</h3>
+                    <h3 class="cv-section-title fade-in">Work Experience</h3>
                     <div class="timeline fade-in">
                         <div class="timeline-item">
                             <div class="timeline-content">
@@ -550,10 +642,6 @@
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <span>Petaling Jaya, Selangor</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-globe"></i>
-                        <a href="https://zahir248.github.io/portfolio" target="_blank" rel="noopener noreferrer">zahir248.github.io/portfolio</a>
                     </div>
                 </div>
                 <form action="https://formspree.io/f/mrgwbaey" method="POST" class="contact-form fade-in">
@@ -788,6 +876,22 @@
             observer.observe(element);
         });
 
+        const projectRevealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-inview');
+                    projectRevealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.18,
+            rootMargin: '0px 0px -12% 0px'
+        });
+
+        document.querySelectorAll('.project-reveal').forEach(card => {
+            projectRevealObserver.observe(card);
+        });
+
         let lastScrollTop = 0;
         const navbar = document.querySelector('.navbar');
         const scrollProgress = document.getElementById('scrollProgress');
@@ -816,7 +920,7 @@
         updateScrollUI();
 
         // Hero typing animation
-        const heroTexts = ["Software Developer", "Web Developer", "Full-Stack Developer"];
+        const heroTexts = ["Software Developer", "Web Developer"];
         const heroRoleText = document.getElementById('heroRoleText');
         let heroTextIndex = 0;
         let i = 0;
@@ -869,6 +973,9 @@
         function typeGreeting() {
             const currentGreeting = greetings[greetingIndex];
             const currentColor = greetingColors[currentGreeting];
+            const isRtl = /[\u0600-\u06FF]/.test(currentGreeting);
+
+            greetingElement.setAttribute('dir', isRtl ? 'rtl' : 'ltr');
 
             if (!isDeletingGreeting && greetingI < currentGreeting.length) {
                 greetingElement.innerHTML = '<span style="color: ' + currentColor + ';">' + currentGreeting.substring(0, greetingI + 1) + '</span><span class="typing-cursor">|</span>';
@@ -965,39 +1072,70 @@
         });
 
         function closeProjectOverlays() {
-            projectCards.forEach(card => card.classList.remove('is-hovered'));
+            projectCards.forEach(card => {
+                card.classList.remove('is-hovered');
+                card.removeAttribute('data-force-closed');
+                const overlay = card.querySelector('.project-overlay');
+                if (overlay) overlay.scrollTop = 0;
+            });
         }
 
-        const useProjectTap = window.matchMedia('(hover: none), (max-width: 768px)').matches;
+        const isTouchDevice =
+            navigator.maxTouchPoints > 0 ||
+            window.matchMedia('(pointer: coarse)').matches ||
+            window.matchMedia('(hover: none)').matches;
+
+        if (isTouchDevice) {
+            document.documentElement.classList.add('is-touch');
+        }
 
         projectCards.forEach(card => {
-            if (useProjectTap) {
-                let tapLocked = false;
+            const overlay = card.querySelector('.project-overlay');
 
-                card.addEventListener('click', (e) => {
-                    if (e.target.closest('.project-live-btn')) return;
-                    if (tapLocked) return;
+            const openCard = () => {
+                closeProjectOverlays();
+                card.classList.add('is-hovered');
+                card.removeAttribute('data-force-closed');
+            };
 
-                    e.stopPropagation();
-                    tapLocked = true;
-                    setTimeout(() => { tapLocked = false; }, 350);
+            const closeCard = () => {
+                card.classList.remove('is-hovered');
+                card.setAttribute('data-force-closed', '1');
+                if (overlay) overlay.scrollTop = 0;
+            };
 
-                    if (card.classList.contains('is-hovered')) {
-                        card.classList.remove('is-hovered');
-                    } else {
-                        closeProjectOverlays();
-                        card.classList.add('is-hovered');
-                    }
+            // Click/tap the same card again to close details
+            card.addEventListener('click', (e) => {
+                if (e.target.closest('.project-live-btn')) return;
+
+                e.stopPropagation();
+
+                if (card.classList.contains('is-hovered')) {
+                    closeCard();
+                } else {
+                    openCard();
+                }
+            });
+
+            if (!isTouchDevice) {
+                card.addEventListener('mouseenter', () => {
+                    if (card.getAttribute('data-force-closed') === '1') return;
+                    openCard();
                 });
-            } else {
-                card.addEventListener('mouseenter', () => card.classList.add('is-hovered'));
-                card.addEventListener('mouseleave', () => card.classList.remove('is-hovered'));
+
+                card.addEventListener('mouseleave', () => {
+                    card.removeAttribute('data-force-closed');
+                    card.classList.remove('is-hovered');
+                    if (overlay) overlay.scrollTop = 0;
+                });
             }
         });
 
-        if (useProjectTap) {
-            document.addEventListener('click', () => closeProjectOverlays());
-        }
+        // Click outside any project card to close
+        document.addEventListener('click', (e) => {
+            if (e.target.closest('.project-card')) return;
+            closeProjectOverlays();
+        });
 
         window.addEventListener('pageshow', closeProjectOverlays);
         document.addEventListener('visibilitychange', () => {
@@ -1023,6 +1161,12 @@
             document.querySelectorAll('.fade-in').forEach((element, index) => {
                 if (element.getBoundingClientRect().top < window.innerHeight) {
                     setTimeout(() => element.classList.add('visible'), index * 70);
+                }
+            });
+
+            document.querySelectorAll('.project-reveal').forEach((card, index) => {
+                if (card.getBoundingClientRect().top < window.innerHeight * 0.88) {
+                    setTimeout(() => card.classList.add('is-inview'), index * 90);
                 }
             });
         });
