@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <title>Zahir | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link href="images/favicon.ico" rel="icon">
 </head>
 <body>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo"></div>
+            <a href="#home" class="logo">Zahir</a>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -22,7 +26,7 @@
                 <li><a href="#cv" class="nav-link">CV</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
@@ -30,116 +34,243 @@
 
     <main>
         <section id="home" class="home">
-            <div class="hero-bg" aria-hidden="true"></div>
-            <div class="hero-content fade-in">
-                <h1>Muhammad Zahiruddin</h1>
-                <h2>Software Developer</h2>
-                <p>Passionate about creating innovative web solutions and bringing ideas to life through code.</p>
-                <a href="#projects" class="btn">View My Work</a>
+            <div class="hero-bg" aria-hidden="true">
+                <div class="hero-collage">
+                    <img
+                        src="https://api.microlink.io/?url=https%3A%2F%2Fiesb.com.my%2Fnujum%2F&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800"
+                        data-fallback="images/nujum.png"
+                        alt=""
+                        loading="eager"
+                    >
+                    <img
+                        src="https://api.microlink.io/?url=https%3A%2F%2Fmygooners.my%2F&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800"
+                        data-fallback="images/mygooners.png"
+                        alt=""
+                        loading="eager"
+                    >
+                    <img
+                        src="https://api.microlink.io/?url=https%3A%2F%2Fiesb.com.my%2FBina2026%2F&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800"
+                        data-fallback="images/bina.png"
+                        alt=""
+                        loading="eager"
+                    >
+                    <img
+                        src="https://api.microlink.io/?url=https%3A%2F%2Fiesb.com.my%2Faras%2F&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800"
+                        data-fallback="images/aras.png"
+                        alt=""
+                        loading="eager"
+                    >
+                    <img
+                        src="https://api.microlink.io/?url=https%3A%2F%2Festgroup.com.my%2F&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800"
+                        data-fallback="images/est.png"
+                        alt=""
+                        loading="eager"
+                    >
+                    <img
+                        src="https://api.microlink.io/?url=https%3A%2F%2Fiesb.com.my%2Fsmks3%2F&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800"
+                        data-fallback="images/smks3.png"
+                        alt=""
+                        loading="eager"
+                    >
+                    <img
+                        src="https://api.microlink.io/?url=https%3A%2F%2Fiesb.com.my%2Fmoodle&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800"
+                        data-fallback="images/lms.png"
+                        alt=""
+                        loading="eager"
+                    >
+                </div>
+            </div>
+            <div class="hero-glow" aria-hidden="true"></div>
+            <div class="hero-content">
+                <p class="hero-role"><span id="heroRoleText">Software Developer</span></p>
+                <h1 class="brand-mark" aria-label="Zahir">
+                    <span class="brand-letter" style="--i:0">Z</span><span class="brand-letter" style="--i:1">a</span><span class="brand-letter" style="--i:2">h</span><span class="brand-letter" style="--i:3">i</span><span class="brand-letter" style="--i:4">r</span>
+                </h1>
+                <p class="hero-position">Full-stack · Laravel / Next.js / Flutter</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn">View My Work</a>
+                </div>
             </div>
         </section>
 
         <section id="about" class="about">
-            <h2 class="section-title fade-in">About Me</h2>
+            <div class="section-head fade-in">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-lead">I ship production web and mobile products end to end.</p>
+            </div>
             <div class="about-content">
                 <div class="about-img-wrapper fade-in">
-                    <img src="images/zahir.jpg" alt="Profile" class="about-img" draggable="false">
+                    <img src="images/zahir.jpg" alt="Muhammad Zahiruddin Bin Mustaza" class="about-img" draggable="false">
                 </div>
                 <div class="about-text fade-in">
                     <h3><span id="greetingText"></span><br class="greeting-break"><span class="greeting-name"> I'm Zahir</span></h3>
-                    <p style="text-align: justify;">Hands-on experience in building and maintaining web and mobile applications across the full development lifecycle, including requirement understanding, implementation, deployment, and production support. Experience working with modern frameworks and tools to deliver functional and user-friendly solutions based on real project work. Focused on continuous learning and improving technical skills through practical development experience.</p>
+                    <p class="about-fullname">Muhammad Zahiruddin Bin Mustaza</p>
+                    <p>I build and maintain production applications across the full lifecycle — requirements, implementation, deployment, and support. My recent work covers SaaS, ecommerce, LMS, ticketing, and internal tools, with a focus on reliable delivery and practical problem-solving.</p>
+                    <div class="about-stats">
+                        <div class="stat-pill">
+                            <strong id="statExperience">—</strong>
+                            <span>Total experience</span>
+                        </div>
+                        <div class="stat-pill">
+                            <strong id="statProjects">—</strong>
+                            <span>Projects shipped</span>
+                        </div>
+                        <div class="stat-pill">
+                            <strong>Full-stack</strong>
+                            <span>Web &amp; mobile</span>
+                        </div>
+                        <div class="stat-pill">
+                            <strong>Meta</strong>
+                            <span>Front-End &amp; Back-End</span>
+                        </div>
+                        <div class="stat-pill">
+                            <strong>UTeM</strong>
+                            <span>BCS · Software Dev</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="skills" class="skills">
-            <h2 class="section-title fade-in">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item fade-in">
-                    <i class="fab fa-laravel"></i>
-                    <h3>Laravel</h3>
+            <div class="section-head fade-in">
+                <h2 class="section-title">Skills</h2>
+                <p class="section-lead">Full technical toolkit across development, deployment, and integrations.</p>
+            </div>
+            <div class="skills-categories">
+                <div class="skill-group fade-in">
+                    <h3>Programming &amp; Markup Languages</h3>
+                    <div class="skill-tags">
+                        <button type="button" class="skill-tag">JavaScript</button>
+                        <button type="button" class="skill-tag">TypeScript</button>
+                        <button type="button" class="skill-tag">PHP</button>
+                        <button type="button" class="skill-tag">Java</button>
+                        <button type="button" class="skill-tag">HTML</button>
+                        <button type="button" class="skill-tag">CSS</button>
+                    </div>
                 </div>
-                <div class="skill-item fade-in">
-                    <i class="devicon-spring-plain colored"></i>
-                    <h3>Spring Boot</h3>
+                <div class="skill-group fade-in">
+                    <h3>Frameworks &amp; Libraries</h3>
+                    <div class="skill-tags">
+                        <button type="button" class="skill-tag">Laravel</button>
+                        <button type="button" class="skill-tag">React</button>
+                        <button type="button" class="skill-tag">Next.js</button>
+                        <button type="button" class="skill-tag">Spring Boot</button>
+                        <button type="button" class="skill-tag">Bootstrap</button>
+                        <button type="button" class="skill-tag">Tailwind CSS</button>
+                        <button type="button" class="skill-tag">shadcn/ui</button>
+                    </div>
                 </div>
-                <div class="skill-item fade-in">
-                    <i class="devicon-flutter-plain colored"></i>
-                    <h3>Flutter</h3>
+                <div class="skill-group fade-in">
+                    <h3>Mobile Development &amp; Deployment</h3>
+                    <div class="skill-tags">
+                        <button type="button" class="skill-tag">Flutter</button>
+                        <button type="button" class="skill-tag">Google Play Console</button>
+                    </div>
                 </div>
-                <div class="skill-item fade-in">
-                    <i class="fab fa-react"></i>
-                    <h3>React</h3>
+                <div class="skill-group fade-in">
+                    <h3>Databases &amp; Backend Services</h3>
+                    <div class="skill-tags">
+                        <button type="button" class="skill-tag">MySQL</button>
+                        <button type="button" class="skill-tag">PostgreSQL</button>
+                        <button type="button" class="skill-tag">Firebase</button>
+                        <button type="button" class="skill-tag">Supabase</button>
+                        <button type="button" class="skill-tag">Redis</button>
+                        <button type="button" class="skill-tag">Upstash Redis</button>
+                        <button type="button" class="skill-tag">Upstash QStash</button>
+                    </div>
                 </div>
-                <div class="skill-item fade-in">
-                    <i class="devicon-mysql-plain colored"></i>
-                    <h3>MySQL</h3>
+                <div class="skill-group fade-in">
+                    <h3>Cloud &amp; DevOps</h3>
+                    <div class="skill-tags">
+                        <button type="button" class="skill-tag">AWS (EC2, S3, RDS)</button>
+                        <button type="button" class="skill-tag">Docker</button>
+                        <button type="button" class="skill-tag">Docker Hub</button>
+                        <button type="button" class="skill-tag">Linux (Ubuntu)</button>
+                        <button type="button" class="skill-tag">GitHub Actions</button>
+                        <button type="button" class="skill-tag">GitLab CI/CD</button>
+                    </div>
                 </div>
-                <div class="skill-item fade-in">
-                    <i class="devicon-postgresql-plain colored"></i>
-                    <h3>PostgreSQL</h3>
+                <div class="skill-group fade-in">
+                    <h3>Hosting &amp; Deployment Platforms</h3>
+                    <div class="skill-tags">
+                        <button type="button" class="skill-tag">Vercel</button>
+                        <button type="button" class="skill-tag">Netlify</button>
+                        <button type="button" class="skill-tag">GitHub Pages</button>
+                        <button type="button" class="skill-tag">Render</button>
+                        <button type="button" class="skill-tag">Railway</button>
+                        <button type="button" class="skill-tag">cPanel</button>
+                    </div>
                 </div>
-                <div class="skill-item fade-in">
-                    <i class="devicon-redis-plain colored"></i>
-                    <h3>Redis</h3>
+                <div class="skill-group fade-in">
+                    <h3>Platforms &amp; LMS</h3>
+                    <div class="skill-tags">
+                        <button type="button" class="skill-tag">Moodle</button>
+                    </div>
                 </div>
-                <div class="skill-item fade-in">
-                    <i class="devicon-firebase-plain"></i>
-                    <h3>Firebase</h3>
+                <div class="skill-group fade-in">
+                    <h3>AI &amp; External Integrations</h3>
+                    <div class="skill-tags">
+                        <button type="button" class="skill-tag">AI Integration (Google, OpenAI)</button>
+                        <button type="button" class="skill-tag">Google APIs</button>
+                        <button type="button" class="skill-tag">Stripe</button>
+                        <button type="button" class="skill-tag">ToyyibPay</button>
+                        <button type="button" class="skill-tag">Telegram Bot API</button>
+                        <button type="button" class="skill-tag">Apify</button>
+                    </div>
                 </div>
-                <div class="skill-item fade-in">
-                    <i class="fab fa-php"></i>
-                    <h3>PHP</h3>
+                <div class="skill-group fade-in">
+                    <h3>Authentication &amp; Security</h3>
+                    <div class="skill-tags">
+                        <button type="button" class="skill-tag">Google OAuth</button>
+                        <button type="button" class="skill-tag">Google reCAPTCHA</button>
+                        <button type="button" class="skill-tag">Google Authenticator</button>
+                    </div>
                 </div>
-                <div class="skill-item fade-in">
-                    <i class="devicon-java-plain colored"></i>
-                    <h3>Java</h3>
+                <div class="skill-group fade-in">
+                    <h3>Email &amp; Notification Services</h3>
+                    <div class="skill-tags">
+                        <button type="button" class="skill-tag">SMTP (Gmail, cPanel)</button>
+                        <button type="button" class="skill-tag">Mailtrap</button>
+                        <button type="button" class="skill-tag">Resend</button>
+                        <button type="button" class="skill-tag">Formspree</button>
+                        <button type="button" class="skill-tag">OneSignal</button>
+                    </div>
                 </div>
-                <div class="skill-item fade-in">
-                    <i class="fab fa-js-square"></i>
-                    <h3>JavaScript</h3>
+                <div class="skill-group fade-in">
+                    <h3>Development Tools &amp; Environment</h3>
+                    <div class="skill-tags">
+                        <button type="button" class="skill-tag">Git</button>
+                        <button type="button" class="skill-tag">GitHub</button>
+                        <button type="button" class="skill-tag">GitLab</button>
+                        <button type="button" class="skill-tag">GitHub Desktop</button>
+                        <button type="button" class="skill-tag">Docker Desktop</button>
+                        <button type="button" class="skill-tag">Oracle VirtualBox</button>
+                        <button type="button" class="skill-tag">pgAdmin4</button>
+                        <button type="button" class="skill-tag">Figma</button>
+                        <button type="button" class="skill-tag">Cursor</button>
+                        <button type="button" class="skill-tag">Postman</button>
+                        <button type="button" class="skill-tag">Visual Studio Code</button>
+                        <button type="button" class="skill-tag">Android Studio</button>
+                        <button type="button" class="skill-tag">Spring Tool Suite</button>
+                        <button type="button" class="skill-tag">Laragon</button>
+                    </div>
                 </div>
-                <div class="skill-item fade-in">
-                    <i class="fab fa-css3-alt"></i>
-                    <h3>CSS</h3>
-                </div>
-                <div class="skill-item fade-in">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML</h3>
-                </div>
-                <div class="skill-item fade-in">
-                    <i class="devicon-docker-plain colored"></i>
-                    <h3>Docker</h3>
-                </div>
-                <div class="skill-item fade-in">
-                    <i class="devicon-git-plain colored"></i>
-                    <h3>Git</h3>
-                </div>
-                <div class="skill-item fade-in">
-                    <i class="devicon-ubuntu-plain colored"></i>
-                    <h3>Ubuntu</h3>
-                </div>
-                <div class="skill-item fade-in">
-                    <i class="devicon-amazonwebservices-plain colored"></i>
-                    <h3>AWS</h3>
-                </div>
-                <div class="skill-item fade-in">
-                    <i class="fas fa-brain"></i>
-                    <h3 class="skill-name-long">AI Integration (Google, OpenAI)</h3>
-                </div>
-                <div class="skill-item fade-in">
-                    <i class="fas fa-credit-card"></i>
-                    <h3 class="skill-name-long">Payment Gateway Integration (Stripe, ToyyibPay)</h3>
-                </div>
-                <div class="skill-item fade-in">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>Moodle</h3>
+                <div class="skill-group fade-in">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <button type="button" class="skill-tag">Malay</button>
+                        <button type="button" class="skill-tag">English</button>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="projects">
-            <h2 class="section-title fade-in">Projects</h2>
+            <div class="section-head fade-in">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-lead">Production systems I helped build and ship.</p>
+            </div>
             <div class="project-filters fade-in">
                 <button class="project-filter active" data-filter="all" type="button">All</button>
                 <button class="project-filter" data-filter="web" type="button">Web</button>
@@ -148,121 +279,173 @@
             <div class="projects-grid">
                 <div class="project-card fade-in" data-platforms="web mobile">
                     <div class="project-image-wrapper">
-                        <img src="images/nujum.png" alt="Nujum" class="project-img" draggable="false">
+                        <img
+                            src="https://api.microlink.io/?url=https%3A%2F%2Fiesb.com.my%2Fnujum%2F&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800"
+                            data-fallback="images/nujum.png"
+                            alt="Nujum"
+                            class="project-img is-loading"
+                            loading="lazy"
+                            draggable="false"
+                        >
                         <div class="project-overlay">
-                            <div class="project-overlay-description">
-                                <p>A SaaS platform that uses AI to help businesses analyse predictions, social media, data, and sentiment, with subscription plans and account management available through a web portal and mobile app.</p>
-                            </div>
-                            <div class="project-overlay-info">
-                                <h3>Nujum</h3>
-                                <div class="project-links">
-                                    <a href="https://iesb.com.my/nujum/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
-                                </div>
-                            </div>
+                            <p><strong>Role:</strong> Full-stack development for web + mobile.</p>
+                            <p><strong>Impact:</strong> Shipped an AI SaaS platform with subscriptions, sentiment analysis, and account management in production.</p>
                         </div>
+                    </div>
+                    <div class="project-meta">
+                        <div>
+                            <h3>Nujum</h3>
+                            <div class="project-badges"><span>Web</span><span>Mobile</span><span>AI</span></div>
+                        </div>
+                        <a href="https://iesb.com.my/nujum/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
                     </div>
                 </div>
                 <div class="project-card fade-in" data-platforms="web mobile">
                     <div class="project-image-wrapper">
-                        <img src="images/mygooners.png" alt="MyGooners" class="project-img" draggable="false">
+                        <img
+                            src="https://api.microlink.io/?url=https%3A%2F%2Fmygooners.my%2F&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800"
+                            data-fallback="images/mygooners.png"
+                            alt="MyGooners"
+                            class="project-img is-loading"
+                            loading="lazy"
+                            draggable="false"
+                        >
                         <div class="project-overlay">
-                            <div class="project-overlay-description">
-                                <p>An e-commerce platform for company products, enabling product browsing, checkout, order management, and payments, while providing football fans with news, video updates, and community features through a customer web portal and cross-platform mobile app.</p>
-                            </div>
-                            <div class="project-overlay-info">
-                                <h3>MyGooners</h3>
-                                <div class="project-links">
-                                    <a href="https://mygooners.my/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
-                                </div>
-                            </div>
+                            <p><strong>Role:</strong> Ecommerce + mobile feature development.</p>
+                            <p><strong>Impact:</strong> Delivered checkout, payments, and fan content flows across web portal and Flutter app.</p>
                         </div>
+                    </div>
+                    <div class="project-meta">
+                        <div>
+                            <h3>MyGooners</h3>
+                            <div class="project-badges"><span>Web</span><span>Mobile</span><span>E-commerce</span></div>
+                        </div>
+                        <a href="https://mygooners.my/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
                     </div>
                 </div>
                 <div class="project-card fade-in" data-platforms="web">
                     <div class="project-image-wrapper">
-                        <img src="images/bina.png" alt="BINA E-Ticketing System" class="project-img" draggable="false">
+                        <img
+                            src="https://api.microlink.io/?url=https%3A%2F%2Fiesb.com.my%2FBina2026%2F&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800"
+                            data-fallback="images/bina.png"
+                            alt="BINA E-Ticketing System"
+                            class="project-img is-loading"
+                            loading="lazy"
+                            draggable="false"
+                        >
                         <div class="project-overlay">
-                            <div class="project-overlay-description">
-                                <p>An event ticketing platform for CIDB IBS, enabling online event browsing, checkout, and payment processing for a national IBS conference, with digital tickets and purchase history available for attendees via a customer web portal.</p>
-                            </div>
-                            <div class="project-overlay-info">
-                                <h3>BINA E-Ticketing System</h3>
-                                <div class="project-links">
-                                    <a href="https://iesb.com.my/Bina2026/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
-                                </div>
-                            </div>
+                            <p><strong>Role:</strong> Ticketing platform development.</p>
+                            <p><strong>Impact:</strong> Enabled online registration and payment for a national IBS conference with digital tickets and purchase history.</p>
                         </div>
+                    </div>
+                    <div class="project-meta">
+                        <div>
+                            <h3>BINA E-Ticketing</h3>
+                            <div class="project-badges"><span>Web</span><span>Payments</span></div>
+                        </div>
+                        <a href="https://iesb.com.my/Bina2026/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
                     </div>
                 </div>
                 <div class="project-card fade-in" data-platforms="web">
                     <div class="project-image-wrapper">
-                        <img src="images/aras.png" alt="ARAS" class="project-img" draggable="false">
+                        <img
+                            src="https://api.microlink.io/?url=https%3A%2F%2Fiesb.com.my%2Faras%2F&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800"
+                            data-fallback="images/aras.png"
+                            alt="ARAS"
+                            class="project-img is-loading"
+                            loading="lazy"
+                            draggable="false"
+                        >
                         <div class="project-overlay">
-                            <div class="project-overlay-description">
-                                <p>An asset management platform used by HR and accounts staff to track assets and handle internal requests such as maintenance, usage, purchases, and leave in one portal, with email and in-app approvals for staff and admin controls for users and workflows.</p>
-                            </div>
-                            <div class="project-overlay-info">
-                                <h3>ARAS</h3>
-                                <div class="project-links">
-                                    <a href="https://iesb.com.my/aras/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
-                                </div>
-                            </div>
+                            <p><strong>Role:</strong> Internal tools development.</p>
+                            <p><strong>Impact:</strong> Centralised asset tracking and approval workflows for HR and accounts in one portal.</p>
                         </div>
+                    </div>
+                    <div class="project-meta">
+                        <div>
+                            <h3>ARAS</h3>
+                            <div class="project-badges"><span>Web</span><span>Internal</span></div>
+                        </div>
+                        <a href="https://iesb.com.my/aras/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
                     </div>
                 </div>
                 <div class="project-card fade-in" data-platforms="web">
                     <div class="project-image-wrapper">
-                        <img src="images/est.png" alt="EST Group Website" class="project-img" draggable="false">
+                        <img
+                            src="https://api.microlink.io/?url=https%3A%2F%2Festgroup.com.my%2F&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800"
+                            data-fallback="images/est.png"
+                            alt="EST Group Website"
+                            class="project-img is-loading"
+                            loading="lazy"
+                            draggable="false"
+                        >
                         <div class="project-overlay">
-                            <div class="project-overlay-description">
-                                <p>A corporate website for EST Group, a renewable energy company, showcasing solar EPCC services to the public, with an admin dashboard for content management.</p>
-                            </div>
-                            <div class="project-overlay-info">
-                                <h3>EST Group Website</h3>
-                                <div class="project-links">
-                                    <a href="https://estgroup.com.my/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
-                                </div>
-                            </div>
+                            <p><strong>Role:</strong> Corporate website + CMS.</p>
+                            <p><strong>Impact:</strong> Launched a public-facing site for solar EPCC services with an admin content dashboard.</p>
                         </div>
+                    </div>
+                    <div class="project-meta">
+                        <div>
+                            <h3>EST Group</h3>
+                            <div class="project-badges"><span>Web</span><span>CMS</span></div>
+                        </div>
+                        <a href="https://estgroup.com.my/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
                     </div>
                 </div>
                 <div class="project-card fade-in" data-platforms="web">
                     <div class="project-image-wrapper">
-                        <img src="images/smks3.png" alt="SMK Seremban 3 Website" class="project-img" draggable="false">
+                        <img
+                            src="https://api.microlink.io/?url=https%3A%2F%2Fiesb.com.my%2Fsmks3%2F&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800"
+                            data-fallback="images/smks3.png"
+                            alt="SMK Seremban 3 Website"
+                            class="project-img is-loading"
+                            loading="lazy"
+                            draggable="false"
+                        >
                         <div class="project-overlay">
-                            <div class="project-overlay-description">
-                                <p>A school portal for SMK Seremban 3, giving students, parents, and the public access to school information, academic resources, and announcements.</p>
-                            </div>
-                            <div class="project-overlay-info">
-                                <h3>SMK Seremban 3 Website</h3>
-                                <div class="project-links">
-                                    <a href="https://iesb.com.my/smks3/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
-                                </div>
-                            </div>
+                            <p><strong>Role:</strong> School portal development.</p>
+                            <p><strong>Impact:</strong> Gave students, parents, and the public a single place for school info, resources, and announcements.</p>
                         </div>
+                    </div>
+                    <div class="project-meta">
+                        <div>
+                            <h3>SMK Seremban 3</h3>
+                            <div class="project-badges"><span>Web</span><span>Education</span></div>
+                        </div>
+                        <a href="https://iesb.com.my/smks3/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
                     </div>
                 </div>
                 <div class="project-card fade-in" data-platforms="web">
                     <div class="project-image-wrapper">
-                        <img src="images/lms.png" alt="IESB LMS" class="project-img" draggable="false">
+                        <img
+                            src="https://api.microlink.io/?url=https%3A%2F%2Fiesb.com.my%2Fmoodle&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800"
+                            data-fallback="images/lms.png"
+                            alt="IESB LMS"
+                            class="project-img is-loading"
+                            loading="lazy"
+                            draggable="false"
+                        >
                         <div class="project-overlay">
-                            <div class="project-overlay-description">
-                                <p>A Moodle LMS with AI grading and quiz generation, complete course and user management for students, teachers, and admins.</p>
-                            </div>
-                            <div class="project-overlay-info">
-                                <h3>IESB LMS</h3>
-                                <div class="project-links">
-                                    <a href="https://iesb.com.my/moodle" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
-                                </div>
-                            </div>
+                            <p><strong>Role:</strong> Moodle LMS customisation + AI features.</p>
+                            <p><strong>Impact:</strong> Added AI grading/quiz generation and full course management for students, teachers, and admins.</p>
                         </div>
+                    </div>
+                    <div class="project-meta">
+                        <div>
+                            <h3>IESB LMS</h3>
+                            <div class="project-badges"><span>Web</span><span>Moodle</span><span>AI</span></div>
+                        </div>
+                        <a href="https://iesb.com.my/moodle" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="cv" class="cv">
-            <h2 class="section-title fade-in">Curriculum Vitae</h2>
+            <div class="section-head fade-in">
+                <h2 class="section-title">Curriculum Vitae</h2>
+                <p class="section-lead">Experience and education that shaped how I build software.</p>
+            </div>
             <div class="cv-container">
                 <div class="cv-content">
                     <h3 class="cv-section-title fade-in">Experience</h3>
@@ -275,12 +458,10 @@
                                     <h4>Intensiti Elemen SDN BHD</h4>
                                     <div class="timeline-date">May 2025 - Present</div>
                                     <ul class="timeline-details">
-                                        <li>Developed production web and mobile applications using Laravel, Flutter, Vanilla PHP, and MySQL, delivering SaaS, ecommerce, learning management, asset management, corporate websites, and event ticketing systems.</li>
-                                        <li>Collaborated with project team members using GitHub for source code management, supporting efficient collaboration, version control, branch management, and coordinated development of software features based on business requirements.</li>
-                                        <li>Designed and integrated RESTful APIs and third-party services such as payment gateways (Stripe, ToyyibPay), email services, AI-powered features, and web scraping techniques to extend system capabilities and support data processing functionality.</li>
-                                        <li>Performed bug fixes, software defect resolution, and feature enhancements to improve system reliability and user experience.</li>
-                                        <li>Deployed and managed applications on Linux-based shared hosting environments, including updates, database migrations, and production support.</li>
-                                        <li>Implemented internal backup and file management system utilizing UGREEN NAS storage to improve data reliability and office-level resource management.</li>
+                                        <li>Ship and maintain production web/mobile apps (Laravel, Next.js, Flutter, MySQL/PostgreSQL) across SaaS, ecommerce, LMS, ticketing, and internal tools.</li>
+                                        <li>Integrate APIs, payments, AI/RAG features, and CI/CD with GitHub Actions to speed delivery and reduce release risk.</li>
+                                        <li>Own deploys, migrations, production support, and user training on Linux/cloud hosting.</li>
+                                        <li>Set up internal NAS backup workflows to improve data reliability for the team.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -293,13 +474,26 @@
                                     <h4>VX Ventures SDN BHD</h4>
                                     <div class="timeline-date">October 2024 - March 2025</div>
                                     <ul class="timeline-details">
-                                        <li>Maintained and contributed to production web applications using Laravel and MySQL, supporting multiple platforms including a community engagement platform, a school management system for Malaysian schools, and a digital cooperative management ecosystem.</li>
-                                        <li>Collaborated with project team members using GitLab for source code management, supporting feature development, version control, and coordinated code integration.</li>
-                                        <li>Performed bug fixes, testing, and quality assurance for web and Flutter mobile applications to improve system stability and user experience.</li>
-                                        <li>Supported deployment and maintenance of web applications on web hosting environments, including application updates, production support, and database migration processes.</li>
+                                        <li>Contributed to live Laravel/MySQL products for community, school, and cooperative platforms.</li>
+                                        <li>Improved stability through bug fixes, QA, and Flutter app testing with the team on GitLab.</li>
+                                        <li>Supported hosting deploys, updates, and database migrations in production.</li>
                                     </ul>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cv-content">
+                    <h3 class="cv-section-title fade-in">Certifications</h3>
+                    <div class="cert-grid fade-in">
+                        <div class="cert-card">
+                            <h3>Meta Front-End Developer</h3>
+                            <span>2025</span>
+                        </div>
+                        <div class="cert-card">
+                            <h3>Meta Back-End Developer</h3>
+                            <span>2025</span>
                         </div>
                     </div>
                 </div>
@@ -332,8 +526,8 @@
                     </div>
                 </div>
                 
-                <div class="cv-download">
-                    <a href="file/Resume_Muhammad Zahiruddin.pdf" class="btn" download="Resume_Muhammad Zahiruddin.pdf" target="_blank">
+                <div class="cv-download fade-in">
+                    <a href="file/Resume_Muhammad Zahiruddin.pdf" class="btn btn-accent" download="Resume_Muhammad Zahiruddin.pdf" target="_blank">
                         <i class="fas fa-download"></i> Download Resume
                     </a>
                 </div>
@@ -341,21 +535,28 @@
         </section>
 
         <section id="contact" class="contact">
-            <h2 class="section-title fade-in">Contact Me</h2>
+            <div class="section-head fade-in">
+                <h2 class="section-title">Contact Me</h2>
+                <p class="section-lead">Have a role, project, or collaboration in mind? Reach out.</p>
+            </div>
             <div class="contact-container">
                 <div class="contact-info fade-in">
-                    <h3 style="margin-bottom: 15px;">Get In Touch</h3>
-                    <p style="margin-bottom: 30px; text-align: justify;">I'm always interested in hearing about new opportunities and interesting projects. Let's connect!</p>
+                    <h3>Get In Touch</h3>
+                    <p>I'm always interested in hearing about new opportunities and interesting projects. Let's connect.</p>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>muhdzahir248@gmail.com</span>
+                        <a href="mailto:muhdzahir248@gmail.com">muhdzahir248@gmail.com</a>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <span>Petaling Jaya, Selangor</span>
                     </div>
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <a href="https://zahir248.github.io/portfolio" target="_blank" rel="noopener noreferrer">zahir248.github.io/portfolio</a>
+                    </div>
                 </div>
-                <form action="https://formspree.io/f/mrgwbaey" method="POST"class="contact-form fade-in">
+                <form action="https://formspree.io/f/mrgwbaey" method="POST" class="contact-form fade-in">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>
@@ -392,14 +593,125 @@
     </button>
 
     <script>
-        // Always apply dark mode
-        const body = document.body;
-        body.setAttribute('data-theme', 'dark');
-
         // Auto-update copyright year
         const copyrightYear = document.getElementById('copyrightYear');
         if (copyrightYear) {
             copyrightYear.textContent = new Date().getFullYear();
+        }
+
+        // Experience = worked months only (excludes employment gaps)
+        // Internship: Oct 2024 – Mar 2025 (6 mo) | Full-time: May 2025 – present
+        // Example (Jul 2026): 6 + 15 = 21 mo → "1 yr 9 mo"
+        function inclusiveCalendarMonths(startYear, startMonth, endYear, endMonth) {
+            // months are 1–12; inclusive of both start and end month
+            return Math.max((endYear - startYear) * 12 + (endMonth - startMonth) + 1, 0);
+        }
+
+        function getWorkedExperienceMonths(referenceDate = new Date()) {
+            const currentYear = referenceDate.getFullYear();
+            const currentMonth = referenceDate.getMonth() + 1; // 1–12
+
+            const internshipMonths = inclusiveCalendarMonths(2024, 10, 2025, 3); // Oct 2024 → Mar 2025
+            const fullTimeMonths = inclusiveCalendarMonths(2025, 5, currentYear, currentMonth); // May 2025 → now
+
+            return internshipMonths + fullTimeMonths;
+        }
+
+        function formatExperienceMonths(months) {
+            const years = Math.floor(months / 12);
+            const remMonths = months % 12;
+            if (years === 0) return `${remMonths} mo`;
+            if (remMonths === 0) return `${years} yr`;
+            return `${years} yr ${remMonths} mo`;
+        }
+
+        function formatExperienceFinal(months) {
+            const years = Math.floor(months / 12);
+            const rem = months % 12;
+            if (years === 0) return `${Math.max(rem, 0)}+ mo`;
+            if (rem === 0) return `${years}+ yr`;
+            return `${years} yr ${rem} mo`;
+        }
+
+        function animateValue({ duration = 1200, from = 0, to = 0, onUpdate, onDone }) {
+            const start = performance.now();
+            const easeOut = (t) => 1 - Math.pow(1 - t, 3);
+
+            function frame(now) {
+                const progress = Math.min((now - start) / duration, 1);
+                const value = Math.round(from + (to - from) * easeOut(progress));
+                onUpdate(value);
+                if (progress < 1) {
+                    requestAnimationFrame(frame);
+                } else if (onDone) {
+                    onDone();
+                }
+            }
+
+            requestAnimationFrame(frame);
+        }
+
+        const statExperience = document.getElementById('statExperience');
+        const statProjects = document.getElementById('statProjects');
+        const aboutStats = document.querySelector('.about-stats');
+        const projectCount = document.querySelectorAll('.project-card').length;
+        let statsAnimated = false;
+
+        function runStatCountAnimation() {
+            if (statsAnimated) return;
+            statsAnimated = true;
+
+            const totalExperienceMonths = getWorkedExperienceMonths();
+
+            if (statExperience) {
+                statExperience.classList.add('is-counting');
+                animateValue({
+                    from: 0,
+                    to: totalExperienceMonths,
+                    duration: 1400,
+                    onUpdate: (months) => {
+                        statExperience.textContent = formatExperienceMonths(months);
+                    },
+                    onDone: () => {
+                        statExperience.textContent = formatExperienceFinal(totalExperienceMonths);
+                        statExperience.classList.remove('is-counting');
+                        statExperience.classList.add('is-counted');
+                    }
+                });
+            }
+
+            if (statProjects) {
+                statProjects.classList.add('is-counting');
+                animateValue({
+                    from: 0,
+                    to: projectCount,
+                    duration: 1100,
+                    onUpdate: (value) => {
+                        statProjects.textContent = `${value}`;
+                    },
+                    onDone: () => {
+                        statProjects.textContent = `${projectCount}+`;
+                        statProjects.classList.remove('is-counting');
+                        statProjects.classList.add('is-counted');
+                    }
+                });
+            }
+        }
+
+        if (aboutStats) {
+            if (statExperience) statExperience.textContent = '0 mo';
+            if (statProjects) statProjects.textContent = '0';
+
+            const statsObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        runStatCountAnimation();
+                        statsObserver.disconnect();
+                    }
+                });
+            }, { threshold: 0.35 });
+
+            statsObserver.observe(aboutStats);
         }
 
         // Mobile menu toggle
@@ -413,7 +725,6 @@
             menuIcon.classList.toggle('fa-times');
         });
 
-        // Close mobile menu when clicking on a link
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
@@ -422,53 +733,44 @@
             });
         });
 
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('.nav-link').forEach(link => {
+        const navOffset = 76;
+
+        document.querySelectorAll('.nav-link, .logo').forEach(link => {
             link.addEventListener('click', function(e) {
-                e.preventDefault();
                 const targetId = this.getAttribute('href');
+                if (!targetId || !targetId.startsWith('#')) return;
+
+                e.preventDefault();
                 const targetSection = document.querySelector(targetId);
-                
+
                 if (targetSection) {
-                    const offsetTop = targetSection.offsetTop - 70; // Account for navbar height
                     window.scrollTo({
-                        top: offsetTop,
+                        top: targetSection.offsetTop - navOffset,
                         behavior: 'smooth'
                     });
                 }
             });
         });
 
-        // Active navigation link highlighting
         function highlightActiveSection() {
             const sections = document.querySelectorAll('section');
             const navLinks = document.querySelectorAll('.nav-link');
-            
             let currentSection = '';
-            
+
             sections.forEach(section => {
                 const sectionTop = section.offsetTop - 100;
                 const sectionHeight = section.clientHeight;
-                
-                if (window.pageYOffset >= sectionTop && 
+
+                if (window.pageYOffset >= sectionTop &&
                     window.pageYOffset < sectionTop + sectionHeight) {
                     currentSection = section.getAttribute('id');
                 }
             });
-            
+
             navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${currentSection}`) {
-                    link.classList.add('active');
-                }
+                link.classList.toggle('active', link.getAttribute('href') === `#${currentSection}`);
             });
         }
-
-        // Intersection Observer for fade-in animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -476,135 +778,126 @@
                     entry.target.classList.add('visible');
                 }
             });
-        }, observerOptions);
+        }, {
+            threshold: 0.12,
+            rootMargin: '0px 0px -40px 0px'
+        });
 
-        // Observe all fade-in elements
-        document.querySelectorAll('.fade-in').forEach(element => {
+        document.querySelectorAll('.fade-in').forEach((element, index) => {
+            element.style.transitionDelay = `${Math.min(index % 6, 5) * 60}ms`;
             observer.observe(element);
         });
 
-        // Navbar hide/show on scroll
         let lastScrollTop = 0;
         const navbar = document.querySelector('.navbar');
-        
-        window.addEventListener('scroll', () => {
+        const scrollProgress = document.getElementById('scrollProgress');
+
+        function updateScrollUI() {
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            
-            // Always show navbar at the top
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+
+            scrollProgress.style.width = `${progress}%`;
+            navbar.classList.toggle('is-scrolled', scrollTop > 20);
+
             if (scrollTop < 100) {
                 navbar.style.top = '0';
-                navbar.style.backgroundColor = 'var(--bg-color)';
-                navbar.style.backdropFilter = 'none';
+            } else if (scrollTop > lastScrollTop) {
+                navbar.style.top = `-${navOffset}px`;
             } else {
-                navbar.style.backgroundColor = 'rgba(26, 26, 26, 0.95)';
-                navbar.style.backdropFilter = 'blur(10px)';
-                
-                // Hide navbar when scrolling down, show when scrolling up
-                if (scrollTop > lastScrollTop) {
-                    // Scrolling down
-                    navbar.style.top = '-70px';
-                } else {
-                    // Scrolling up
-                    navbar.style.top = '0';
-                }
+                navbar.style.top = '0';
             }
-            
-            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-            
-            // Highlight active section
-            highlightActiveSection();
-        });
 
-        // Add typing animation to hero text with blinking cursor (continuous loop)
-        const heroTexts = ["Software Developer", "Web Developer"];
-        const heroSubtitle = document.querySelector('.hero-content h2');
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+            highlightActiveSection();
+        }
+
+        window.addEventListener('scroll', updateScrollUI, { passive: true });
+        updateScrollUI();
+
+        // Hero typing animation
+        const heroTexts = ["Software Developer", "Web Developer", "Full-Stack Developer"];
+        const heroRoleText = document.getElementById('heroRoleText');
         let heroTextIndex = 0;
         let i = 0;
         let isDeleting = false;
 
         function typeWriter() {
+            if (!heroRoleText) return;
             const heroText = heroTexts[heroTextIndex];
 
             if (!isDeleting && i < heroText.length) {
-                // Typing forward
-                heroSubtitle.innerHTML = heroText.substring(0, i + 1) + '<span class="typing-cursor">|</span>';
+                heroRoleText.innerHTML = heroText.substring(0, i + 1) + '<span class="typing-cursor">|</span>';
                 i++;
                 setTimeout(typeWriter, 100);
             } else if (!isDeleting && i === heroText.length) {
-                // Finished typing, wait then start deleting
                 setTimeout(() => {
                     isDeleting = true;
                     typeWriter();
-                }, 2000); // Wait 2 seconds before deleting
+                }, 2000);
             } else if (isDeleting && i > 0) {
-                // Deleting backward
                 i--;
-                heroSubtitle.innerHTML = heroText.substring(0, i) + '<span class="typing-cursor">|</span>';
-                setTimeout(typeWriter, 50); // Faster when deleting
+                heroRoleText.innerHTML = heroText.substring(0, i) + '<span class="typing-cursor">|</span>';
+                setTimeout(typeWriter, 50);
             } else if (isDeleting && i === 0) {
-                // Finished deleting, move to next text and start typing again
                 isDeleting = false;
                 heroTextIndex = (heroTextIndex + 1) % heroTexts.length;
                 setTimeout(typeWriter, 500);
             }
         }
-        
-        // Start typing animation when page loads
+
         window.addEventListener('load', () => {
-            heroSubtitle.textContent = '';
-            setTimeout(typeWriter, 500);
+            if (heroRoleText) {
+                heroRoleText.textContent = '';
+                setTimeout(typeWriter, 900);
+            }
         });
 
-        // Add typing animation for greeting in About section (continuous loop)
+        // Greeting typing animation
         const greetings = ["السلام عليكم!", "你好!", "வணக்கம்!", "Hello!"];
         const greetingColors = {
-            "السلام عليكم!": "#228B22", // Green - Islamic culture
-            "你好!": "#DC143C", // Red - Chinese culture
-            "வணக்கம்!": "#FF8C00", // Orange/Saffron - Indian/Tamil culture
-            "Hello!": "#4169E1" // Blue - Western culture
+            "السلام عليكم!": "#86efac",
+            "你好!": "#fda4af",
+            "வணக்கம்!": "#fdba74",
+            "Hello!": "#93c5fd"
         };
         const greetingElement = document.getElementById('greetingText');
         let greetingIndex = 0;
         let greetingI = 0;
         let isDeletingGreeting = false;
-        
+
         function typeGreeting() {
             const currentGreeting = greetings[greetingIndex];
             const currentColor = greetingColors[currentGreeting];
-            
+
             if (!isDeletingGreeting && greetingI < currentGreeting.length) {
-                // Typing forward
-                greetingElement.innerHTML = '<span style="color: ' + currentColor + ';">' + currentGreeting.substring(0, greetingI + 1) + '</span><span class="typing-cursor" style="color: white;">|</span>';
+                greetingElement.innerHTML = '<span style="color: ' + currentColor + ';">' + currentGreeting.substring(0, greetingI + 1) + '</span><span class="typing-cursor">|</span>';
                 greetingI++;
                 setTimeout(typeGreeting, 100);
             } else if (!isDeletingGreeting && greetingI === currentGreeting.length) {
-                // Finished typing, wait then start deleting
                 setTimeout(() => {
                     isDeletingGreeting = true;
                     typeGreeting();
-                }, 2000); // Wait 2 seconds before deleting
+                }, 2000);
             } else if (isDeletingGreeting && greetingI > 0) {
-                // Deleting backward
                 greetingI--;
-                greetingElement.innerHTML = '<span style="color: ' + currentColor + ';">' + currentGreeting.substring(0, greetingI) + '</span><span class="typing-cursor" style="color: white;">|</span>';
-                setTimeout(typeGreeting, 50); // Faster when deleting
+                greetingElement.innerHTML = '<span style="color: ' + currentColor + ';">' + currentGreeting.substring(0, greetingI) + '</span><span class="typing-cursor">|</span>';
+                setTimeout(typeGreeting, 50);
             } else if (isDeletingGreeting && greetingI === 0) {
-                // Finished deleting, move to next greeting
                 isDeletingGreeting = false;
-                greetingIndex = (greetingIndex + 1) % greetings.length; // Cycle through greetings
+                greetingIndex = (greetingIndex + 1) % greetings.length;
                 setTimeout(typeGreeting, 500);
             }
         }
-        
-        // Start greeting animation when page loads
+
         window.addEventListener('load', () => {
             if (greetingElement) {
                 greetingElement.textContent = '';
-                setTimeout(typeGreeting, 1000); // Start after hero animation
+                setTimeout(typeGreeting, 1000);
             }
         });
 
-        // Project platform filters
+        // Project filters with exit animation
         const projectFilters = document.querySelectorAll('.project-filter');
         const projectCards = document.querySelectorAll('.project-card[data-platforms]');
 
@@ -618,22 +911,59 @@
                 projectCards.forEach(card => {
                     const platforms = card.dataset.platforms.split(' ');
                     const show = filter === 'all' || platforms.includes(filter);
-                    card.classList.toggle('project-hidden', !show);
+
+                    if (!show) {
+                        card.classList.add('is-filtering-out');
+                        setTimeout(() => {
+                            card.classList.add('project-hidden');
+                            card.classList.remove('is-filtering-out');
+                        }, 220);
+                    } else {
+                        card.classList.remove('project-hidden');
+                        requestAnimationFrame(() => {
+                            card.classList.remove('is-filtering-out');
+                        });
+                    }
                 });
             });
         });
 
-        // Prevent easy download of project screenshots
         document.querySelectorAll('.project-image-wrapper').forEach(wrapper => {
             wrapper.addEventListener('contextmenu', (e) => e.preventDefault());
-
             const img = wrapper.querySelector('.project-img');
-            if (img) {
-                img.addEventListener('dragstart', (e) => e.preventDefault());
+            if (!img) return;
+
+            img.addEventListener('dragstart', (e) => e.preventDefault());
+
+            const markLoaded = () => img.classList.remove('is-loading');
+            if (img.complete && img.naturalWidth > 0) {
+                markLoaded();
+            } else {
+                img.addEventListener('load', markLoaded);
             }
+
+            img.addEventListener('error', () => {
+                const fallback = img.dataset.fallback;
+                if (fallback && !img.dataset.usedFallback) {
+                    img.dataset.usedFallback = 'true';
+                    img.src = fallback;
+                    return;
+                }
+                markLoaded();
+            });
         });
 
-        // Project overlay — JS-controlled so it closes when user returns via back button
+        // Same Microlink → local fallback for hero collage
+        document.querySelectorAll('.hero-collage img[data-fallback]').forEach(img => {
+            img.addEventListener('error', () => {
+                const fallback = img.dataset.fallback;
+                if (fallback && !img.dataset.usedFallback) {
+                    img.dataset.usedFallback = 'true';
+                    img.src = fallback;
+                }
+            });
+        });
+
         function closeProjectOverlays() {
             projectCards.forEach(card => card.classList.remove('is-hovered'));
         }
@@ -645,14 +975,12 @@
                 let tapLocked = false;
 
                 card.addEventListener('click', (e) => {
-                    if (e.target.closest('.project-links a')) return;
+                    if (e.target.closest('.project-live-btn')) return;
                     if (tapLocked) return;
 
                     e.stopPropagation();
                     tapLocked = true;
-                    setTimeout(() => {
-                        tapLocked = false;
-                    }, 350);
+                    setTimeout(() => { tapLocked = false; }, 350);
 
                     if (card.classList.contains('is-hovered')) {
                         card.classList.remove('is-hovered');
@@ -665,183 +993,48 @@
                 card.addEventListener('mouseenter', () => card.classList.add('is-hovered'));
                 card.addEventListener('mouseleave', () => card.classList.remove('is-hovered'));
             }
-
-            const liveLink = card.querySelector('.project-links a');
-            if (liveLink) {
-                liveLink.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    card.classList.remove('is-hovered');
-                });
-            }
         });
 
         if (useProjectTap) {
-            document.addEventListener('click', () => {
-                closeProjectOverlays();
-            });
+            document.addEventListener('click', () => closeProjectOverlays());
         }
 
-        window.addEventListener('pageshow', () => {
-            closeProjectOverlays();
-        });
-
+        window.addEventListener('pageshow', closeProjectOverlays);
         document.addEventListener('visibilitychange', () => {
-            if (document.visibilityState === 'visible') {
-                closeProjectOverlays();
-            }
+            if (document.visibilityState === 'visible') closeProjectOverlays();
         });
 
-        // Interactive 3D tilt on about profile image
         const aboutImgWrapper = document.querySelector('.about-img-wrapper');
         const aboutImg = document.querySelector('.about-img');
 
         if (aboutImgWrapper && aboutImg) {
             aboutImgWrapper.addEventListener('contextmenu', (e) => e.preventDefault());
             aboutImg.addEventListener('dragstart', (e) => e.preventDefault());
-
-            aboutImgWrapper.addEventListener('mousemove', (e) => {
-                const rect = aboutImgWrapper.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                const rotateX = ((y - rect.height / 2) / (rect.height / 2)) * -10;
-                const rotateY = ((x - rect.width / 2) / (rect.width / 2)) * 10;
-
-                aboutImg.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.04)`;
-            });
-
-            aboutImgWrapper.addEventListener('mouseleave', () => {
-                aboutImg.style.transform = '';
-            });
         }
 
-        // Interactive 3D tilt on skill cards (same motion style as about image)
-        document.querySelectorAll('.skill-item').forEach(item => {
-            item.addEventListener('mousemove', (e) => {
-                const rect = item.getBoundingClientRect();
-                const rotateX = ((e.clientY - rect.top - rect.height / 2) / (rect.height / 2)) * -10;
-                const rotateY = ((e.clientX - rect.left - rect.width / 2) / (rect.width / 2)) * 10;
-
-                item.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.04)`;
-            });
-
-            item.addEventListener('mouseleave', () => {
-                item.style.transform = '';
+        document.querySelectorAll('.skill-tag').forEach(tag => {
+            tag.addEventListener('click', () => {
+                tag.classList.add('is-pop');
+                setTimeout(() => tag.classList.remove('is-pop'), 450);
             });
         });
 
-        // Add smooth hover effects for CV timeline items
-        document.querySelectorAll('.timeline-content').forEach(item => {
-            item.addEventListener('mouseenter', () => {
-                item.style.transform = 'translateY(-10px)';
-            });
-            
-            item.addEventListener('mouseleave', () => {
-                item.style.transform = 'translateY(0)';
-            });
-        });
-
-        // Fixed wallpaper — image stays in place while page scrolls over it
-        const heroBg = document.querySelector('.hero-bg');
-        const homeSection = document.querySelector('.home');
-
-        function updateHeroParallax() {
-            const scrolled = window.pageYOffset;
-            const homeHeight = homeSection.offsetHeight;
-
-            if (scrolled < homeHeight) {
-                heroBg.style.visibility = 'visible';
-                heroBg.style.opacity = String(1 - (scrolled / homeHeight) * 0.6);
-            } else {
-                heroBg.style.visibility = 'hidden';
-                heroBg.style.opacity = '0';
-            }
-        }
-
-        window.addEventListener('scroll', updateHeroParallax, { passive: true });
-        window.addEventListener('resize', updateHeroParallax);
-        updateHeroParallax();
-
-        // Add click animation to buttons
-        document.querySelectorAll('.btn').forEach(btn => {
-            btn.addEventListener('click', function(e) {
-                // Create ripple effect
-                const ripple = document.createElement('span');
-                const rect = this.getBoundingClientRect();
-                const size = Math.max(rect.width, rect.height);
-                const x = e.clientX - rect.left - size / 2;
-                const y = e.clientY - rect.top - size / 2;
-                
-                ripple.style.width = ripple.style.height = size + 'px';
-                ripple.style.left = x + 'px';
-                ripple.style.top = y + 'px';
-                ripple.style.position = 'absolute';
-                ripple.style.borderRadius = '50%';
-                ripple.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
-                ripple.style.transform = 'scale(0)';
-                ripple.style.animation = 'ripple-effect 0.6s linear';
-                ripple.style.pointerEvents = 'none';
-                
-                this.style.position = 'relative';
-                this.style.overflow = 'hidden';
-                this.appendChild(ripple);
-                
-                setTimeout(() => {
-                    ripple.remove();
-                }, 600);
-            });
-        });
-
-        // Add CSS for ripple effect
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes ripple-effect {
-                to {
-                    transform: scale(4);
-                    opacity: 0;
-                }
-            }
-        `;
-        document.head.appendChild(style);
-
-        // Add loading animation
         window.addEventListener('load', () => {
-            // Remove any loading screen if present
-            const loader = document.querySelector('.loader');
-            if (loader) {
-                loader.style.opacity = '0';
-                setTimeout(() => {
-                    loader.remove();
-                }, 300);
-            }
-            
-            // Trigger initial animations
             document.querySelectorAll('.fade-in').forEach((element, index) => {
                 if (element.getBoundingClientRect().top < window.innerHeight) {
-                    setTimeout(() => {
-                        element.classList.add('visible');
-                    }, index * 100);
+                    setTimeout(() => element.classList.add('visible'), index * 70);
                 }
             });
         });
 
-        // Scroll to Top Button
         const scrollToTopBtn = document.getElementById('scrollToTop');
-        
-        // Show/hide button based on scroll position
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                scrollToTopBtn.classList.add('show');
-            } else {
-                scrollToTopBtn.classList.remove('show');
-            }
-        });
 
-        // Scroll to top when button is clicked
+        window.addEventListener('scroll', () => {
+            scrollToTopBtn.classList.toggle('show', window.pageYOffset > 300);
+        }, { passive: true });
+
         scrollToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     </script>
 </body>
