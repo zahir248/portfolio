@@ -17,7 +17,6 @@
 
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#home" class="logo">Zahir</a>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -823,7 +822,7 @@
 
         const navOffset = 76;
 
-        document.querySelectorAll('.nav-link, .logo').forEach(link => {
+        document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', function(e) {
                 const targetId = this.getAttribute('href');
                 if (!targetId || !targetId.startsWith('#')) return;
