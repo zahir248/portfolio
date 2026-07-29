@@ -295,6 +295,19 @@ section {
 }
 
 .hero-position {
+    font-size: clamp(0.95rem, 1.8vw, 1.05rem);
+    margin-bottom: 0.45rem;
+    color: var(--text);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    animation: fade-up 0.8s ease 0.4s both;
+}
+
+.hero-stack {
     font-size: clamp(1rem, 2vw, 1.15rem);
     margin-bottom: 2rem;
     color: var(--muted);
