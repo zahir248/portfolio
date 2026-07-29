@@ -30,10 +30,12 @@
     <meta name="twitter:image:alt" content="Zahir (zahir248) — Muhammad Zahiruddin">
 
     <meta name="theme-color" content="#0f172a">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; script-src 'self' 'unsafe-inline'; connect-src 'self' https://zahir-portfolio-flax.vercel.app https://*.vercel.app https://api.microlink.io; form-action 'self' https://formspree.io;">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=20260729seo">
+    <link rel="stylesheet" href="style.css?v=20260729avatar">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="images/favicon.ico" rel="icon" type="image/x-icon">
     <link rel="apple-touch-icon" href="images/zahir.jpg">
@@ -707,7 +709,7 @@
                 </div>
                 
                 <div class="cv-download fade-in">
-                    <a href="file/Resume_Muhammad Zahiruddin.pdf" class="btn btn-accent" download="Resume_Muhammad Zahiruddin.pdf" target="_blank">
+                    <a href="file/Resume_Muhammad Zahiruddin.pdf" class="btn btn-accent" download="Resume_Muhammad Zahiruddin.pdf" target="_blank" rel="noopener noreferrer">
                         <i class="fas fa-download"></i> Download Resume
                     </a>
                 </div>
@@ -763,10 +765,58 @@
         <p>&copy; <span id="copyrightYear"></span> Zahir (zahir248) — Muhammad Zahiruddin. All rights reserved.</p>
     </footer>
 
-    <!-- Scroll to Top Button -->
-    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+    <!-- Portfolio AI chatbot (Gemini + RAG via Vercel) -->
+    <div class="chatbot" id="chatbot">
+        <div class="chatbot-panel" id="chatbotPanel" role="dialog" aria-labelledby="chatbotTitle" hidden>
+            <div class="chatbot-header">
+                <div class="chatbot-identity">
+                    <img src="images/zahir.jpg" alt="" class="chatbot-header-avatar" width="44" height="44" draggable="false">
+                    <div>
+                        <p class="chatbot-kicker">AI version</p>
+                        <h2 class="chatbot-title" id="chatbotTitle">Chat with Zahir</h2>
+                    </div>
+                </div>
+                <button type="button" class="chatbot-close" id="chatbotClose" aria-label="Close chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages" aria-live="polite">
+                <div class="chatbot-msg chatbot-msg--assistant">Hey — I'm Zahir (AI). Ask me about my skills, projects, experience, or how to reach me.</div>
+                <div class="chatbot-prompts">
+                    <button type="button" data-chat-prompt="What projects have you built?">Projects</button>
+                    <button type="button" data-chat-prompt="What tech stack do you use?">Tech stack</button>
+                    <button type="button" data-chat-prompt="How can someone reach you for work?">Work inquiry</button>
+                </div>
+            </div>
+            <p class="chatbot-status" id="chatbotStatus" aria-live="polite"></p>
+            <form class="chatbot-form" id="chatbotForm">
+                <label class="visually-hidden" for="chatbotInput">Your message</label>
+                <input
+                    type="text"
+                    id="chatbotInput"
+                    name="message"
+                    maxlength="500"
+                    placeholder="Message Zahir…"
+                    autocomplete="off"
+                    required
+                >
+                <button type="submit" class="chatbot-send" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+        <button
+            type="button"
+            class="chatbot-toggle"
+            id="chatbotToggle"
+            aria-expanded="false"
+            aria-controls="chatbotPanel"
+            aria-label="Chat with Zahir AI"
+        >
+            <i class="fas fa-comment-dots chatbot-toggle-icon" aria-hidden="true"></i>
+            <i class="fas fa-times chatbot-toggle-close" aria-hidden="true"></i>
+        </button>
+    </div>
 
     <script>
         // Auto-update copyright year
@@ -1318,15 +1368,11 @@
             });
         });
 
-        const scrollToTopBtn = document.getElementById('scrollToTop');
-
-        window.addEventListener('scroll', () => {
-            scrollToTopBtn.classList.toggle('show', window.pageYOffset > 300);
-        }, { passive: true });
-
-        scrollToTopBtn.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
     </script>
+    <!-- Chat API on Vercel (site stays on GitHub Pages) -->
+    <script>
+        window.PORTFOLIO_CHAT_API = 'https://zahir-portfolio-flax.vercel.app/api/chat';
+    </script>
+    <script src="chat.js?v=20260729nostatus" defer></script>
 </body>
 </html>

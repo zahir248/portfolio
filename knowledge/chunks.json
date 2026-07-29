@@ -1,0 +1,82 @@
+[
+  {
+    "id": "identity",
+    "title": "Identity",
+    "text": "Muhammad Zahiruddin is a software developer known online as Zahir or zahir248. He builds and maintains production web and mobile applications end to end — requirements, implementation, deployment, and support. His recent work covers SaaS, ecommerce, LMS, ticketing, and internal tools, with a focus on reliable delivery and practical problem-solving. Portfolio: https://zahir248.github.io/portfolio/"
+  },
+  {
+    "id": "skills-languages",
+    "title": "Programming languages",
+    "text": "Zahir's programming and markup languages: JavaScript, TypeScript, PHP, Java, HTML, CSS."
+  },
+  {
+    "id": "skills-frameworks",
+    "title": "Frameworks and libraries",
+    "text": "Zahir's frameworks and libraries: Laravel, React, Next.js, Spring Boot, Bootstrap, Tailwind CSS, shadcn/ui, Flutter."
+  },
+  {
+    "id": "skills-data-cloud",
+    "title": "Databases, cloud, and DevOps",
+    "text": "Databases: MySQL, PostgreSQL, Firebase, Supabase, Redis, Upstash Redis, Upstash QStash. Cloud and DevOps: AWS (EC2, S3, RDS), Docker, Docker Hub, Linux (Ubuntu), GitHub Actions, GitLab CI/CD. Hosting: Vercel, Netlify, GitHub Pages, Render, Railway, cPanel. LMS: Moodle."
+  },
+  {
+    "id": "skills-integrations",
+    "title": "Integrations and tools",
+    "text": "Zahir works with AI integration (Google, OpenAI), Google APIs, Stripe, ToyyibPay, Telegram Bot API, Apify, Google OAuth, Google reCAPTCHA, Google Authenticator, SMTP, Mailtrap, Resend, Formspree, OneSignal. Tools: Git, GitHub, GitLab, GitHub Desktop, Docker Desktop, Oracle VirtualBox, pgAdmin4, Figma, Cursor, Postman, Visual Studio Code, Android Studio, Spring Tool Suite, Laragon. Languages spoken: Malay and English."
+  },
+  {
+    "id": "project-nujum",
+    "title": "Project: NUJUM",
+    "text": "NUJUM is an AI Prediction Analysis System (web + mobile SaaS). Stack: Laravel, Flutter, MySQL, ToyyibPay. Role: Full-stack, solo. It helps teams turn data, files, and social media posts into forecasts and advice quickly. Features: website and mobile app, four AI tools for forecasts/profiles/files/text opinions, subscriptions and usage limits, downloadable reports, chat and notifications. Timeline: Aug 2025 – Jul 2026. Client: Intensiti Elemen SDN BHD. Live: https://iesb.com.my/nujum/"
+  },
+  {
+    "id": "project-mygooners",
+    "title": "Project: MyGooners",
+    "text": "MyGooners is a company store and football news platform (web + mobile ecommerce). Stack: Laravel, Flutter, MySQL, ToyyibPay, Stripe. Role: Full-stack focused on web, small team of 2. Features: online shop, football news, online payments and email receipts, mobile app in English and Malay. Timeline: Jul 2025 – Jun 2026. Client: Intensiti Elemen SDN BHD. Live: https://mygooners.my/"
+  },
+  {
+    "id": "project-bina",
+    "title": "Project: BINA E-Ticketing",
+    "text": "BINA E-Ticketing is an online ticketing system for a national conference. Stack: Laravel, MySQL, ToyyibPay, Stripe. Role: Full-stack, solo. Features: online registration and ticket buying, digital tickets and purchase history, admin tools for orders. Timeline: May 2025 – Oct 2025. Client: CIDB IBS SDN BHD. Live: https://iesb.com.my/Bina2026/"
+  },
+  {
+    "id": "project-aras",
+    "title": "Project: ARAS",
+    "text": "ARAS is a company asset and approval system. Stack: Laravel, MySQL. Role: Full-stack, small team of 2. Features: approve/reject requests in-app or by email, asset list and Excel export, admin/staff access in English and Malay, approved purchases can add assets automatically. Timeline: Jan 2026 – Jun 2026. Client: Intensiti Elemen SDN BHD. Live: https://iesb.com.my/aras/"
+  },
+  {
+    "id": "project-est",
+    "title": "Project: EST Group",
+    "text": "EST Group is a company website for solar and EV charging services. Stack: Laravel, MySQL. Role: Full-stack, solo. Features: public pages (Home, About, Services, Partners, Contact), staff login to manage content, contact form for inquiries, option to temporarily hide the site. Timeline: Feb 2026 – Jun 2026. Client: EST Group. Live: https://estgroup.com.my/"
+  },
+  {
+    "id": "project-smks3",
+    "title": "Project: SMK Seremban 3",
+    "text": "SMK Seremban 3 is an official school website. Stack: PHP, MySQL. Role: Full-stack, small team of 2. Features: school pages for profile, news, staff, courses; staff login with unit-level edit permissions; easier discovery of school news. Timeline: Mar 2026 – Jul 2026. Client: SMK Seremban 3. Live: https://iesb.com.my/smks3/"
+  },
+  {
+    "id": "project-lms",
+    "title": "Project: IESB LMS",
+    "text": "IESB LMS is an online learning platform with AI tools built on Moodle. Stack: Moodle, PHP, MySQL, AI. Role: Full-stack, solo. Features: courses, users, quizzes; AI chat, AI marking, AI quiz-question help for teachers; admin tools. Timeline: Jan 2026 – Jun 2026. Client: Intensiti Elemen SDN BHD. Live: https://iesb.com.my/moodle"
+  },
+  {
+    "id": "experience-iesb",
+    "title": "Work: Intensiti Elemen",
+    "text": "Software Developer at Intensiti Elemen SDN BHD (May 2025 – Present). Ships and maintains production web/mobile apps with Laravel, Next.js, Flutter, MySQL/PostgreSQL across SaaS, ecommerce, LMS, ticketing, and internal tools. Integrates APIs, payments, AI/RAG features, and CI/CD with GitHub Actions. Owns deploys, migrations, production support, and user training on Linux/cloud hosting. Set up internal NAS backup workflows."
+  },
+  {
+    "id": "experience-vx",
+    "title": "Work: VX Ventures internship",
+    "text": "Web Developer intern at VX Ventures SDN BHD (October 2024 – March 2025). Contributed to live Laravel/MySQL products for community, school, and cooperative platforms. Improved stability through bug fixes, QA, and Flutter app testing with the team on GitLab. Supported hosting deploys, updates, and database migrations in production."
+  },
+  {
+    "id": "education-certs",
+    "title": "Education and certifications",
+    "text": "Education: Bachelor of Computer Science (Software Development) with Honours from Universiti Teknikal Malaysia Melaka (UTeM), 2021–2025. Science Stream (Module II) at Kolej Matrikulasi Melaka (KMM), 2019–2021. Certifications: Meta Front-End Developer (2025), Meta Back-End Developer (2025). A resume PDF is available on the portfolio site."
+  },
+  {
+    "id": "contact",
+    "title": "Contact",
+    "text": "For contact, visitors should use the contact form on the portfolio website. Zahir is open to roles, projects, and collaborations. Do not share private contact details such as email, phone number, or home address through this chat."
+  }
+]

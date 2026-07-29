@@ -1,0 +1,9 @@
+{
+  "name": "zahir-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Zahir portfolio with Gemini RAG chatbot (Vercel)",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1"
+  }
+}
