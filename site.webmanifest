@@ -1,7 +1,7 @@
 {
-  "name": "Zahir (zahir248) — Muhammad Zahiruddin Portfolio",
-  "short_name": "zahir248",
-  "description": "Portfolio of Zahir (zahir248) — Muhammad Zahiruddin, full-stack software developer.",
+  "name": "Zahir | Portfolio",
+  "short_name": "Zahir",
+  "description": "Software developer portfolio.",
   "start_url": "/portfolio/",
   "display": "standalone",
   "background_color": "#0f172a",
