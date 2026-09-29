@@ -373,7 +373,7 @@ section {
     display: grid;
     grid-template-columns: minmax(220px, 320px) 1fr;
     gap: 40px;
-    align-items: center;
+    align-items: stretch;
 }
 
 .about-img-wrapper {
@@ -383,6 +383,7 @@ section {
 }
 
 .about-img {
+    display: block;
     width: 100%;
     max-width: 320px;
     height: auto;
@@ -390,6 +391,16 @@ section {
     border: 1px solid var(--border);
     box-shadow: var(--shadow);
     transition: transform var(--transition);
+}
+
+/* Transparent layer so "Save image" targets nothing */
+.about-img-shield {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: transparent;
+    -webkit-touch-callout: none;
+    user-select: none;
 }
 
 .about-img-wrapper:hover .about-img {
@@ -401,6 +412,9 @@ section {
     border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about-text h3,
