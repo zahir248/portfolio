@@ -62,6 +62,11 @@ t('<dt>Projects in use</dt>', '<dt>Projek yang digunakan</dt>');
 t('<span class="fact-note">Including 1 freelance and 2 of my own</span>', '<span class="fact-note">Termasuk 1 kerja bebas dan 2 projek sendiri</span>');
 t('<dt>Main tools</dt>', '<dt>Alat utama</dt>');
 
+t('<p class="hero-open">Open to full-stack roles in the Klang Valley, hybrid or remote, and freelance work.</p>',
+  '<p class="hero-open">Terbuka kepada jawatan full-stack di Lembah Klang (hibrid atau jarak jauh) dan kerja bebas.</p>');
+t('<p class="contact-open"><strong>Open to</strong> full-stack developer roles, or other roles that use web and mobile development, in the Klang Valley, hybrid or remote. I also take on freelance projects.</p>',
+  '<p class="contact-open"><strong>Terbuka kepada</strong> jawatan pembangun full-stack, atau jawatan lain yang melibatkan pembangunan web dan aplikasi mudah alih, di Lembah Klang, secara hibrid atau jarak jauh. Saya juga menerima projek kerja bebas.</p>');
+
 // ---------- Plain words ----------
 t('<h2 id="plainTitle" class="plain-title">How I work</h2>', '<h2 id="plainTitle" class="plain-title">Cara saya bekerja</h2>');
 t('<h3>I find out what the business needs</h3>', '<h3>Saya mengenal pasti keperluan perniagaan</h3>');

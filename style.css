@@ -336,6 +336,13 @@ ol {
     grid-column: 1 / -1;
 }
 
+.hero-open {
+    margin-top: var(--space-3);
+    font-size: var(--step--1);
+    font-weight: 500;
+    color: var(--accent-ink);
+}
+
 /* Project index beside the headline */
 .hero-index {
     align-self: end;
@@ -1018,6 +1025,13 @@ ol {
 .contact-intro > p:not(.eyebrow) {
     margin-top: var(--space-4);
     color: var(--ink-2);
+}
+
+.contact-intro .contact-open {
+    padding: var(--space-3) var(--space-4);
+    border-left: 2px solid var(--accent);
+    background: var(--paper-2);
+    color: var(--ink);
 }
 
 .contact-email {
