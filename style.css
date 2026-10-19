@@ -777,6 +777,89 @@ ol {
     background: var(--accent);
 }
 
+/* Technical detail, closed by default so non-technical readers can skip it */
+.how-it-works {
+    margin-top: var(--space-5);
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+}
+
+.how-it-works summary {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-2);
+    padding: var(--space-3) 0;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+}
+
+.how-it-works summary::-webkit-details-marker {
+    display: none;
+}
+
+.how-it-works summary::after {
+    content: "+";
+    margin-left: auto;
+    font-weight: 500;
+    color: var(--accent-ink);
+}
+
+.how-it-works[open] summary::after {
+    content: "\2212";
+}
+
+.how-it-works summary:hover {
+    color: var(--accent-ink);
+}
+
+.how-note {
+    font-weight: 400;
+    color: var(--muted);
+}
+
+.how-it-works ul,
+.how-it-works p {
+    font-size: var(--step-small);
+    color: var(--ink-2);
+}
+
+.how-it-works li {
+    position: relative;
+    padding-left: 1.1em;
+}
+
+.how-it-works li + li {
+    margin-top: var(--space-2);
+}
+
+.how-it-works li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.72em;
+    width: 0.45em;
+    height: 1px;
+    background: var(--accent);
+}
+
+.how-it-works strong {
+    color: var(--ink);
+    font-weight: 600;
+}
+
+.how-it-works h4 {
+    margin-top: var(--space-5);
+    margin-bottom: var(--space-1);
+    font-size: var(--step--1);
+    font-weight: 500;
+    color: var(--muted);
+}
+
+.how-it-works p {
+    padding-bottom: var(--space-4);
+}
+
 .project-stack {
     margin-top: var(--space-5);
     margin-bottom: var(--space-3);

@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=20261019polish">
+    <link rel="stylesheet" href="style.css?v=20261019how">
     <link rel="icon" href="images/favicon.ico" sizes="48x48 32x32 16x16">
     <link rel="apple-touch-icon" href="images/icon-180.png">
     <link rel="manifest" href="site.webmanifest">
@@ -128,6 +128,20 @@
                                 <li>A guide to who to contact about a problem, and a short political history</li>
                             </ul>
                         </div>
+                        <details class="how-it-works">
+                            <summary>How it works <span class="how-note">(for technical readers)</span></summary>
+                            <ul>
+                                <li><strong>Collecting news.</strong> A Laravel scheduler job reads the RSS feeds of 21 Malaysian news portals every five minutes. Articles are kept for 14 days; the site shows the last 72 hours through a JSON endpoint that browsers poll every minute.</li>
+                                <li><strong>Grouping the same story.</strong> Headlines are grouped in two passes: shared words (at least three, covering 60% of the shorter headline, within 48 hours), then meaning, using Gemini text embeddings to join reports worded differently or written in another language. An issue is marked “hot” when three or more independent portals cover it; state-government media are not counted.</li>
+                                <li><strong>State and topic.</strong> Each story is tagged with states and constituencies from state names, seat names and an index of place names (GeoNames). The place a report was filed from is used only when the headline and text name no state. Topics come from the portal’s section and topic keywords.</li>
+                                <li><strong>Summaries.</strong> For issues covered by three or more portals, Google Gemini writes a short summary from the reports’ text, where portals allow it to be read (at most 20 an hour). Daily, weekly and monthly round-ups are generated each morning.</li>
+                                <li><strong>The map.</strong> Leaflet with GeoJSON boundaries. The 16 states load first (89 KB compressed). The parliamentary (268 KB) and state-seat (414 KB) layers load only when opened, so the first visit stays light.</li>
+                                <li><strong>“Who is my YB?”</strong> Finds the constituency by checking the user’s location against the boundaries in the browser (point-in-polygon), so the location never reaches the server.</li>
+                                <li><strong>Official data.</strong> Representatives are taken from the official Parliament portal and state assembly websites. Heads of state governments are verified against official portals where available, otherwise against recent news reports, and the page shows which, with the date checked.</li>
+                            </ul>
+                            <h4>Hardest problem</h4>
+                            <p>Grouping the same story across portals. Twenty-one portals word the same event differently, sometimes in another language, and the “hot” score depends entirely on getting this right: too loose merges unrelated stories, too strict counts one story several times. Word matching alone missed paraphrases and English reports, so a second pass compares the meaning of headlines using embeddings. The threshold (0.95) was set by checking real headline pairs; at 0.94, different Budget announcements began to merge. The free embedding quota (1,000 headlines a day) was smaller than the ~1,300 articles a day, so only one representative per word-group is sent, usage is capped at 950 in any rolling 24 hours, and articles older than 12 hours no longer use quota. Two limits remain: only headlines are compared, and the word pass can still join two reports from the same portal about different places.</p>
+                        </details>
                         <p class="project-stack">Built with Laravel, Vite, Google Gemini API, Render</p>
                         <a class="text-link" href="https://mysekilas.onrender.com/" target="_blank" rel="noopener noreferrer">Visit mySekilas <span aria-hidden="true">↗</span></a>
                     </div>
