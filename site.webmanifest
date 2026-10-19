@@ -4,8 +4,8 @@
   "description": "Software developer portfolio.",
   "start_url": "/portfolio/",
   "display": "standalone",
-  "background_color": "#0f172a",
-  "theme_color": "#0f172a",
+  "background_color": "#f4f1ea",
+  "theme_color": "#f4f1ea",
   "icons": [
     {
       "src": "images/zahir.jpg",

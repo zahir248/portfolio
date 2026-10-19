@@ -4,694 +4,397 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <title>Zahir | Portfolio</title>
-    <meta name="theme-color" content="#0f172a">
+    <title>Zahir | Software developer</title>
+    <meta name="description" content="Muhammad Zahiruddin (Zahir), software developer in Petaling Jaya. Seven web systems live in production, from a civic map of Malaysia to an AI analysis platform.">
+    <meta name="theme-color" content="#f4f1ea">
+    <meta name="color-scheme" content="light">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; script-src 'self' 'unsafe-inline'; connect-src 'self' https://zahir-portfolio-flax.vercel.app https://*.vercel.app https://api.microlink.io; form-action 'self' https://formspree.io;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline'; connect-src 'self' https://zahir-portfolio-flax.vercel.app https://*.vercel.app https://api.microlink.io; form-action 'self' https://formspree.io;">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=20260729avatar">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=20261019paper">
     <link href="images/favicon.ico" rel="icon" type="image/x-icon">
     <link rel="apple-touch-icon" href="images/zahir.jpg">
     <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
-    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <a class="skip-link" href="#work">Skip to projects</a>
 
-    <nav class="navbar">
-        <div class="nav-container">
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#cv" class="nav-link">CV</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
-                <i class="fas fa-bars"></i>
-            </button>
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a href="#top" class="wordmark">Zahir</a>
+            <nav aria-label="Main">
+                <ul class="nav-list">
+                    <li><a href="#work" class="nav-link">Work</a></li>
+                    <li><a href="#capabilities" class="nav-link">Capabilities</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <main>
-        <section id="home" class="home">
-            <div class="hero-bg" aria-hidden="true">
-                <div class="hero-collage">
-                    <img
-                        src="images/nujum.png"
-                        data-screenshot="https://iesb.com.my/nujum/"
-                        data-fallback="images/nujum.png"
-                        alt=""
-                        loading="eager"
-                    >
-                    <img
-                        src="images/mygooners.png"
-                        data-screenshot="https://mygooners.my/"
-                        data-fallback="images/mygooners.png"
-                        alt=""
-                        loading="eager"
-                    >
-                    <img
-                        src="images/bina.png"
-                        data-screenshot="https://iesb.com.my/Bina2026/"
-                        data-fallback="images/bina.png"
-                        alt=""
-                        loading="eager"
-                    >
-                    <img
-                        src="images/aras.png"
-                        data-screenshot="https://iesb.com.my/aras/"
-                        data-fallback="images/aras.png"
-                        alt=""
-                        loading="eager"
-                    >
-                    <img
-                        src="images/est.png"
-                        data-screenshot="https://estgroup.com.my/"
-                        data-fallback="images/est.png"
-                        alt=""
-                        loading="eager"
-                    >
-                    <img
-                        src="images/smks3.png"
-                        data-screenshot="https://iesb.com.my/smks3/"
-                        data-fallback="images/smks3.png"
-                        alt=""
-                        loading="eager"
-                    >
-                    <img
-                        src="images/lms.png"
-                        data-screenshot="https://iesb.com.my/moodle/"
-                        data-fallback="images/lms.png"
-                        alt=""
-                        loading="eager"
-                    >
+    <main id="top">
+        <section id="intro" class="hero wrap" aria-labelledby="heroTitle">
+            <div class="hero-main">
+                <p class="eyebrow">Muhammad Zahiruddin · Software developer · Petaling Jaya</p>
+                <h1 id="heroTitle" class="hero-title">I build and run Laravel and PHP systems for real clients.</h1>
+                <p class="hero-lede">Seven are live right now, from an interactive map of Malaysia's elected representatives to an AI analysis platform, ticketing for an ASEAN construction conference and a website for a Singapore logistics firm. I built five of them on my own.</p>
+                <div class="hero-actions">
+                    <a href="#work" class="btn btn-primary">See the projects</a>
+                    <a href="file/Resume_Muhammad Zahiruddin.pdf" class="btn btn-quiet" download="Resume_Muhammad Zahiruddin.pdf">Download résumé (PDF)</a>
                 </div>
             </div>
-            <div class="hero-glow" aria-hidden="true"></div>
-            <div class="hero-content">
-                <p class="hero-role"><span id="heroRoleText">Software Developer</span></p>
-                <h1 class="brand-mark" aria-label="Zahir">
-                    <span class="brand-letter" style="--i:0">Z</span><span class="brand-letter" style="--i:1">a</span><span class="brand-letter" style="--i:2">h</span><span class="brand-letter" style="--i:3">i</span><span class="brand-letter" style="--i:4">r</span>
-                </h1>
-                <p class="hero-position">Full-stack · Laravel / Next.js / Flutter</p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn">View My Work</a>
+
+            <nav class="hero-index" aria-label="Projects">
+                <p class="hero-index-title">Live now</p>
+                <ol>
+                    <li><a href="#p-mysekilas"><span class="hero-index-name">mySekilas</span><span class="hero-index-kind">Civic map, own project</span></a></li>
+                    <li><a href="#p-nujum"><span class="hero-index-name">NUJUM</span><span class="hero-index-kind">AI analysis platform</span></a></li>
+                    <li><a href="#p-bina"><span class="hero-index-name">BINA e-ticketing</span><span class="hero-index-kind">Conference ticketing</span></a></li>
+                    <li><a href="#p-enadd"><span class="hero-index-name">ENADD Logistics</span><span class="hero-index-kind">Freelance, Singapore</span></a></li>
+                </ol>
+                <p class="hero-index-more"><a href="#more">Also live: MyGooners, EST Group, SMK Seremban 3</a></p>
+            </nav>
+
+            <dl class="facts">
+                <div class="fact">
+                    <dt>Full-time experience</dt>
+                    <dd><span id="statExperience">1 yr 6 mo</span> <span class="fact-note">+ 6 mo internship</span></dd>
+                </div>
+                <div class="fact">
+                    <dt>Live products</dt>
+                    <dd><span id="statProjects">7</span> <span class="fact-note">5 solo, 2 in a team of two</span></dd>
+                </div>
+                <div class="fact">
+                    <dt>Main stack</dt>
+                    <dd>Laravel, PHP, MySQL</dd>
+                </div>
+            </dl>
+
+        </section>
+
+        <section id="work" class="work" aria-labelledby="workTitle">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="eyebrow">Selected work</p>
+                    <h2 id="workTitle" class="section-title">Seven products, all live today.</h2>
+                    <p class="section-lead">The four I would show first, then three more client systems. Open any of them to see it running.</p>
+                </div>
+
+                <article class="feature" id="p-mysekilas">
+                    <a class="feature-shot project-shot" href="https://mysekilas.onrender.com/" target="_blank" rel="noopener noreferrer" aria-label="Open mySekilas live site">
+                        <img src="images/mysekilas.png" data-screenshot="https://mysekilas.onrender.com/" data-fallback="images/mysekilas.png" alt="mySekilas map of Malaysia with state governments and live news" class="project-img is-loading" width="1280" height="800" loading="lazy" draggable="false">
+                    </a>
+                    <div class="feature-body">
+                        <p class="project-kind">Personal project · Civic information · Web</p>
+                        <h3 class="project-name">mySekilas</h3>
+                        <p class="project-summary">An interactive map of Malaysia that shows who governs each state, who your MP and state assemblyman are, and what is in the news there, in Malay and English.</p>
+                        <dl class="project-meta">
+                            <div><dt>Role</dt><dd>Solo: design, build, data and deploy</dd></div>
+                        </dl>
+                        <div class="project-story">
+                            <h4>Problem</h4>
+                            <p>Who represents you, and what is happening in your state, is spread across Parliament pages, election results and many news portals.</p>
+                            <h4>What I built</h4>
+                            <ul>
+                                <li>A map of states, parliamentary seats and state seats, with search by area, postcode or name</li>
+                                <li>A "Who is my YB?" button that matches your location inside the browser and never sends it to the server</li>
+                                <li>Dewan Rakyat seat counts and each state's government, checked against official portals</li>
+                                <li>Live headlines from many Malaysian portals, grouped when several cover the same story and tagged by state and topic</li>
+                                <li>Story summaries and a daily round-up written with Google Gemini</li>
+                                <li>A guide to who to contact for a problem, and a political history section</li>
+                            </ul>
+                            <h4>Outcome</h4>
+                            <p>One page answers who represents me and what is happening near me, and every figure links to where it came from.</p>
+                        </div>
+                        <p class="project-stack">Laravel · Vite · Google Gemini API · Render</p>
+                        <a class="text-link" href="https://mysekilas.onrender.com/" target="_blank" rel="noopener noreferrer">Visit mySekilas <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <article class="feature feature-flip" id="p-nujum">
+                    <a class="feature-shot project-shot" href="https://iesb.com.my/nujum/" target="_blank" rel="noopener noreferrer" aria-label="Open NUJUM live site">
+                        <img src="images/nujum.png" data-screenshot="https://iesb.com.my/nujum/" data-fallback="images/nujum.png" alt="NUJUM dashboard" class="project-img is-loading" width="1280" height="800" loading="lazy" draggable="false">
+                    </a>
+                    <div class="feature-body">
+                        <p class="project-kind">AI analysis platform · Web</p>
+                        <h3 class="project-name">NUJUM</h3>
+                        <p class="project-summary">Pick one of six kinds of analysis, answer a few questions, and get a report that names its sources, in Malay or English.</p>
+                        <dl class="project-meta">
+                            <div><dt>Role</dt><dd>Full-stack, solo</dd></div>
+                            <div><dt>Client</dt><dd>Intensiti Elemen</dd></div>
+                            <div><dt>Timeline</dt><dd>Aug 2025 to Jul 2026</dd></div>
+                        </dl>
+                        <div class="project-story">
+                            <h4>Problem</h4>
+                            <p>Checking data by hand took too long, so risks and useful advice often came too late.</p>
+                            <h4>What I built</h4>
+                            <ul>
+                                <li>Six analysis types: prediction, trend topic, social profile, profile comparison, communication pack and fact check</li>
+                                <li>A document library with an Ask feature that answers from the user's own files and shows where each fact came from</li>
+                                <li>A war room, daily brief and stakeholder tracking for communications teams</li>
+                                <li>Reports as PDF or shareable links, a free tier, and monthly plans with usage allowances and team accounts</li>
+                            </ul>
+                            <h4>Outcome</h4>
+                            <p>Analysis that used to be done by hand now runs on demand, and every report lists the news, posts and files it was written from.</p>
+                        </div>
+                        <p class="project-stack">Laravel · MySQL · Google Gemini API · OpenAI API · ToyyibPay</p>
+                        <a class="text-link" href="https://iesb.com.my/nujum/" target="_blank" rel="noopener noreferrer">Visit NUJUM <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <article class="feature" id="p-bina">
+                    <a class="feature-shot project-shot" href="https://iesb.com.my/Bina2026/" target="_blank" rel="noopener noreferrer" aria-label="Open BINA e-ticketing live site">
+                        <img src="images/bina.png" data-screenshot="https://iesb.com.my/Bina2026/" data-fallback="images/bina.png" alt="BINA conference ticketing page" class="project-img is-loading" width="1280" height="800" loading="lazy" draggable="false">
+                    </a>
+                    <div class="feature-body">
+                        <p class="project-kind">Event ticketing · Web</p>
+                        <h3 class="project-name">BINA e-ticketing</h3>
+                        <p class="project-summary">Event site and ticketing for BINA, an ASEAN construction conference at MITEC Kuala Lumpur, held during International Construction Week.</p>
+                        <dl class="project-meta">
+                            <div><dt>Role</dt><dd>Full-stack, solo</dd></div>
+                            <div><dt>Client</dt><dd>CIDB IBS</dd></div>
+                            <div><dt>Timeline</dt><dd>May to Oct 2025, then the 2026 edition</dd></div>
+                        </dl>
+                        <div class="project-story">
+                            <h4>Problem</h4>
+                            <p>Registration and payment were handled by hand, which was slow and hard to track across many attendees.</p>
+                            <h4>What I built</h4>
+                            <ul>
+                                <li>Event pages for each programme in the conference</li>
+                                <li>Online registration and ticket purchase, with ToyyibPay and Stripe</li>
+                                <li>Digital tickets and purchase history for buyers</li>
+                                <li>Admin tools for orders and ticket records</li>
+                            </ul>
+                            <h4>Outcome</h4>
+                            <p>Registration, payment and ticket issuing moved online end to end, and organisers manage orders from an admin panel.</p>
+                        </div>
+                        <p class="project-stack">Laravel · MySQL · ToyyibPay · Stripe</p>
+                        <a class="text-link" href="https://iesb.com.my/Bina2026/" target="_blank" rel="noopener noreferrer">Visit BINA <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <article class="feature feature-flip" id="p-enadd">
+                    <a class="feature-shot project-shot" href="https://enadd.com.sg/" target="_blank" rel="noopener noreferrer" aria-label="Open ENADD Logistics live site">
+                        <img src="images/enadd.png" data-screenshot="https://enadd.com.sg/" data-fallback="images/enadd.png" alt="ENADD Logistics home page with container port photo" class="project-img is-loading" width="1280" height="800" loading="lazy" draggable="false">
+                    </a>
+                    <div class="feature-body">
+                        <p class="project-kind">Freelance · Company website · Singapore</p>
+                        <h3 class="project-name">ENADD Logistics</h3>
+                        <p class="project-summary">Website for a Singapore freight forwarding and marine logistics company: what they handle, where they operate, and how to ask for a quote.</p>
+                        <dl class="project-meta">
+                            <div><dt>Role</dt><dd>Solo: design, build and deploy</dd></div>
+                            <div><dt>Client</dt><dd>ENADD Logistics (S) Pte Ltd</dd></div>
+                        </dl>
+                        <div class="project-story">
+                            <h4>What I built</h4>
+                            <ul>
+                                <li>Home, About, Services and Contact pages, designed from scratch for a Singapore client</li>
+                                <li>A service catalogue covering air and sea freight, Malaysia to Singapore trucking, FTZ warehousing and marine logistics</li>
+                                <li>A "Get a quote" button on every page, leading to an enquiry form</li>
+                            </ul>
+                        </div>
+                        <p class="project-stack">HTML · Bootstrap 5 · JavaScript</p>
+                        <a class="text-link" href="https://enadd.com.sg/" target="_blank" rel="noopener noreferrer">Visit ENADD Logistics <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <h3 class="more-title" id="more">Also live</h3>
+                <div class="more-grid">
+                    <article class="mini" id="p-mygooners">
+                        <a class="mini-shot project-shot" href="https://mygooners.my/" target="_blank" rel="noopener noreferrer" aria-label="Open MyGooners live site">
+                            <img src="images/mygooners.png" data-screenshot="https://mygooners.my/" data-fallback="images/mygooners.png" alt="MyGooners fan community home page" class="project-img is-loading" width="1280" height="800" loading="lazy" draggable="false">
+                        </a>
+                        <p class="project-kind">Fan community and shop · Web</p>
+                        <h4 class="mini-name">MyGooners</h4>
+                        <p class="mini-summary">A Malay-language Arsenal fan community. I built the web side: news and video publishing, a directory of verified services, and a shop with checkout, all run from one admin panel. A teammate built the Flutter app.</p>
+                        <p class="mini-meta">Web side, team of two · Intensiti Elemen · Jul 2025 to Jun 2026</p>
+                        <p class="project-stack">Laravel · MySQL · ToyyibPay · Stripe</p>
+                        <a class="text-link" href="https://mygooners.my/" target="_blank" rel="noopener noreferrer">Visit MyGooners <span aria-hidden="true">↗</span></a>
+                    </article>
+
+
+
+                    <article class="mini" id="p-est">
+                        <a class="mini-shot project-shot" href="https://estgroup.com.my/" target="_blank" rel="noopener noreferrer" aria-label="Open EST Group live site">
+                            <img src="images/est.png" data-screenshot="https://estgroup.com.my/" data-fallback="images/est.png" alt="EST Group website" class="project-img is-loading" width="1280" height="800" loading="lazy" draggable="false">
+                        </a>
+                        <p class="project-kind">Company website · Web</p>
+                        <h4 class="mini-name">EST Group</h4>
+                        <p class="mini-summary">Site for a solar installation (EPCC) and NexTron EV charging company, with About, What We Do and Partner We Seek pages. Staff update partners, team and contact details themselves, and the contact form goes straight to the company inbox.</p>
+                        <p class="mini-meta">Full-stack, solo · EST Group · Feb to Jun 2026</p>
+                        <p class="project-stack">Laravel · MySQL</p>
+                        <a class="text-link" href="https://estgroup.com.my/" target="_blank" rel="noopener noreferrer">Visit EST Group <span aria-hidden="true">↗</span></a>
+                    </article>
+
+                    <article class="mini" id="p-smks3">
+                        <a class="mini-shot project-shot" href="https://iesb.com.my/smks3/" target="_blank" rel="noopener noreferrer" aria-label="Open SMK Seremban 3 live site">
+                            <img src="images/smks3.png" data-screenshot="https://iesb.com.my/smks3/" data-fallback="images/smks3.png" alt="SMK Seremban 3 school website" class="project-img is-loading" width="1280" height="800" loading="lazy" draggable="false">
+                        </a>
+                        <p class="project-kind">School website · Web</p>
+                        <h4 class="mini-name">SMK Seremban 3</h4>
+                        <p class="mini-summary">Malay-language portal for a secondary school in Seremban. Staff update news and school information through a staff portal, and each unit edits only its own pages.</p>
+                        <p class="mini-meta">Full-stack, team of two · SMK Seremban 3 · Mar to Jul 2026</p>
+                        <p class="project-stack">PHP · MySQL</p>
+                        <a class="text-link" href="https://iesb.com.my/smks3/" target="_blank" rel="noopener noreferrer">Visit SMK Seremban 3 <span aria-hidden="true">↗</span></a>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="about">
-            <div class="section-head fade-in">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-lead">I ship production web and mobile products end to end.</p>
+        <section id="capabilities" class="capabilities" aria-labelledby="capTitle">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="eyebrow">Capabilities</p>
+                    <h2 id="capTitle" class="section-title">What I can take on, and where I have done it.</h2>
+                </div>
+
+                <ul class="cap-list">
+                    <li class="cap">
+                        <h3>Payments and checkout</h3>
+                        <p>ToyyibPay and Stripe checkouts with receipts, order records and paid subscriptions with usage limits.</p>
+                        <p class="cap-proof">Shipped in MyGooners, BINA, NUJUM</p>
+                    </li>
+                    <li class="cap">
+                        <h3>AI features inside real products</h3>
+                        <p>AI analysis reports, answers drawn from a user's own documents with sources shown, news summaries, and the chatbot on this site.</p>
+                        <p class="cap-proof">Shipped in NUJUM, mySekilas, this site</p>
+                    </li>
+                    <li class="cap">
+                        <h3>Maps and live public data</h3>
+                        <p>An interactive map with location lookup done in the browser, official data checked against its source, and news pulled from many portals and grouped by story.</p>
+                        <p class="cap-proof">Shipped in mySekilas</p>
+                    </li>
+                    <li class="cap">
+                        <h3>Admin panels and roles</h3>
+                        <p>Admin panels that let non-technical staff run the site themselves, with role-based access so each team edits only what it owns.</p>
+                        <p class="cap-proof">Shipped in MyGooners, SMK Seremban 3, EST Group</p>
+                    </li>
+                    <li class="cap">
+                        <h3>Shipping and running it</h3>
+                        <p>Deploys, database migrations, GitHub Actions, Linux and cPanel hosting, production support, user training and NAS backups.</p>
+                        <p class="cap-proof">Day to day at Intensiti Elemen</p>
+                    </li>
+                </ul>
+
+                <div class="toolkit">
+                    <div class="toolkit-row">
+                        <h3>Core, used in production</h3>
+                        <p>PHP, Laravel, MySQL, PostgreSQL, JavaScript, HTML, CSS, Bootstrap, Linux (Ubuntu), cPanel, Git, GitHub Actions</p>
+                    </div>
+                    <div class="toolkit-row">
+                        <h3>Integrations</h3>
+                        <p>ToyyibPay, Stripe, Google Gemini and OpenAI APIs, Google OAuth, Google reCAPTCHA, SMTP email, OneSignal, Telegram Bot API</p>
+                    </div>
+                    <div class="toolkit-row">
+                        <h3>Familiar, from side projects and testing</h3>
+                        <p>Flutter, TypeScript, React, Next.js, Tailwind CSS, Java, Spring Boot, Docker, AWS (EC2, S3, RDS)</p>
+                    </div>
+                    <div class="toolkit-row">
+                        <h3>Languages</h3>
+                        <p>Malay, English</p>
+                    </div>
+                </div>
             </div>
-            <div class="about-content">
-                <div class="about-img-wrapper fade-in">
-                    <img src="images/zahir.jpg" alt="Zahir" class="about-img" draggable="false" width="300" height="400">
+        </section>
+
+        <section id="about" class="about" aria-labelledby="aboutTitle">
+            <div class="wrap about-grid">
+                <div class="about-photo">
+                    <img src="images/zahir.jpg" alt="Portrait of Zahir" class="about-img" draggable="false" width="480" height="640">
                     <div class="about-img-shield" aria-hidden="true"></div>
                 </div>
-                <div class="about-text fade-in">
-                    <h3 class="about-greeting">
-                        <span id="greetingText" class="greeting-message"></span>
-                        <span class="greeting-name">I'm Zahir</span>
-                    </h3>
-                    <p>I build and maintain production applications across the full lifecycle — requirements, implementation, deployment, and support. My recent work covers SaaS, ecommerce, LMS, ticketing, and internal tools, with a focus on reliable delivery and practical problem-solving.</p>
-                    <div class="about-stats">
-                        <div class="stat-pill">
-                            <strong id="statExperience">—</strong>
-                            <span>Total experience</span>
-                        </div>
-                        <div class="stat-pill">
-                            <strong id="statProjects">—</strong>
-                            <span>Projects shipped</span>
-                        </div>
-                        <div class="stat-pill">
-                            <strong>Full-stack</strong>
-                            <span>Web &amp; mobile</span>
-                        </div>
+                <div class="about-body">
+                    <p class="eyebrow">About</p>
+                    <h2 id="aboutTitle" class="section-title">Hi, I'm Zahir.</h2>
+                    <p>I studied software development at UTeM and went straight into production work: six months as an intern at VX Ventures, then full-time at Intensiti Elemen since May 2025.</p>
+                    <p>I also take freelance work, most recently the website for ENADD Logistics in Singapore, and I build my own products like mySekilas.</p>
+                    <p>Most of my projects are solo or in a team of two, so I handle the whole job. I gather requirements, build the system, deploy it, and train the people who use it. When something breaks in production, I am the one who fixes it.</p>
+
+                    <div class="history">
+                        <h3 class="history-title">Experience</h3>
+                        <ol class="history-list">
+                            <li>
+                                <p class="history-when">May 2025 to now</p>
+                                <div>
+                                    <p class="history-what">Software developer, Intensiti Elemen</p>
+                                    <p class="history-detail">Build and maintain the company's web products in Laravel, PHP, MySQL and PostgreSQL. Handle payments, AI features, automated builds with GitHub Actions, deploys, migrations, production support and the team's NAS backups.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="history-when">Oct 2024 to Mar 2025</p>
+                                <div>
+                                    <p class="history-what">Web developer intern, VX Ventures</p>
+                                    <p class="history-detail">Fixed bugs and tested live Laravel products for community, school and cooperative platforms, tested the Flutter app, and helped with deploys and database migrations.</p>
+                                </div>
+                            </li>
+                        </ol>
+
+                        <h3 class="history-title">Education</h3>
+                        <ol class="history-list">
+                            <li>
+                                <p class="history-when">2021 to 2025</p>
+                                <div>
+                                    <p class="history-what">BSc Computer Science (Software Development), UTeM</p>
+                                    <p class="history-detail">Honours, CGPA 3.68</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="history-when">2025</p>
+                                <div>
+                                    <p class="history-what">Meta Front-End Developer and Meta Back-End Developer certificates</p>
+                                </div>
+                            </li>
+                        </ol>
+                        <a class="text-link" href="file/Resume_Muhammad Zahiruddin.pdf" download="Resume_Muhammad Zahiruddin.pdf">Download the full résumé (PDF)</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="skills">
-            <div class="section-head fade-in">
-                <h2 class="section-title">Skills</h2>
-                <p class="section-lead">Full technical toolkit across development, deployment, and integrations.</p>
-            </div>
-            <div class="skills-categories">
-                <div class="skill-group fade-in">
-                    <h3>Programming &amp; Markup Languages</h3>
-                    <div class="skill-tags">
-                        <button type="button" class="skill-tag">JavaScript</button>
-                        <button type="button" class="skill-tag">TypeScript</button>
-                        <button type="button" class="skill-tag">PHP</button>
-                        <button type="button" class="skill-tag">Java</button>
-                        <button type="button" class="skill-tag">HTML</button>
-                        <button type="button" class="skill-tag">CSS</button>
-                    </div>
+        <section id="contact" class="contact" aria-labelledby="contactTitle">
+            <div class="wrap contact-grid">
+                <div class="contact-intro">
+                    <p class="eyebrow">Contact</p>
+                    <h2 id="contactTitle" class="section-title">Hiring for a full-stack role, or need a system built?</h2>
+                    <p>Email is the fastest way to reach me. Messages from this form go to the same inbox.</p>
+                    <a class="contact-email" href="mailto:muhdzahir248@gmail.com">muhdzahir248@gmail.com</a>
+                    <ul class="contact-links">
+                        <li><a class="text-link" href="https://www.linkedin.com/in/zahir248" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></li>
+                        <li><a class="text-link" href="https://github.com/zahir248" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></li>
+                    </ul>
+                    <p class="contact-place">Based in Petaling Jaya, Selangor</p>
                 </div>
-                <div class="skill-group fade-in">
-                    <h3>Frameworks &amp; Libraries</h3>
-                    <div class="skill-tags">
-                        <button type="button" class="skill-tag">Laravel</button>
-                        <button type="button" class="skill-tag">React</button>
-                        <button type="button" class="skill-tag">Next.js</button>
-                        <button type="button" class="skill-tag">Spring Boot</button>
-                        <button type="button" class="skill-tag">Bootstrap</button>
-                        <button type="button" class="skill-tag">Tailwind CSS</button>
-                        <button type="button" class="skill-tag">shadcn/ui</button>
+                <form action="https://formspree.io/f/mrgwbaey" method="POST" class="contact-form">
+                    <div class="field">
+                        <label for="name">Your name</label>
+                        <input type="text" id="name" name="name" autocomplete="name" required>
                     </div>
-                </div>
-                <div class="skill-group fade-in">
-                    <h3>Mobile Development &amp; Deployment</h3>
-                    <div class="skill-tags">
-                        <button type="button" class="skill-tag">Flutter</button>
-                        <button type="button" class="skill-tag">Google Play Console</button>
+                    <div class="field">
+                        <label for="email">Your email</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
                     </div>
-                </div>
-                <div class="skill-group fade-in">
-                    <h3>Databases &amp; Backend Services</h3>
-                    <div class="skill-tags">
-                        <button type="button" class="skill-tag">MySQL</button>
-                        <button type="button" class="skill-tag">PostgreSQL</button>
-                        <button type="button" class="skill-tag">Firebase</button>
-                        <button type="button" class="skill-tag">Supabase</button>
-                        <button type="button" class="skill-tag">Redis</button>
-                        <button type="button" class="skill-tag">Upstash Redis</button>
-                        <button type="button" class="skill-tag">Upstash QStash</button>
-                    </div>
-                </div>
-                <div class="skill-group fade-in">
-                    <h3>Cloud &amp; DevOps</h3>
-                    <div class="skill-tags">
-                        <button type="button" class="skill-tag">AWS (EC2, S3, RDS)</button>
-                        <button type="button" class="skill-tag">Docker</button>
-                        <button type="button" class="skill-tag">Docker Hub</button>
-                        <button type="button" class="skill-tag">Linux (Ubuntu)</button>
-                        <button type="button" class="skill-tag">GitHub Actions</button>
-                        <button type="button" class="skill-tag">GitLab CI/CD</button>
-                    </div>
-                </div>
-                <div class="skill-group fade-in">
-                    <h3>Hosting &amp; Deployment Platforms</h3>
-                    <div class="skill-tags">
-                        <button type="button" class="skill-tag">Vercel</button>
-                        <button type="button" class="skill-tag">Netlify</button>
-                        <button type="button" class="skill-tag">GitHub Pages</button>
-                        <button type="button" class="skill-tag">Render</button>
-                        <button type="button" class="skill-tag">Railway</button>
-                        <button type="button" class="skill-tag">cPanel</button>
-                    </div>
-                </div>
-                <div class="skill-group fade-in">
-                    <h3>Platforms &amp; LMS</h3>
-                    <div class="skill-tags">
-                        <button type="button" class="skill-tag">Moodle</button>
-                    </div>
-                </div>
-                <div class="skill-group fade-in">
-                    <h3>AI &amp; External Integrations</h3>
-                    <div class="skill-tags">
-                        <button type="button" class="skill-tag">AI Integration (Google, OpenAI)</button>
-                        <button type="button" class="skill-tag">Google APIs</button>
-                        <button type="button" class="skill-tag">Stripe</button>
-                        <button type="button" class="skill-tag">ToyyibPay</button>
-                        <button type="button" class="skill-tag">Telegram Bot API</button>
-                        <button type="button" class="skill-tag">Apify</button>
-                    </div>
-                </div>
-                <div class="skill-group fade-in">
-                    <h3>Authentication &amp; Security</h3>
-                    <div class="skill-tags">
-                        <button type="button" class="skill-tag">Google OAuth</button>
-                        <button type="button" class="skill-tag">Google reCAPTCHA</button>
-                        <button type="button" class="skill-tag">Google Authenticator</button>
-                    </div>
-                </div>
-                <div class="skill-group fade-in">
-                    <h3>Email &amp; Notification Services</h3>
-                    <div class="skill-tags">
-                        <button type="button" class="skill-tag">SMTP (Gmail, cPanel)</button>
-                        <button type="button" class="skill-tag">Mailtrap</button>
-                        <button type="button" class="skill-tag">Resend</button>
-                        <button type="button" class="skill-tag">Formspree</button>
-                        <button type="button" class="skill-tag">OneSignal</button>
-                    </div>
-                </div>
-                <div class="skill-group fade-in">
-                    <h3>Development Tools &amp; Environment</h3>
-                    <div class="skill-tags">
-                        <button type="button" class="skill-tag">Git</button>
-                        <button type="button" class="skill-tag">GitHub</button>
-                        <button type="button" class="skill-tag">GitLab</button>
-                        <button type="button" class="skill-tag">GitHub Desktop</button>
-                        <button type="button" class="skill-tag">Docker Desktop</button>
-                        <button type="button" class="skill-tag">Oracle VirtualBox</button>
-                        <button type="button" class="skill-tag">pgAdmin4</button>
-                        <button type="button" class="skill-tag">Figma</button>
-                        <button type="button" class="skill-tag">Cursor</button>
-                        <button type="button" class="skill-tag">Postman</button>
-                        <button type="button" class="skill-tag">Visual Studio Code</button>
-                        <button type="button" class="skill-tag">Android Studio</button>
-                        <button type="button" class="skill-tag">Spring Tool Suite</button>
-                        <button type="button" class="skill-tag">Laragon</button>
-                    </div>
-                </div>
-                <div class="skill-group fade-in">
-                    <h3>Languages</h3>
-                    <div class="skill-tags">
-                        <button type="button" class="skill-tag">Malay</button>
-                        <button type="button" class="skill-tag">English</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="projects">
-            <div class="section-head fade-in">
-                <h2 class="section-title">Projects</h2>
-                <p class="section-lead">Production systems I helped build and ship.</p>
-            </div>
-            <div class="project-filters fade-in">
-                <button class="project-filter active" data-filter="all" type="button">All</button>
-                <button class="project-filter" data-filter="web" type="button">Web</button>
-                <button class="project-filter" data-filter="mobile" type="button">Mobile</button>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card project-card-detailed project-reveal" data-platforms="web mobile" data-reveal="left">
-                    <div class="project-image-wrapper">
-                        <img
-                            src="images/nujum.png"
-                            data-screenshot="https://iesb.com.my/nujum/"
-                            data-fallback="images/nujum.png"
-                            alt="NUJUM — AI Prediction Analysis System"
-                            class="project-img is-loading"
-                            loading="lazy"
-                            draggable="false"
-                        >
-                    </div>
-                    <div class="project-meta">
-                        <div>
-                            <h3>NUJUM</h3>
-                            <p class="project-subtitle">AI Prediction Analysis System</p>
-                            <div class="project-badges">
-                                <span>Web</span><span>Mobile</span><span>AI</span><span>SaaS</span><span>Laravel</span><span>Flutter</span><span>MySQL</span><span>ToyyibPay</span>
-                            </div>
-                        </div>
-                        <a href="https://iesb.com.my/nujum/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
-                    </div>
-                    <div class="project-overlay project-overlay-rich">
-                        <p class="project-overlay-lead">An AI tool that helps the team turn data, files, and social media posts into clear forecasts and advice — in minutes, not weeks.</p>
-                        <p><strong>Role:</strong> Full-stack · Solo</p>
-                        <p><strong>Problem:</strong> Checking data by hand took too long, so risks and useful advice often came too late.</p>
-                        <p><strong>Impact:</strong> Staff can spot issues earlier and make decisions faster, with clearer next steps instead of digging through raw data.</p>
-                        <ul>
-                            <li>Website and mobile app for everyday use</li>
-                            <li>Four AI tools for forecasts, profiles, files, and opinions from text</li>
-                            <li>Online subscriptions, usage limits, and downloadable reports</li>
-                            <li>Chat and notifications to keep the team updated</li>
-                        </ul>
-                        <p><strong>Timeline:</strong> Aug 2025 – Jul 2026</p>
-                        <p><strong>Client:</strong> Intensiti Elemen SDN BHD</p>
-                        <a href="https://iesb.com.my/nujum/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
-                    </div>
-                </div>
-                <div class="project-card project-card-detailed project-reveal" data-platforms="web mobile" data-reveal="right">
-                    <div class="project-image-wrapper">
-                        <img
-                            src="images/mygooners.png"
-                            data-screenshot="https://mygooners.my/"
-                            data-fallback="images/mygooners.png"
-                            alt="MyGooners"
-                            class="project-img is-loading"
-                            loading="lazy"
-                            draggable="false"
-                        >
-                    </div>
-                    <div class="project-meta">
-                        <div>
-                            <h3>MyGooners</h3>
-                            <p class="project-subtitle">Company store &amp; football news platform</p>
-                            <div class="project-badges">
-                                <span>Web</span><span>Mobile</span><span>E-commerce</span><span>Laravel</span><span>Flutter</span><span>MySQL</span><span>ToyyibPay</span><span>Stripe</span>
-                            </div>
-                        </div>
-                        <a href="https://mygooners.my/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
-                    </div>
-                    <div class="project-overlay project-overlay-rich">
-                        <p class="project-overlay-lead">A website and mobile app to sell company products and share the latest football news with fans.</p>
-                        <p><strong>Role:</strong> Full-stack · Focused on web · Small team (2 people)</p>
-                        <p><strong>Problem:</strong> The company needed one place to sell products online, manage orders, and keep fans updated with football news.</p>
-                        <p><strong>Impact:</strong> Customers can browse, pay, and order online — while the team manages sales and news from one system, including on mobile.</p>
-                        <ul>
-                            <li>Online shop for company products and services</li>
-                            <li>Football news for fans to read and follow</li>
-                            <li>Safe online payments and email receipts</li>
-                            <li>Mobile app in English and Malay</li>
-                        </ul>
-                        <p><strong>Timeline:</strong> Jul 2025 – Jun 2026</p>
-                        <p><strong>Client:</strong> Intensiti Elemen SDN BHD</p>
-                        <a href="https://mygooners.my/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
-                    </div>
-                </div>
-                <div class="project-card project-card-detailed project-reveal" data-platforms="web" data-reveal="left">
-                    <div class="project-image-wrapper">
-                        <img
-                            src="images/bina.png"
-                            data-screenshot="https://iesb.com.my/Bina2026/"
-                            data-fallback="images/bina.png"
-                            alt="BINA E-Ticketing System"
-                            class="project-img is-loading"
-                            loading="lazy"
-                            draggable="false"
-                        >
-                    </div>
-                    <div class="project-meta">
-                        <div>
-                            <h3>BINA E-Ticketing</h3>
-                            <p class="project-subtitle">Online ticketing for a national conference</p>
-                            <div class="project-badges">
-                                <span>Web</span><span>Laravel</span><span>MySQL</span><span>ToyyibPay</span><span>Stripe</span>
-                            </div>
-                        </div>
-                        <a href="https://iesb.com.my/Bina2026/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
-                    </div>
-                    <div class="project-overlay project-overlay-rich">
-                        <p class="project-overlay-lead">An online ticketing system for a national conference — so attendees can register, pay online, and get their tickets digitally.</p>
-                        <p><strong>Role:</strong> Full-stack · Solo</p>
-                        <p><strong>Problem:</strong> Conference registration and payment were done by hand, which was slow and hard to manage for many attendees.</p>
-                        <p><strong>Impact:</strong> Organisers can sell tickets online with less manual work, and attendees get digital tickets plus a clear purchase history.</p>
-                        <ul>
-                            <li>Online registration and ticket buying</li>
-                            <li>Safe online payment for attendees</li>
-                            <li>Digital tickets and purchase history for buyers</li>
-                            <li>Admin tools to manage orders and ticket records</li>
-                        </ul>
-                        <p><strong>Timeline:</strong> May 2025 – Oct 2025</p>
-                        <p><strong>Client:</strong> CIDB IBS SDN BHD</p>
-                        <a href="https://iesb.com.my/Bina2026/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
-                    </div>
-                </div>
-                <div class="project-card project-card-detailed project-reveal" data-platforms="web" data-reveal="right">
-                    <div class="project-image-wrapper">
-                        <img
-                            src="images/aras.png"
-                            data-screenshot="https://iesb.com.my/aras/"
-                            data-fallback="images/aras.png"
-                            alt="ARAS — Asset Management System"
-                            class="project-img is-loading"
-                            loading="lazy"
-                            draggable="false"
-                        >
-                    </div>
-                    <div class="project-meta">
-                        <div>
-                            <h3>ARAS</h3>
-                            <p class="project-subtitle">Company asset &amp; approval system</p>
-                            <div class="project-badges">
-                                <span>Web</span><span>Laravel</span><span>MySQL</span>
-                            </div>
-                        </div>
-                        <a href="https://iesb.com.my/aras/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
-                    </div>
-                    <div class="project-overlay project-overlay-rich">
-                        <p class="project-overlay-lead">An internal website to track company assets and approve requests — like maintenance, purchases, and leave — all in one place.</p>
-                        <p><strong>Role:</strong> Full-stack · Small team (2 people)</p>
-                        <p><strong>Problem:</strong> Staff tracked assets and approvals in different tools and emails, so work was slow and easy to miss.</p>
-                        <p><strong>Impact:</strong> One shared system — less email chasing, clearer approvals, and easier asset records.</p>
-                        <ul>
-                            <li>Approve or reject requests in the app or by email</li>
-                            <li>Asset list, categories, value tracking, and Excel download</li>
-                            <li>Different access for admins and staff, in English and Malay</li>
-                            <li>Approved purchases can add new assets automatically, with simple overview screens</li>
-                        </ul>
-                        <p><strong>Timeline:</strong> Jan 2026 – Jun 2026</p>
-                        <p><strong>Client:</strong> Intensiti Elemen SDN BHD</p>
-                        <a href="https://iesb.com.my/aras/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
-                    </div>
-                </div>
-                <div class="project-card project-card-detailed project-reveal" data-platforms="web" data-reveal="left">
-                    <div class="project-image-wrapper">
-                        <img
-                            src="images/est.png"
-                            data-screenshot="https://estgroup.com.my/"
-                            data-fallback="images/est.png"
-                            alt="EST Group website"
-                            class="project-img is-loading"
-                            loading="lazy"
-                            draggable="false"
-                        >
-                    </div>
-                    <div class="project-meta">
-                        <div>
-                            <h3>EST Group</h3>
-                            <p class="project-subtitle">Company website</p>
-                            <div class="project-badges">
-                                <span>Web</span><span>Laravel</span><span>MySQL</span>
-                            </div>
-                        </div>
-                        <a href="https://estgroup.com.my/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
-                    </div>
-                    <div class="project-overlay project-overlay-rich">
-                        <p class="project-overlay-lead">A company website to showcase solar and EV charging services — with a simple staff login so the team can update content and receive contact messages.</p>
-                        <p><strong>Role:</strong> Full-stack · Solo</p>
-                        <p><strong>Problem:</strong> The company needed a professional website and a way for staff to update partners, team, and contact info on their own.</p>
-                        <p><strong>Impact:</strong> Staff can update the website themselves whenever needed, and visitor inquiries reach the team by email right away.</p>
-                        <ul>
-                            <li>Public pages for Home, About, Services, Partners, and Contact</li>
-                            <li>Staff login to manage partners, team, and contact details</li>
-                            <li>Contact form that sends messages to the company email</li>
-                            <li>Option to temporarily hide the site from visitors when needed</li>
-                        </ul>
-                        <p><strong>Timeline:</strong> Feb 2026 – Jun 2026</p>
-                        <p><strong>Client:</strong> EST Group</p>
-                        <a href="https://estgroup.com.my/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
-                    </div>
-                </div>
-                <div class="project-card project-card-detailed project-reveal" data-platforms="web" data-reveal="right">
-                    <div class="project-image-wrapper">
-                        <img
-                            src="images/smks3.png"
-                            data-screenshot="https://iesb.com.my/smks3/"
-                            data-fallback="images/smks3.png"
-                            alt="SMK Seremban 3 website"
-                            class="project-img is-loading"
-                            loading="lazy"
-                            draggable="false"
-                        >
-                    </div>
-                    <div class="project-meta">
-                        <div>
-                            <h3>SMK Seremban 3</h3>
-                            <p class="project-subtitle">Official school website</p>
-                            <div class="project-badges">
-                                <span>Web</span><span>PHP</span><span>MySQL</span>
-                            </div>
-                        </div>
-                        <a href="https://iesb.com.my/smks3/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
-                    </div>
-                    <div class="project-overlay project-overlay-rich">
-                        <p class="project-overlay-lead">An official school website — news and school info for parents, students, and teachers, with an easy way for staff to update pages.</p>
-                        <p><strong>Role:</strong> Full-stack · Small team (2 people)</p>
-                        <p><strong>Problem:</strong> School updates were stuck in old fixed pages and shared files, so staff couldn’t update news and info on their own.</p>
-                        <p><strong>Impact:</strong> Staff can update their own pages safely, and parents can find news and school info in one place instead of scattered files.</p>
-                        <ul>
-                            <li>School pages for profile, news, staff, courses, and more</li>
-                            <li>Staff login to edit content and upload files</li>
-                            <li>Each unit only edits the pages they are allowed to manage</li>
-                            <li>Pages that make school news easier to find online</li>
-                        </ul>
-                        <p><strong>Timeline:</strong> Mar 2026 – Jul 2026</p>
-                        <p><strong>Client:</strong> SMK Seremban 3</p>
-                        <a href="https://iesb.com.my/smks3/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
-                    </div>
-                </div>
-                <div class="project-card project-card-detailed project-reveal" data-platforms="web" data-reveal="left">
-                    <div class="project-image-wrapper">
-                        <img
-                            src="images/lms.png"
-                            data-screenshot="https://iesb.com.my/moodle/"
-                            data-fallback="images/lms.png"
-                            alt="IESB LMS — AI-enhanced learning platform"
-                            class="project-img is-loading"
-                            loading="lazy"
-                            draggable="false"
-                        >
-                    </div>
-                    <div class="project-meta">
-                        <div>
-                            <h3>IESB LMS</h3>
-                            <p class="project-subtitle">Online learning with AI tools</p>
-                            <div class="project-badges">
-                                <span>Web</span><span>Moodle</span><span>AI</span><span>PHP</span><span>MySQL</span>
-                            </div>
-                        </div>
-                        <a href="https://iesb.com.my/moodle" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
-                    </div>
-                    <div class="project-overlay project-overlay-rich">
-                        <p class="project-overlay-lead">An online learning platform with courses, quizzes, and AI tools that help teachers and learners.</p>
-                        <p><strong>Role:</strong> Full-stack · Solo</p>
-                        <p><strong>Problem:</strong> The company needed a learning system with AI to help teachers mark work and create questions faster.</p>
-                        <p><strong>Impact:</strong> Teachers spend less time marking work and creating quizzes with AI help, while learners get courses and tests in one place.</p>
-                        <ul>
-                            <li>Learning platform for courses, users, and quizzes</li>
-                            <li>AI chat, AI marking, and AI quiz-question help for teachers</li>
-                            <li>Better tools for admins to manage the day-to-day system</li>
-                            <li>Clear course and homework steps for teachers and learners</li>
-                        </ul>
-                        <p><strong>Timeline:</strong> Jan 2026 – Jun 2026</p>
-                        <p><strong>Client:</strong> Intensiti Elemen SDN BHD</p>
-                        <a href="https://iesb.com.my/moodle" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="cv" class="cv">
-            <div class="section-head fade-in">
-                <h2 class="section-title">Curriculum Vitae</h2>
-                <p class="section-lead">Experience and education that shaped how I build software.</p>
-            </div>
-            <div class="cv-container">
-                <div class="cv-content">
-                    <h3 class="cv-section-title fade-in">Work Experience</h3>
-                    <div class="timeline fade-in">
-                        <div class="timeline-item">
-                            <div class="timeline-content">
-                                <img src="images/iesb.png" alt="Intensiti Elemen Logo" class="timeline-logo">
-                                <div class="timeline-text">
-                                    <h3>Software Developer</h3>
-                                    <h4>Intensiti Elemen SDN BHD</h4>
-                                    <div class="timeline-date">May 2025 - Present</div>
-                                    <ul class="timeline-details">
-                                        <li>Ship and maintain production web/mobile apps (Laravel, Next.js, Flutter, MySQL/PostgreSQL) across SaaS, ecommerce, LMS, ticketing, and internal tools.</li>
-                                        <li>Integrate APIs, payments, AI/RAG features, and CI/CD with GitHub Actions to speed delivery and reduce release risk.</li>
-                                        <li>Own deploys, migrations, production support, and user training on Linux/cloud hosting.</li>
-                                        <li>Set up internal NAS backup workflows to improve data reliability for the team.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-content">
-                                <img src="images/vx.png" alt="VX Logo" class="timeline-logo">
-                                <div class="timeline-text">
-                                    <h3>Web Developer (Internship)</h3>
-                                    <h4>VX Ventures SDN BHD</h4>
-                                    <div class="timeline-date">October 2024 - March 2025</div>
-                                    <ul class="timeline-details">
-                                        <li>Contributed to live Laravel/MySQL products for community, school, and cooperative platforms.</li>
-                                        <li>Improved stability through bug fixes, QA, and Flutter app testing with the team on GitLab.</li>
-                                        <li>Supported hosting deploys, updates, and database migrations in production.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cv-content">
-                    <h3 class="cv-section-title fade-in">Certifications</h3>
-                    <div class="cert-grid fade-in">
-                        <div class="cert-card">
-                            <h3>Meta Front-End Developer</h3>
-                            <span>2025</span>
-                        </div>
-                        <div class="cert-card">
-                            <h3>Meta Back-End Developer</h3>
-                            <span>2025</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="cv-content">
-                    <h3 class="cv-section-title fade-in">Education</h3>
-                    <div class="timeline fade-in">
-                        <div class="timeline-item">
-                            <div class="timeline-content">
-                                <img src="images/utem.png" alt="UTeM Logo" class="timeline-logo">
-                                <div class="timeline-text">
-                                    <h3>Bachelor Of Computer Science (Software Development) With Honours</h3>
-                                    <h4>Universiti Teknikal Malaysia Melaka (UTeM)</h4>
-                                    <div class="timeline-date">2021 - 2025</div>
-                                    <p>CGPA: 3.68</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-content">
-                                <img src="images/kmm.png" alt="KMM Logo" class="timeline-logo">
-                                <div class="timeline-text">
-                                    <h3>Science Stream (Module II)</h3>
-                                    <h4>Kolej Matrikulasi Melaka (KMM)</h4>
-                                    <div class="timeline-date">2019 - 2021</div>
-                                    <p>CGPA: 3.75</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="cv-download fade-in">
-                    <a href="file/Resume_Muhammad Zahiruddin.pdf" class="btn btn-accent" download="Resume_Muhammad Zahiruddin.pdf" target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-download"></i> Download Resume
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <div class="section-head fade-in">
-                <h2 class="section-title">Contact Me</h2>
-                <p class="section-lead">Have a role, project, or collaboration in mind? Reach out.</p>
-            </div>
-            <div class="contact-container">
-                <div class="contact-info fade-in">
-                    <h3>Get In Touch</h3>
-                    <p>I'm always interested in hearing about new opportunities and interesting projects. Let's connect.</p>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:muhdzahir248@gmail.com">muhdzahir248@gmail.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Petaling Jaya, Selangor</span>
-                    </div>
-                </div>
-                <form action="https://formspree.io/f/mrgwbaey" method="POST" class="contact-form fade-in">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
+                    <div class="field">
                         <label for="subject">Subject</label>
                         <input type="text" id="subject" name="subject" required>
                     </div>
-                    <div class="form-group">
+                    <div class="field">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" required></textarea>
+                        <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    <button type="submit" class="btn btn-primary">Send the message</button>
                 </form>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="social-links">
-            <a href="https://github.com/zahir248" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/zahir248" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <p>&copy; <span id="copyrightYear">2026</span> Muhammad Zahiruddin</p>
+            <p>Petaling Jaya, Selangor</p>
         </div>
-        <p>&copy; <span id="copyrightYear"></span> Zahir. All rights reserved.</p>
     </footer>
 
     <!-- Portfolio AI chatbot (Gemini + RAG via Vercel) -->
@@ -699,414 +402,79 @@
         <div class="chatbot-panel" id="chatbotPanel" role="dialog" aria-labelledby="chatbotTitle" hidden>
             <div class="chatbot-header">
                 <div class="chatbot-identity">
-                    <img src="images/zahir.jpg" alt="" class="chatbot-header-avatar" width="44" height="44" draggable="false">
+                    <img src="images/zahir.jpg" alt="" class="chatbot-header-avatar" width="40" height="40" draggable="false">
                     <div>
-                        <p class="chatbot-kicker">AI version</p>
-                        <h2 class="chatbot-title" id="chatbotTitle">Chat with Zahir</h2>
+                        <h2 class="chatbot-title" id="chatbotTitle">Ask about my work</h2>
+                        <p class="chatbot-kicker">AI assistant trained on this site</p>
                     </div>
                 </div>
                 <button type="button" class="chatbot-close" id="chatbotClose" aria-label="Close chat">
-                    <i class="fas fa-times"></i>
+                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
                 </button>
             </div>
             <div class="chatbot-messages" id="chatbotMessages" aria-live="polite">
-                <div class="chatbot-msg chatbot-msg--assistant">Hey — I'm Zahir (AI). Ask me about my skills, projects, experience, or how to reach me.</div>
+                <div class="chatbot-msg chatbot-msg--assistant">Hi, I'm an AI version of Zahir. Ask me about my projects, the stack I use, or how to reach me.</div>
                 <div class="chatbot-prompts">
-                    <button type="button" data-chat-prompt="What projects have you built?">Projects</button>
-                    <button type="button" data-chat-prompt="What tech stack do you use?">Tech stack</button>
-                    <button type="button" data-chat-prompt="How can someone reach you for work?">Work inquiry</button>
+                    <button type="button" data-chat-prompt="What projects have you built?">Which projects did you build?</button>
+                    <button type="button" data-chat-prompt="What tech stack do you use?">What stack do you use?</button>
+                    <button type="button" data-chat-prompt="How can someone reach you for work?">How do I hire you?</button>
                 </div>
             </div>
             <p class="chatbot-status" id="chatbotStatus" aria-live="polite"></p>
             <form class="chatbot-form" id="chatbotForm">
                 <label class="visually-hidden" for="chatbotInput">Your message</label>
-                <input
-                    type="text"
-                    id="chatbotInput"
-                    name="message"
-                    maxlength="500"
-                    placeholder="Message Zahir…"
-                    autocomplete="off"
-                    required
-                >
-                <button type="submit" class="chatbot-send" aria-label="Send message">
-                    <i class="fas fa-paper-plane"></i>
-                </button>
+                <input type="text" id="chatbotInput" name="message" maxlength="500" placeholder="Type a question" autocomplete="off" required>
+                <button type="submit" class="chatbot-send">Send</button>
             </form>
         </div>
-        <button
-            type="button"
-            class="chatbot-toggle"
-            id="chatbotToggle"
-            aria-expanded="false"
-            aria-controls="chatbotPanel"
-            aria-label="Chat with Zahir AI"
-        >
-            <i class="fas fa-comment-dots chatbot-toggle-icon" aria-hidden="true"></i>
-            <i class="fas fa-times chatbot-toggle-close" aria-hidden="true"></i>
+        <button type="button" class="chatbot-toggle" id="chatbotToggle" aria-expanded="false" aria-controls="chatbotPanel">
+            <span class="chatbot-toggle-open">Ask my AI</span>
+            <span class="chatbot-toggle-close">Close</span>
         </button>
     </div>
 
     <script>
-        // Auto-update copyright year
         const copyrightYear = document.getElementById('copyrightYear');
-        if (copyrightYear) {
-            copyrightYear.textContent = new Date().getFullYear();
-        }
+        if (copyrightYear) copyrightYear.textContent = new Date().getFullYear();
 
-        // Experience = worked months only (excludes employment gaps)
-        // Internship: Oct 2024 – Mar 2025 (6 mo) | Full-time: May 2025 – present
-        // Example (Jul 2026): 6 + 15 = 21 mo → "1 yr 9 mo"
+        // Full-time experience only (May 2025 to now); the internship is shown separately in the markup
         function inclusiveCalendarMonths(startYear, startMonth, endYear, endMonth) {
-            // months are 1–12; inclusive of both start and end month
             return Math.max((endYear - startYear) * 12 + (endMonth - startMonth) + 1, 0);
         }
 
-        function getWorkedExperienceMonths(referenceDate = new Date()) {
-            const currentYear = referenceDate.getFullYear();
-            const currentMonth = referenceDate.getMonth() + 1; // 1–12
-
-            const internshipMonths = inclusiveCalendarMonths(2024, 10, 2025, 3); // Oct 2024 → Mar 2025
-            const fullTimeMonths = inclusiveCalendarMonths(2025, 5, currentYear, currentMonth); // May 2025 → now
-
-            return internshipMonths + fullTimeMonths;
-        }
-
-        function formatExperienceMonths(months) {
-            const years = Math.floor(months / 12);
-            const remMonths = months % 12;
-            if (years === 0) return `${remMonths} mo`;
-            if (remMonths === 0) return `${years} yr`;
-            return `${years} yr ${remMonths} mo`;
-        }
-
-        function formatExperienceFinal(months) {
+        function formatMonths(months) {
             const years = Math.floor(months / 12);
             const rem = months % 12;
-            if (years === 0) return `${Math.max(rem, 0)}+ mo`;
-            if (rem === 0) return `${years}+ yr`;
+            if (years === 0) return `${rem} mo`;
+            if (rem === 0) return `${years} yr`;
             return `${years} yr ${rem} mo`;
         }
 
-        function animateValue({ duration = 1200, from = 0, to = 0, onUpdate, onDone }) {
-            const start = performance.now();
-            const easeOut = (t) => 1 - Math.pow(1 - t, 3);
-
-            function frame(now) {
-                const progress = Math.min((now - start) / duration, 1);
-                const value = Math.round(from + (to - from) * easeOut(progress));
-                onUpdate(value);
-                if (progress < 1) {
-                    requestAnimationFrame(frame);
-                } else if (onDone) {
-                    onDone();
-                }
-            }
-
-            requestAnimationFrame(frame);
-        }
-
         const statExperience = document.getElementById('statExperience');
-        const statProjects = document.getElementById('statProjects');
-        const aboutStats = document.querySelector('.about-stats');
-        const projectCount = document.querySelectorAll('.project-card').length;
-        let statsAnimated = false;
-
-        function runStatCountAnimation() {
-            if (statsAnimated) return;
-            statsAnimated = true;
-
-            const totalExperienceMonths = getWorkedExperienceMonths();
-
-            if (statExperience) {
-                statExperience.classList.add('is-counting');
-                animateValue({
-                    from: 0,
-                    to: totalExperienceMonths,
-                    duration: 1400,
-                    onUpdate: (months) => {
-                        statExperience.textContent = formatExperienceMonths(months);
-                    },
-                    onDone: () => {
-                        statExperience.textContent = formatExperienceFinal(totalExperienceMonths);
-                        statExperience.classList.remove('is-counting');
-                        statExperience.classList.add('is-counted');
-                    }
-                });
-            }
-
-            if (statProjects) {
-                statProjects.classList.add('is-counting');
-                animateValue({
-                    from: 0,
-                    to: projectCount,
-                    duration: 1100,
-                    onUpdate: (value) => {
-                        statProjects.textContent = `${value}`;
-                    },
-                    onDone: () => {
-                        statProjects.textContent = `${projectCount}+`;
-                        statProjects.classList.remove('is-counting');
-                        statProjects.classList.add('is-counted');
-                    }
-                });
-            }
+        if (statExperience) {
+            const now = new Date();
+            statExperience.textContent = formatMonths(inclusiveCalendarMonths(2025, 5, now.getFullYear(), now.getMonth() + 1));
         }
 
-        if (aboutStats) {
-            if (statExperience) statExperience.textContent = '0 mo';
-            if (statProjects) statProjects.textContent = '0';
-
-            const statsObserver = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        runStatCountAnimation();
-                        statsObserver.disconnect();
-                    }
-                });
-            }, { threshold: 0.35 });
-
-            statsObserver.observe(aboutStats);
-        }
-
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const navMenu = document.querySelector('.nav-menu');
-        const menuIcon = mobileMenuBtn.querySelector('i');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            menuIcon.classList.toggle('fa-bars');
-            menuIcon.classList.toggle('fa-times');
-        });
-
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                menuIcon.classList.add('fa-bars');
-                menuIcon.classList.remove('fa-times');
-            });
-        });
-
-        const navOffset = 76;
-
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                const targetId = this.getAttribute('href');
-                if (!targetId || !targetId.startsWith('#')) return;
-
-                e.preventDefault();
-                const targetSection = document.querySelector(targetId);
-
-                if (targetSection) {
-                    window.scrollTo({
-                        top: targetSection.offsetTop - navOffset,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        function highlightActiveSection() {
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-link');
-            let currentSection = '';
-
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 100;
-                const sectionHeight = section.clientHeight;
-
-                if (window.pageYOffset >= sectionTop &&
-                    window.pageYOffset < sectionTop + sectionHeight) {
-                    currentSection = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.toggle('active', link.getAttribute('href') === `#${currentSection}`);
-            });
-        }
-
-        const observer = new IntersectionObserver((entries) => {
+        // Highlight the nav link for the section in view
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sectionObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, {
-            threshold: 0.12,
-            rootMargin: '0px 0px -40px 0px'
-        });
-
-        document.querySelectorAll('.fade-in').forEach((element, index) => {
-            element.style.transitionDelay = `${Math.min(index % 6, 5) * 60}ms`;
-            observer.observe(element);
-        });
-
-        const projectRevealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-inview');
-                    projectRevealObserver.unobserve(entry.target);
-                }
-            });
-        }, {
-            threshold: 0.18,
-            rootMargin: '0px 0px -12% 0px'
-        });
-
-        document.querySelectorAll('.project-reveal').forEach(card => {
-            projectRevealObserver.observe(card);
-        });
-
-        let lastScrollTop = 0;
-        const navbar = document.querySelector('.navbar');
-        const scrollProgress = document.getElementById('scrollProgress');
-
-        function updateScrollUI() {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-
-            scrollProgress.style.width = `${progress}%`;
-            navbar.classList.toggle('is-scrolled', scrollTop > 20);
-
-            if (scrollTop < 100) {
-                navbar.style.top = '0';
-            } else if (scrollTop > lastScrollTop) {
-                navbar.style.top = `-${navOffset}px`;
-            } else {
-                navbar.style.top = '0';
-            }
-
-            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-            highlightActiveSection();
-        }
-
-        window.addEventListener('scroll', updateScrollUI, { passive: true });
-        updateScrollUI();
-
-        // Hero typing animation
-        const heroTexts = ["Software Developer", "Web Developer"];
-        const heroRoleText = document.getElementById('heroRoleText');
-        let heroTextIndex = 0;
-        let i = 0;
-        let isDeleting = false;
-
-        function typeWriter() {
-            if (!heroRoleText) return;
-            const heroText = heroTexts[heroTextIndex];
-
-            if (!isDeleting && i < heroText.length) {
-                heroRoleText.innerHTML = heroText.substring(0, i + 1) + '<span class="typing-cursor">|</span>';
-                i++;
-                setTimeout(typeWriter, 100);
-            } else if (!isDeleting && i === heroText.length) {
-                setTimeout(() => {
-                    isDeleting = true;
-                    typeWriter();
-                }, 2000);
-            } else if (isDeleting && i > 0) {
-                i--;
-                heroRoleText.innerHTML = heroText.substring(0, i) + '<span class="typing-cursor">|</span>';
-                setTimeout(typeWriter, 50);
-            } else if (isDeleting && i === 0) {
-                isDeleting = false;
-                heroTextIndex = (heroTextIndex + 1) % heroTexts.length;
-                setTimeout(typeWriter, 500);
-            }
-        }
-
-        window.addEventListener('load', () => {
-            if (heroRoleText) {
-                heroRoleText.textContent = '';
-                setTimeout(typeWriter, 900);
-            }
-        });
-
-        // Greeting typing animation
-        const greetings = ["السلام عليكم!", "你好!", "வணக்கம்!", "Hello!"];
-        const greetingColors = {
-            "السلام عليكم!": "#86efac",
-            "你好!": "#fda4af",
-            "வணக்கம்!": "#fdba74",
-            "Hello!": "#93c5fd"
-        };
-        const greetingElement = document.getElementById('greetingText');
-        let greetingIndex = 0;
-        let greetingI = 0;
-        let isDeletingGreeting = false;
-
-        function typeGreeting() {
-            const currentGreeting = greetings[greetingIndex];
-            const currentColor = greetingColors[currentGreeting];
-            const isRtl = /[\u0600-\u06FF]/.test(currentGreeting);
-
-            greetingElement.setAttribute('dir', isRtl ? 'rtl' : 'ltr');
-
-            if (!isDeletingGreeting && greetingI < currentGreeting.length) {
-                greetingElement.innerHTML = '<span style="color: ' + currentColor + ';">' + currentGreeting.substring(0, greetingI + 1) + '</span><span class="typing-cursor">|</span>';
-                greetingI++;
-                setTimeout(typeGreeting, 100);
-            } else if (!isDeletingGreeting && greetingI === currentGreeting.length) {
-                setTimeout(() => {
-                    isDeletingGreeting = true;
-                    typeGreeting();
-                }, 2000);
-            } else if (isDeletingGreeting && greetingI > 0) {
-                greetingI--;
-                greetingElement.innerHTML = '<span style="color: ' + currentColor + ';">' + currentGreeting.substring(0, greetingI) + '</span><span class="typing-cursor">|</span>';
-                setTimeout(typeGreeting, 50);
-            } else if (isDeletingGreeting && greetingI === 0) {
-                isDeletingGreeting = false;
-                greetingIndex = (greetingIndex + 1) % greetings.length;
-                setTimeout(typeGreeting, 500);
-            }
-        }
-
-        window.addEventListener('load', () => {
-            if (greetingElement) {
-                greetingElement.textContent = '';
-                setTimeout(typeGreeting, 1000);
-            }
-        });
-
-        // Project filters with exit animation
-        const projectFilters = document.querySelectorAll('.project-filter');
-        const projectCards = document.querySelectorAll('.project-card[data-platforms]');
-
-        projectFilters.forEach(button => {
-            button.addEventListener('click', () => {
-                const filter = button.dataset.filter;
-
-                projectFilters.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-
-                projectCards.forEach(card => {
-                    const platforms = card.dataset.platforms.split(' ');
-                    const show = filter === 'all' || platforms.includes(filter);
-
-                    if (!show) {
-                        card.classList.add('is-filtering-out');
-                        setTimeout(() => {
-                            card.classList.add('project-hidden');
-                            card.classList.remove('is-filtering-out');
-                        }, 220);
-                    } else {
-                        card.classList.remove('project-hidden');
-                        requestAnimationFrame(() => {
-                            card.classList.remove('is-filtering-out');
-                        });
-                    }
+                if (!entry.isIntersecting) return;
+                navLinks.forEach(link => {
+                    const active = link.getAttribute('href') === `#${entry.target.id}`;
+                    link.classList.toggle('is-active', active);
+                    if (active) link.setAttribute('aria-current', 'true');
+                    else link.removeAttribute('aria-current');
                 });
             });
-        });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+        document.querySelectorAll('main section[id]').forEach(section => sectionObserver.observe(section));
 
-        document.querySelectorAll('.project-image-wrapper').forEach(wrapper => {
-            wrapper.addEventListener('contextmenu', (e) => e.preventDefault());
-            const img = wrapper.querySelector('.project-img');
-            if (!img) return;
-            img.addEventListener('dragstart', (e) => e.preventDefault());
+        // Block the easy ways to save images
+        document.querySelectorAll('.project-shot, .about-photo').forEach(el => {
+            el.addEventListener('contextmenu', (e) => e.preventDefault());
+            el.querySelectorAll('img').forEach(img => img.addEventListener('dragstart', (e) => e.preventDefault()));
         });
 
         // Prefer live Microlink screenshots; keep local files as instant fallback
@@ -1144,38 +512,16 @@
 
         function applyFallbackImage(img) {
             const fallback = img.dataset.fallback;
-            if (fallback && img.getAttribute('src') !== fallback) {
-                img.src = fallback;
-            }
+            if (fallback && img.getAttribute('src') !== fallback) img.src = fallback;
             markImageLoaded(img);
         }
 
         async function upgradeToScreenshot(img) {
-            const pageUrl = img.dataset.screenshot;
-            if (!pageUrl) {
-                if (img.complete && img.naturalWidth > 0) markImageLoaded(img);
-                else img.addEventListener('load', () => markImageLoaded(img), { once: true });
-                img.addEventListener('error', () => markImageLoaded(img), { once: true });
-                return;
-            }
-
             try {
-                const screenshotUrl = await resolveMicrolinkScreenshot(pageUrl);
+                const screenshotUrl = await resolveMicrolinkScreenshot(img.dataset.screenshot);
                 await new Promise((resolve, reject) => {
-                    const onLoad = () => {
-                        cleanup();
-                        resolve();
-                    };
-                    const onError = () => {
-                        cleanup();
-                        reject(new Error('cdn load failed'));
-                    };
-                    const cleanup = () => {
-                        img.removeEventListener('load', onLoad);
-                        img.removeEventListener('error', onError);
-                    };
-                    img.addEventListener('load', onLoad);
-                    img.addEventListener('error', onError);
+                    img.addEventListener('load', resolve, { once: true });
+                    img.addEventListener('error', () => reject(new Error('cdn load failed')), { once: true });
                     img.src = screenshotUrl;
                 });
                 markImageLoaded(img);
@@ -1184,124 +530,19 @@
             }
         }
 
-        // Load unique screenshot URLs with light concurrency to reduce rate-limit stubs
-        const screenshotImages = Array.from(document.querySelectorAll('img[data-screenshot]'));
-        (async () => {
-            const queue = [...screenshotImages];
-            const workers = Array.from({ length: 2 }, async () => {
-                while (queue.length) {
-                    const img = queue.shift();
-                    if (img) await upgradeToScreenshot(img);
-                }
-            });
-            await Promise.all(workers);
-        })();
-
-        function closeProjectOverlays() {
-            projectCards.forEach(card => {
-                card.classList.remove('is-hovered');
-                card.removeAttribute('data-force-closed');
-                const overlay = card.querySelector('.project-overlay');
-                if (overlay) overlay.scrollTop = 0;
-            });
-        }
-
-        const isTouchDevice =
-            navigator.maxTouchPoints > 0 ||
-            window.matchMedia('(pointer: coarse)').matches ||
-            window.matchMedia('(hover: none)').matches;
-
-        if (isTouchDevice) {
-            document.documentElement.classList.add('is-touch');
-        }
-
-        projectCards.forEach(card => {
-            const overlay = card.querySelector('.project-overlay');
-
-            const openCard = () => {
-                closeProjectOverlays();
-                card.classList.add('is-hovered');
-                card.removeAttribute('data-force-closed');
-            };
-
-            const closeCard = () => {
-                card.classList.remove('is-hovered');
-                card.setAttribute('data-force-closed', '1');
-                if (overlay) overlay.scrollTop = 0;
-            };
-
-            // Click/tap the same card again to close details
-            card.addEventListener('click', (e) => {
-                if (e.target.closest('.project-live-btn')) return;
-
-                e.stopPropagation();
-
-                if (card.classList.contains('is-hovered')) {
-                    closeCard();
-                } else {
-                    openCard();
-                }
-            });
-
-            if (!isTouchDevice) {
-                card.addEventListener('mouseenter', () => {
-                    if (card.getAttribute('data-force-closed') === '1') return;
-                    openCard();
-                });
-
-                card.addEventListener('mouseleave', () => {
-                    card.removeAttribute('data-force-closed');
-                    card.classList.remove('is-hovered');
-                    if (overlay) overlay.scrollTop = 0;
-                });
+        // Load screenshots two at a time to reduce rate-limit stubs
+        const screenshotQueue = Array.from(document.querySelectorAll('img[data-screenshot]'));
+        Array.from({ length: 2 }, async () => {
+            while (screenshotQueue.length) {
+                const img = screenshotQueue.shift();
+                if (img) await upgradeToScreenshot(img);
             }
         });
-
-        // Click outside any project card to close
-        document.addEventListener('click', (e) => {
-            if (e.target.closest('.project-card')) return;
-            closeProjectOverlays();
-        });
-
-        window.addEventListener('pageshow', closeProjectOverlays);
-        document.addEventListener('visibilitychange', () => {
-            if (document.visibilityState === 'visible') closeProjectOverlays();
-        });
-
-        const aboutImgWrapper = document.querySelector('.about-img-wrapper');
-        const aboutImg = document.querySelector('.about-img');
-
-        if (aboutImgWrapper && aboutImg) {
-            aboutImgWrapper.addEventListener('contextmenu', (e) => e.preventDefault());
-            aboutImg.addEventListener('dragstart', (e) => e.preventDefault());
-        }
-
-        document.querySelectorAll('.skill-tag').forEach(tag => {
-            tag.addEventListener('click', () => {
-                tag.classList.add('is-pop');
-                setTimeout(() => tag.classList.remove('is-pop'), 450);
-            });
-        });
-
-        window.addEventListener('load', () => {
-            document.querySelectorAll('.fade-in').forEach((element, index) => {
-                if (element.getBoundingClientRect().top < window.innerHeight) {
-                    setTimeout(() => element.classList.add('visible'), index * 70);
-                }
-            });
-
-            document.querySelectorAll('.project-reveal').forEach((card, index) => {
-                if (card.getBoundingClientRect().top < window.innerHeight * 0.88) {
-                    setTimeout(() => card.classList.add('is-inview'), index * 90);
-                }
-            });
-        });
-
     </script>
     <!-- Chat API on Vercel (site stays on GitHub Pages) -->
     <script>
         window.PORTFOLIO_CHAT_API = 'https://zahir-portfolio-flax.vercel.app/api/chat';
     </script>
-    <script src="chat.js?v=20260729nostatus" defer></script>
+    <script src="chat.js?v=20261019paper" defer></script>
 </body>
 </html>
