@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=20261019how">
+    <link rel="stylesheet" href="style.css?v=20261019uroshow">
     <link rel="icon" href="images/favicon.ico" sizes="48x48 32x32 16x16">
     <link rel="apple-touch-icon" href="images/icon-180.png">
     <link rel="manifest" href="site.webmanifest">
@@ -173,7 +173,21 @@
                                 <li>An Android app made with Flutter and published on Google Play, and a web version made with React, both running on a Spring Boot backend</li>
                             </ul>
                         </div>
-                        <p class="project-stack">Built with Flutter, React, Spring Boot, Vite, Vercel, Render</p>
+                        <details class="how-it-works">
+                            <summary>How it works <span class="how-note">(for technical readers)</span></summary>
+                            <ul>
+                                <li><strong>One API, two apps.</strong> A Spring Boot REST API on Render serves both the Flutter Android app and the React web app (Vite, on Vercel), so finance, notes and diary data stay the same on phone and computer. Data lives in PostgreSQL (Supabase), with optional Redis (Upstash) for sessions. Vercel forwards <code>/api</code> to Render, so the browser treats the API as the same site.</li>
+                                <li><strong>Sign-in and sessions.</strong> Access tokens are short-lived JWTs (15 minutes). Refresh tokens rotate on every use and are stored only as SHA-256 hashes. The web app also uses a CSRF token. No token is ever handed to the app code: both travel as httpOnly, Secure cookies. On Android those cookies are kept encrypted with <code>flutter_secure_storage</code>. Every signed-in device is listed as a session, and the user can sign out of all the others from one place.</li>
+                                <li><strong>Two-step verification.</strong> Optional TOTP (authenticator app) with a guided setup, its own sign-in step and 8 backup codes. Google sign-in can create an account or link to an existing one. If the email already belongs to an account, nothing is linked until the user confirms.</li>
+                                <li><strong>Private PIN.</strong> Sensitive notes and diary entries stay locked behind a 6-digit PIN, stored only as a BCrypt hash. Unlocking gives a signed token in its own httpOnly cookie, valid for 5, 10, 15 or 30 minutes, and the user can lock again at once. After 5 wrong tries the PIN is locked for 15 minutes.</li>
+                                <li><strong>Finance.</strong> Expenses by category against a monthly budget, charts (Recharts on the web), and PDF reports. The PDFs are built on the device: jsPDF on the web, the <code>pdf</code> package in Flutter. The server only supplies the data.</li>
+                                <li><strong>Telegram bot.</strong> To link an account, the user gets a 6-digit code in the app that expires after 10 minutes and sends it to the bot. One Telegram chat links to one account. The bot then answers questions about spending in English or Malay, such as today, this month, by category or budget status. In production it receives messages through a secret webhook. When the server wakes from sleep, it first handles any messages that arrived while it was down.</li>
+                                <li><strong>Two languages and currencies.</strong> English and Malay (i18next on the web, easy_localization in Flutter), with the currency set per user from 19 supported currencies. Currency only changes how amounts are shown; nothing is converted.</li>
+                            </ul>
+                            <h4>Hardest problem</h4>
+                            <p>Keeping users signed in without opening a security hole. Each refresh token works only once, and reusing an old one is treated as theft, so every session for that user is signed out. But the Flutter app often sends several requests at once. When the access token expired, each of them tried to refresh with the same token, and the second attempt looked like theft and signed the user out. The fix is a 60-second grace window: an old token reused within 60 seconds gets a fresh token instead of a sign-out, and only reuse after that is treated as an attack. The web app also shares a single refresh between all waiting requests.</p>
+                        </details>
+                        <p class="project-stack">Built with Flutter, React, Spring Boot, PostgreSQL (Supabase), Vite, Vercel, Render</p>
                         <p class="project-links">
                             <a class="text-link" href="https://play.google.com/store/apps/details?id=com.uros.zahir" target="_blank" rel="noopener noreferrer">Get it on Google Play <span aria-hidden="true">↗</span></a>
                             <a class="text-link" href="https://uros-mu.vercel.app/" target="_blank" rel="noopener noreferrer">Open the web version <span aria-hidden="true">↗</span></a>
@@ -358,7 +372,7 @@
                     </div>
                     <div class="toolkit-row">
                         <h3>Integrations</h3>
-                        <p>ToyyibPay, Stripe, Google Gemini and OpenAI APIs, Google OAuth, Google reCAPTCHA, SMTP email, OneSignal, Telegram Bot API</p>
+                        <p>ToyyibPay, Stripe, Google Gemini and OpenAI APIs, Google OAuth, Google reCAPTCHA, Supabase, Upstash Redis, SMTP email, OneSignal, Telegram Bot API</p>
                     </div>
                     <div class="toolkit-row">
                         <h3>Familiar, from side projects and testing</h3>
