@@ -539,6 +539,7 @@ ol {
 .project-shot {
     position: relative;
     display: block;
+    text-decoration: none;
     overflow: hidden;
     border-radius: var(--radius);
     border: 1px solid var(--rule);
@@ -552,6 +553,50 @@ ol {
     top: calc(var(--header-h) + 24px);
 }
 
+/* Web projects sit in a plain browser window that shows the real address */
+.browser-bar {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    height: 34px;
+    padding: 0 var(--space-3);
+    background: var(--paper-2);
+    border-bottom: 1px solid var(--rule);
+}
+
+.browser-dots {
+    flex: none;
+    width: 8px;
+    height: 8px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background: var(--rule-strong);
+    box-shadow: 13px 0 0 var(--rule-strong), 26px 0 0 var(--rule-strong);
+}
+
+.browser-url {
+    text-decoration: none;
+    flex: 1;
+    min-width: 0;
+    max-width: 340px;
+    padding: 3px var(--space-3);
+    border-radius: 999px;
+    background: var(--white);
+    border: 1px solid var(--rule);
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    color: var(--muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Loading and unavailable notes sit below the browser bar */
+.project-shot--browser.is-loading::after,
+.project-shot--browser.is-failed::after {
+    top: 34px;
+}
+
 /* App screenshots: three phone screens side by side in the same 16:10 frame */
 .phone-trio {
     display: flex;
@@ -559,14 +604,19 @@ ol {
     align-items: center;
     gap: 4%;
     aspect-ratio: 16 / 10;
-    padding: 5% 6%;
+    overflow: hidden;
 }
 
+/* Sized by width so every browser keeps the phones inside the 16:10 frame */
 .phone-img {
-    height: 100%;
-    width: auto;
-    border-radius: 12px;
-    border: 1px solid var(--rule);
+    flex: 0 0 28%;
+    width: 28%;
+    height: auto;
+    aspect-ratio: 240 / 427;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 4px solid var(--ink);
+    background: var(--ink);
     box-shadow: var(--shadow);
     user-select: none;
     transition: transform 0.4s ease;

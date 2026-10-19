@@ -41,16 +41,16 @@ t('<a class="lang-switch" href="ms/" lang="ms" hreflang="ms" aria-label="Baca da
 
 // ---------- Hero ----------
 t('Muhammad Zahiruddin · Software developer · Petaling Jaya', 'Muhammad Zahiruddin · Pembangun perisian · Petaling Jaya');
-t('I build the websites and online systems that businesses use every day.',
-  'Saya membina laman web dan sistem dalam talian untuk kegunaan harian perniagaan.');
-t('Eight are in use right now, including a map that shows Malaysians who their elected representatives are, an organiser app on Google Play, an AI tool that writes reports for PR teams, and a ticket shop for a big construction conference.',
-  'Lapan sedang digunakan sekarang, termasuk peta wakil rakyat Malaysia, aplikasi pengurus diri di Google Play, alat AI yang menulis laporan untuk pasukan perhubungan awam dan kedai tiket persidangan pembinaan.');
+t('I build websites and mobile apps that businesses use every day.',
+  'Saya membina laman web dan aplikasi mudah alih untuk kegunaan harian perniagaan.');
+t('Eight are in use right now, including a map that shows Malaysians who their elected representatives are, a personal organiser app for Android on Google Play, an AI tool that writes reports for PR teams, and a ticket shop for a big construction conference.',
+  'Lapan sedang digunakan sekarang, termasuk peta wakil rakyat Malaysia, aplikasi pengurus diri untuk Android di Google Play, alat AI yang menulis laporan untuk pasukan perhubungan awam dan kedai tiket persidangan pembinaan.');
 t('class="btn btn-primary">See the projects</a>', 'class="btn btn-primary">Lihat projek</a>');
 t('>Download résumé (PDF)</a>', '>Muat turun resume (PDF)</a>');
 t('<nav class="hero-index" aria-label="Projects">', '<nav class="hero-index" aria-label="Projek">');
 t('<p class="hero-index-title">Live now</p>', '<p class="hero-index-title">Sedang digunakan</p>');
 t('<span class="hero-index-kind">Who is my MP map</span>', '<span class="hero-index-kind">Peta wakil rakyat</span>');
-t('<span class="hero-index-kind">Organiser app</span>', '<span class="hero-index-kind">Aplikasi pengurus diri</span>');
+t('<span class="hero-index-kind">Android app, Google Play</span>', '<span class="hero-index-kind">Aplikasi Android, Google Play</span>');
 t('<span class="hero-index-kind">AI report writer</span>', '<span class="hero-index-kind">Penulis laporan AI</span>');
 t('<span class="hero-index-kind">Conference tickets</span>', '<span class="hero-index-kind">Tiket persidangan</span>');
 t('<span class="hero-index-kind">Shipping company site</span>', '<span class="hero-index-kind">Laman syarikat perkapalan</span>');
@@ -67,9 +67,9 @@ t('<h2 id="plainTitle" class="plain-title">How I work</h2>', '<h2 id="plainTitle
 t('<h3>I find out what the business needs</h3>', '<h3>Saya mengenal pasti keperluan perniagaan</h3>');
 t('<p>Selling tickets online, taking orders, letting staff update their own website. I talk to the people involved until the problem is clear.</p>',
   '<p>Menjual tiket dalam talian, menerima pesanan atau membolehkan kakitangan mengemas kini laman web sendiri. Saya berbincang dengan pihak yang terlibat sehingga masalahnya jelas.</p>');
-t('<h3>I build the website or system</h3>', '<h3>Saya membina laman web atau sistem</h3>');
-t('<p>The pages people see, and the parts behind the scenes that store information, take payments and send emails.</p>',
-  '<p>Halaman yang dilihat oleh pengguna, serta bahagian di sebalik tabir yang menyimpan maklumat, menerima bayaran dan menghantar e-mel.</p>');
+t('<h3>I build the website, app or system</h3>', '<h3>Saya membina laman web, aplikasi atau sistem</h3>');
+t('<p>The screens people use on their computer or phone, and the parts behind the scenes that store information, take payments and send emails.</p>',
+  '<p>Skrin yang digunakan orang ramai di komputer atau telefon, serta bahagian di sebalik tabir yang menyimpan maklumat, menerima bayaran dan menghantar e-mel.</p>');
 t('<h3>I put it online and keep it running</h3>', '<h3>Saya melancarkan dan memastikan sistem terus berjalan</h3>');
 t('<p>I launch it, fix problems when they come up, add new features, and show staff how to use it.</p>',
   '<p>Saya melancarkannya, membaiki masalah apabila timbul, menambah ciri baharu dan mengajar kakitangan cara menggunakannya.</p>');
@@ -251,7 +251,7 @@ t('>Download the full résumé (PDF)</a>', '>Muat turun resume penuh (PDF)</a>')
 
 // ---------- Contact ----------
 t('<p class="eyebrow">Contact</p>', '<p class="eyebrow">Hubungi</p>');
-t('Need a website or system built, or hiring a developer?', 'Perlukan laman web atau sistem, atau sedang mencari pembangun?');
+t('Need a website or mobile app built, or hiring a developer?', 'Perlukan laman web atau aplikasi mudah alih, atau sedang mencari pembangun?');
 t('<p>Email is the fastest way to reach me. Messages from this form go to the same inbox.</p>',
   '<p>E-mel ialah cara paling cepat untuk menghubungi saya. Mesej daripada borang ini dihantar ke peti masuk yang sama.</p>');
 t('<p class="contact-place">Based in Petaling Jaya, Selangor</p>', '<p class="contact-place">Berpangkalan di Petaling Jaya, Selangor</p>');
