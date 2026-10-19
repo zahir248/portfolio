@@ -13,10 +13,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=20261019paper">
-    <link href="images/favicon.ico" rel="icon" type="image/x-icon">
-    <link rel="apple-touch-icon" href="images/zahir.jpg">
+    <link rel="stylesheet" href="style.css?v=20261019bm">
+    <link rel="icon" href="images/favicon.ico" sizes="48x48 32x32 16x16">
+    <link rel="apple-touch-icon" href="images/icon-180.png">
     <link rel="manifest" href="site.webmanifest">
+    <link rel="alternate" hreflang="en" href="https://zahir248.github.io/portfolio/">
+    <link rel="alternate" hreflang="ms" href="https://zahir248.github.io/portfolio/ms/">
 </head>
 <body>
     <a class="skip-link" href="#work">Skip to projects</a>
@@ -30,6 +32,7 @@
                     <li><a href="#capabilities" class="nav-link">Capabilities</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a class="lang-switch" href="ms/" lang="ms" hreflang="ms" aria-label="Baca dalam Bahasa Melayu">BM</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,7 +43,7 @@
             <div class="hero-main">
                 <p class="eyebrow">Muhammad Zahiruddin · Software developer · Petaling Jaya</p>
                 <h1 id="heroTitle" class="hero-title">I build the websites and online systems that businesses use every day.</h1>
-                <p class="hero-lede">Seven are in use right now, including a map that shows Malaysians who their elected representatives are, an AI tool that writes reports for PR teams, a ticket shop for a big construction conference, and a website for a Singapore shipping company. I built five of them on my own.</p>
+                <p class="hero-lede">Seven are in use right now, including a map that shows Malaysians who their elected representatives are, an AI tool that writes reports for PR teams, a ticket shop for a big construction conference, and a website for a Singapore shipping company.</p>
                 <div class="hero-actions">
                     <a href="#work" class="btn btn-primary">See the projects</a>
                     <a href="file/Resume_Muhammad Zahiruddin.pdf" class="btn btn-quiet" download="Resume_Muhammad Zahiruddin.pdf">Download résumé (PDF)</a>
@@ -65,7 +68,7 @@
                 </div>
                 <div class="fact">
                     <dt>Projects in use</dt>
-                    <dd><span id="statProjects">7</span> <span class="fact-note">5 built alone, 2 with a teammate</span></dd>
+                    <dd><span id="statProjects">7</span> <span class="fact-note">Including 1 freelance and 1 of my own</span></dd>
                 </div>
                 <div class="fact">
                     <dt>Main tools</dt>
@@ -111,9 +114,6 @@
                         <p class="project-kind">My own project · Public information</p>
                         <h3 class="project-name">mySekilas</h3>
                         <p class="project-summary">A free website where anyone in Malaysia can find out who their elected representatives are, which party runs their state, and what is in the news there. In Malay and English.</p>
-                        <dl class="project-meta">
-                            <div><dt>Role</dt><dd>Built alone, from design to launch</dd></div>
-                        </dl>
                         <div class="project-story">
                             <h4>The problem</h4>
                             <p>To find out who represents you and what is happening in your state, you would have to dig through government websites, election results and many news sites.</p>
@@ -126,8 +126,6 @@
                                 <li>Short AI-written summaries of big stories, and a daily round-up</li>
                                 <li>A guide to who to contact about a problem, and a short political history</li>
                             </ul>
-                            <h4>The result</h4>
-                            <p>One page answers "who represents me, and what is happening near me?", and every fact shows where it came from.</p>
                         </div>
                         <p class="project-stack">Built with Laravel, Vite, Google Gemini API, Render</p>
                         <a class="text-link" href="https://mysekilas.onrender.com/" target="_blank" rel="noopener noreferrer">Visit mySekilas <span aria-hidden="true">↗</span></a>
@@ -143,9 +141,7 @@
                         <h3 class="project-name">NUJUM</h3>
                         <p class="project-summary">A tool for public relations and communications teams. Give it a topic or a social media account, answer a few questions, and it writes a report on what people are saying and what may happen next, listing every source it used.</p>
                         <dl class="project-meta">
-                            <div><dt>Role</dt><dd>Built alone, start to finish</dd></div>
                             <div><dt>Client</dt><dd>Intensiti Elemen</dd></div>
-                            <div><dt>Timeline</dt><dd>Aug 2025 to Jul 2026</dd></div>
                         </dl>
                         <div class="project-story">
                             <h4>The problem</h4>
@@ -174,9 +170,7 @@
                         <h3 class="project-name">BINA e-ticketing</h3>
                         <p class="project-summary">The website where people sign up and buy tickets for BINA, a construction industry conference for Southeast Asia, held at MITEC in Kuala Lumpur.</p>
                         <dl class="project-meta">
-                            <div><dt>Role</dt><dd>Built alone, start to finish</dd></div>
                             <div><dt>Client</dt><dd>CIDB IBS</dd></div>
-                            <div><dt>Timeline</dt><dd>May to Oct 2025, then the 2026 edition</dd></div>
                         </dl>
                         <div class="project-story">
                             <h4>The problem</h4>
@@ -189,7 +183,7 @@
                                 <li>A back office where organisers see every order and ticket</li>
                             </ul>
                             <h4>The result</h4>
-                            <p>Signing up, paying and getting a ticket all happen online now, and organisers manage everything from one place.</p>
+                            <p>Signing up, paying and getting a ticket all happen online now, and organisers manage everything from one place. They came back to use it again for the 2026 conference.</p>
                         </div>
                         <p class="project-stack">Built with Laravel, MySQL, ToyyibPay, Stripe</p>
                         <a class="text-link" href="https://iesb.com.my/Bina2026/" target="_blank" rel="noopener noreferrer">Visit BINA <span aria-hidden="true">↗</span></a>
@@ -205,7 +199,6 @@
                         <h3 class="project-name">ENADD Logistics</h3>
                         <p class="project-summary">The company website for a Singapore shipping and logistics company: what they move, how they move it, and how to ask for a price.</p>
                         <dl class="project-meta">
-                            <div><dt>Role</dt><dd>Designed and built alone</dd></div>
                             <div><dt>Client</dt><dd>ENADD Logistics (S) Pte Ltd</dd></div>
                         </dl>
                         <div class="project-story">
@@ -229,22 +222,20 @@
                         </a>
                         <p class="project-kind">Fan website and online shop</p>
                         <h4 class="mini-name">MyGooners</h4>
-                        <p class="mini-summary">A Malay-language website for Arsenal fans with news, videos, a list of trusted service providers and an online shop. I built the website and its back office; a teammate built the phone app.</p>
-                        <p class="mini-meta">Built the website with one teammate · Intensiti Elemen · Jul 2025 to Jun 2026</p>
+                        <p class="mini-summary">A Malay-language website for Arsenal fans with news, videos, a list of trusted service providers and an online shop. I built the website and the back office the team uses to run it.</p>
+                        <p class="mini-meta">Intensiti Elemen</p>
                         <p class="project-stack">Built with Laravel, MySQL, ToyyibPay, Stripe</p>
                         <a class="text-link" href="https://mygooners.my/" target="_blank" rel="noopener noreferrer">Visit MyGooners <span aria-hidden="true">↗</span></a>
                     </article>
-
-
 
                     <article class="mini" id="p-est">
                         <a class="mini-shot project-shot" href="https://estgroup.com.my/" target="_blank" rel="noopener noreferrer" aria-label="Open EST Group live site">
                             <img src="https://raw.githubusercontent.com/zahir248/portfolio/screenshots/est.jpg" data-screenshot="https://estgroup.com.my/" alt="EST Group website" class="project-img" width="1280" height="800" loading="lazy" draggable="false">
                         </a>
-                        <p class="project-kind">Company website · Web</p>
+                        <p class="project-kind">Company website</p>
                         <h4 class="mini-name">EST Group</h4>
                         <p class="mini-summary">Website for a company that installs solar panels and electric car chargers. Staff can update the site themselves, and messages from the contact form go straight to their email.</p>
-                        <p class="mini-meta">Built alone · EST Group · Feb to Jun 2026</p>
+                        <p class="mini-meta">EST Group</p>
                         <p class="project-stack">Built with Laravel, MySQL</p>
                         <a class="text-link" href="https://estgroup.com.my/" target="_blank" rel="noopener noreferrer">Visit EST Group <span aria-hidden="true">↗</span></a>
                     </article>
@@ -253,13 +244,14 @@
                         <a class="mini-shot project-shot" href="https://iesb.com.my/smks3/" target="_blank" rel="noopener noreferrer" aria-label="Open SMK Seremban 3 live site">
                             <img src="https://raw.githubusercontent.com/zahir248/portfolio/screenshots/smks3.jpg" data-screenshot="https://iesb.com.my/smks3/" alt="SMK Seremban 3 school website" class="project-img" width="1280" height="800" loading="lazy" draggable="false">
                         </a>
-                        <p class="project-kind">School website · Web</p>
+                        <p class="project-kind">School website</p>
                         <h4 class="mini-name">SMK Seremban 3</h4>
                         <p class="mini-summary">The official website of a secondary school in Seremban. Teachers log in to post news and update school information, and each unit can only change its own pages.</p>
-                        <p class="mini-meta">Built with one teammate · SMK Seremban 3 · Mar to Jul 2026</p>
+                        <p class="mini-meta">SMK Seremban 3</p>
                         <p class="project-stack">Built with PHP, MySQL</p>
                         <a class="text-link" href="https://iesb.com.my/smks3/" target="_blank" rel="noopener noreferrer">Visit SMK Seremban 3 <span aria-hidden="true">↗</span></a>
                     </article>
+
                 </div>
             </div>
         </section>
@@ -311,7 +303,7 @@
                     </div>
                     <div class="toolkit-row">
                         <h3>Familiar, from side projects and testing</h3>
-                        <p>Flutter, TypeScript, React, Next.js, Tailwind CSS, Java, Spring Boot, Docker, AWS (EC2, S3, RDS)</p>
+                        <p>Node.js, Flutter, TypeScript, React, Next.js, Tailwind CSS, Java, Spring Boot, Docker, AWS (EC2, S3, RDS)</p>
                     </div>
                     <div class="toolkit-row">
                         <h3>Languages</h3>
@@ -332,7 +324,8 @@
                     <h2 id="aboutTitle" class="section-title">Hi, I'm Zahir.</h2>
                     <p>I studied software development at UTeM and went straight into production work: six months as an intern at VX Ventures, then full-time at Intensiti Elemen since May 2025.</p>
                     <p>I also take freelance work, most recently the website for ENADD Logistics in Singapore, and I build my own products like mySekilas.</p>
-                    <p>Most of my projects are done alone or with one teammate, so I handle the whole job: I find out what is needed, build it, put it online, and teach people to use it. When something stops working, I am the one who fixes it.</p>
+                    <p>Most of my client work is in Laravel because that is what those teams use. The problems underneath, like payments, AI, data and keeping systems running, are the same in any stack, and I pick up new tools when a project needs them: the chatbot on this site runs on Node.js.</p>
+                    <p>I handle the whole job, not just the code: I find out what is needed, build it, put it online, and teach people to use it. When something stops working, I am the one who fixes it.</p>
 
                     <div class="history">
                         <h3 class="history-title">Experience</h3>
@@ -520,6 +513,6 @@
     <script>
         window.PORTFOLIO_CHAT_API = 'https://zahir-portfolio-flax.vercel.app/api/chat';
     </script>
-    <script src="chat.js?v=20261019paper" defer></script>
+    <script src="chat.js?v=20261019bm" defer></script>
 </body>
 </html>

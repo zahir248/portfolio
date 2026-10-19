@@ -17,7 +17,7 @@
   {
     "id": "skills-frameworks",
     "title": "Familiar skills (side projects and learning)",
-    "text": "Skills Zahir is familiar with from side projects, testing or learning (not his main production stack): Flutter, TypeScript, React, Next.js, Tailwind CSS, Java, Spring Boot, Docker, AWS (EC2, S3, RDS). Be honest that these are familiar rather than core if asked."
+    "text": "Skills Zahir is familiar with from side projects, testing or learning (not his main production stack): Node.js, Flutter, TypeScript, React, Next.js, Tailwind CSS, Java, Spring Boot, Docker, AWS (EC2, S3, RDS). Be honest that these are familiar rather than core if asked."
   },
   {
     "id": "skills-data-cloud",
@@ -63,6 +63,11 @@
     "id": "project-enadd",
     "title": "Project: ENADD Logistics (freelance)",
     "text": "ENADD Logistics is a freelance project: a company website for ENADD Logistics (S) Pte Ltd, a Singapore freight forwarding and marine logistics company. Live at https://enadd.com.sg/. Zahir designed, built and deployed it solo. Stack: HTML, Bootstrap 5, JavaScript. Pages: Home, About, Services, Contact. Features: a service catalogue (air and sea freight, Malaysia to Singapore trucking, FTZ warehousing, marine logistics), a Get a quote button on every page leading to an enquiry form that opens the visitor's email app, direct lines for operations, finance and sales, an office map, and a link to the company's Gurusoft operations portal."
+  },
+  {
+    "id": "project-portfolio",
+    "title": "Project: this portfolio and its AI chatbot",
+    "text": "Zahir's portfolio site is itself one of his projects, and its code is public at https://github.com/zahir248/portfolio. The site is hosted on GitHub Pages in English and Malay. The 'Ask my AI' chatbot is a Node.js serverless function on Vercel: it turns the visitor's question into a Google Gemini embedding, finds the most relevant parts of the portfolio content by similarity, and has Gemini write the answer in the visitor's language, with a per-visitor rate limit. A GitHub Actions job written in Node.js refreshes the screenshot of every project each day. Most of Zahir's client work is in Laravel because that is what those teams use, but he works across stacks: plain PHP (SMK Seremban 3), HTML, Bootstrap and JavaScript (ENADD Logistics), and Node.js (this chatbot and the screenshot job)."
   },
   {
     "id": "experience-iesb",

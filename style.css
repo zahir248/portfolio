@@ -298,6 +298,31 @@ ol {
     background: var(--accent);
 }
 
+.nav-list {
+    align-items: center;
+}
+
+.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 36px;
+    padding: 0 var(--space-3);
+    border: 1px solid var(--rule-strong);
+    border-radius: 999px;
+    font-size: var(--step--1);
+    font-weight: 600;
+    color: var(--ink);
+    text-decoration: none;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.lang-switch:hover {
+    border-color: var(--ink);
+    background: var(--paper-2);
+}
+
 /* Hero */
 .hero {
     display: grid;
@@ -376,6 +401,11 @@ ol {
     line-height: 1.06;
     letter-spacing: -0.012em;
     font-variation-settings: "opsz" 96;
+}
+
+/* Malay words run longer; give the headline a little more room */
+:lang(ms) .hero-title {
+    max-width: 22ch;
 }
 
 .hero-lede {
@@ -556,6 +586,14 @@ ol {
     content: "Preview unavailable. Open the live site.";
     text-decoration: underline;
     text-underline-offset: 0.2em;
+}
+
+:lang(ms) .project-shot.is-loading::after {
+    content: "Memuatkan pratonton…";
+}
+
+:lang(ms) .project-shot.is-failed::after {
+    content: "Pratonton tidak tersedia. Buka laman sebenar.";
 }
 
 .project-shot:hover .project-img {
@@ -1258,7 +1296,6 @@ ol {
 
     .more-grid {
         grid-template-columns: 1fr;
-        max-width: 560px;
     }
 }
 
@@ -1273,7 +1310,15 @@ ol {
     }
 
     .nav-list {
-        gap: var(--space-4);
+        gap: var(--space-3);
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    .header-inner {
+        gap: var(--space-3);
     }
 
     .nav-list li:nth-child(2) {
