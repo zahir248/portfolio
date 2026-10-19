@@ -552,6 +552,38 @@ ol {
     top: calc(var(--header-h) + 24px);
 }
 
+/* App screenshots: three phone screens side by side in the same 16:10 frame */
+.phone-trio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+    aspect-ratio: 16 / 10;
+    padding: 5% 6%;
+}
+
+.phone-img {
+    height: 100%;
+    width: auto;
+    border-radius: 12px;
+    border: 1px solid var(--rule);
+    box-shadow: var(--shadow);
+    user-select: none;
+    transition: transform 0.4s ease;
+}
+
+.phone-img:nth-child(2) {
+    transform: translateY(-4%);
+}
+
+.project-shot--phones:hover .phone-img {
+    transform: translateY(-2%);
+}
+
+.project-shot--phones:hover .phone-img:nth-child(2) {
+    transform: translateY(-6%);
+}
+
 .project-img {
     width: 100%;
     aspect-ratio: 16 / 10;
@@ -562,6 +594,7 @@ ol {
 }
 
 /* No src until the live screenshot is ready */
+.phone-img:not([src]),
 .project-img:not([src]) {
     visibility: hidden;
 }

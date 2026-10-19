@@ -81,7 +81,7 @@
 
         <section class="plain" aria-labelledby="plainTitle">
             <div class="wrap">
-                <h2 id="plainTitle" class="plain-title">Kerja pembangun perisian, dalam bahasa mudah</h2>
+                <h2 id="plainTitle" class="plain-title">Cara saya bekerja</h2>
                 <ol class="plain-steps">
                     <li>
                         <h3>Saya mengenal pasti keperluan perniagaan</h3>
@@ -134,8 +134,12 @@
                 </article>
 
                 <article class="feature feature-flip" id="p-uros">
-                    <a class="feature-shot project-shot" href="https://play.google.com/store/apps/details?id=com.uros.zahir" target="_blank" rel="noopener noreferrer" aria-label="Buka Uros di Google Play">
-                        <img src="https://raw.githubusercontent.com/zahir248/portfolio/screenshots/uros.jpg" data-screenshot="https://play.google.com/store/apps/details?id=com.uros.zahir&amp;hl=en" alt="Uros di Google Play" class="project-img" width="1280" height="800" loading="lazy" draggable="false">
+                    <a class="feature-shot project-shot project-shot--phones" href="https://play.google.com/store/apps/details?id=com.uros.zahir" target="_blank" rel="noopener noreferrer" aria-label="Buka Uros di Google Play">
+                        <span class="phone-trio">
+                            <img src="https://play-lh.googleusercontent.com/aTwxk5g_GtIyylljbEaPTnbI2etZFUT9RPQTHipF8hQo-VGiZIJORmW95uyzN1sD8vvFaccUyh3gcCdFZBE_=w480" alt="Papan pemuka Uros dengan kewangan, nota dan diari" class="phone-img" width="240" height="427" loading="lazy" draggable="false">
+                            <img src="https://play-lh.googleusercontent.com/kT5p8qDgmmegO0Orwin-YGQbhplqmF9G1MbVCxwsl8msQpHHLGhja9pyQ-QGNb0d-YQR0ReP_DllBtvf-FWpg_M=w480" alt="Carta perbelanjaan mengikut kategori dalam Uros" class="phone-img" width="240" height="427" loading="lazy" draggable="false">
+                            <img src="https://play-lh.googleusercontent.com/sb8QlJ1H73mdzPR92wg6a9P9iY23-Ai1YLJILCTNnIb-tk5b9avujir9qDIXT9hbNHA6S_OdyoL4PdBfosFyNA=w480" alt="Kalendar diari Uros" class="phone-img" width="240" height="427" loading="lazy" draggable="false">
+                        </span>
                     </a>
                     <div class="feature-body">
                         <p class="project-kind">Aplikasi sendiri · Pengurus diri</p>
@@ -360,7 +364,7 @@
                     <h2 id="aboutTitle" class="section-title">Hai, saya Zahir.</h2>
                     <p>Saya mempelajari pembangunan perisian di UTeM dan terus bekerja dengan sistem sebenar: enam bulan sebagai pelatih di VX Ventures, kemudian bekerja sepenuh masa di Intensiti Elemen sejak Mei 2025.</p>
                     <p>Saya juga menerima kerja bebas, yang terbaharu ialah laman web ENADD Logistics di Singapura, dan membina produk sendiri seperti mySekilas dan Uros.</p>
-                    <p>Kebanyakan kerja klien saya menggunakan Laravel kerana itulah yang digunakan oleh pasukan tersebut. Walau bagaimanapun, masalah asasnya, seperti pembayaran, AI, data dan memastikan sistem terus berjalan, tetap sama dalam mana-mana teknologi, dan saya mempelajari alat baharu apabila projek memerlukannya: Uros dibina dengan Flutter, React dan Spring Boot, manakala chatbot di laman ini dibina menggunakan Node.js.</p>
+                    <p>Saya tidak terikat pada satu alat sahaja. Saya menggunakan apa-apa yang sesuai dengan projek, dan mempelajari alat baharu apabila diperlukan.</p>
                     <p>Saya mengendalikan keseluruhan kerja, bukan sekadar menulis kod: mengenal pasti keperluan, membinanya, melancarkannya dan mengajar pengguna. Apabila sesuatu tidak berfungsi, sayalah yang membaikinya.</p>
 
                     <div class="history">
@@ -529,7 +533,7 @@
 
         // Project screenshots are refreshed daily by .github/workflows/screenshots.yml.
         // The frame shows a loading or unavailable note until the image arrives.
-        document.querySelectorAll('.project-shot .project-img').forEach(img => {
+        document.querySelectorAll('.project-shot img').forEach(img => {
             const frame = img.closest('.project-shot');
             const settle = (ok) => {
                 frame.classList.remove('is-loading');

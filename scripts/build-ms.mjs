@@ -63,7 +63,7 @@ t('<span class="fact-note">Including 1 freelance and 2 of my own</span>', '<span
 t('<dt>Main tools</dt>', '<dt>Alat utama</dt>');
 
 // ---------- Plain words ----------
-t('What a software developer does, in plain words', 'Kerja pembangun perisian, dalam bahasa mudah');
+t('<h2 id="plainTitle" class="plain-title">How I work</h2>', '<h2 id="plainTitle" class="plain-title">Cara saya bekerja</h2>');
 t('<h3>I find out what the business needs</h3>', '<h3>Saya mengenal pasti keperluan perniagaan</h3>');
 t('<p>Selling tickets online, taking orders, letting staff update their own website. I talk to the people involved until the problem is clear.</p>',
   '<p>Menjual tiket dalam talian, menerima pesanan atau membolehkan kakitangan mengemas kini laman web sendiri. Saya berbincang dengan pihak yang terlibat sehingga masalahnya jelas.</p>');
@@ -106,7 +106,9 @@ t('<li>Short AI-written summaries of big stories, and a daily round-up</li>', '<
 t('<li>A guide to who to contact about a problem, and a short political history</li>', '<li>Panduan tentang pihak yang patut dihubungi bagi sesuatu masalah, dan sejarah politik ringkas</li>');
 
 // Uros
-t('alt="Uros on Google Play"', 'alt="Uros di Google Play"');
+t('alt="Uros dashboard with finance, notes and diary"', 'alt="Papan pemuka Uros dengan kewangan, nota dan diari"');
+t('alt="Uros spending by category chart"', 'alt="Carta perbelanjaan mengikut kategori dalam Uros"');
+t('alt="Uros diary calendar"', 'alt="Kalendar diari Uros"');
 t('<p class="project-kind">My own app · Personal organiser</p>', '<p class="project-kind">Aplikasi sendiri · Pengurus diri</p>');
 t('A private personal organiser: track spending against a monthly budget, keep notes and write a diary, all in one app. Published on Google Play, with a web version too, in English and Malay.',
   'Aplikasi pengurus diri yang peribadi: menjejak perbelanjaan berbanding bajet bulanan, menyimpan nota dan menulis diari dalam satu aplikasi. Diterbitkan di Google Play, turut tersedia dalam versi web, dalam bahasa Inggeris dan bahasa Melayu.');
@@ -229,8 +231,8 @@ t('<p>I also take freelance work, most recently the website for ENADD Logistics 
   '<p>Saya juga menerima kerja bebas, yang terbaharu ialah laman web ENADD Logistics di Singapura, dan membina produk sendiri seperti mySekilas dan Uros.</p>');
 t('<p>I handle the whole job, not just the code: I find out what is needed, build it, put it online, and teach people to use it. When something stops working, I am the one who fixes it.</p>',
   '<p>Saya mengendalikan keseluruhan kerja, bukan sekadar menulis kod: mengenal pasti keperluan, membinanya, melancarkannya dan mengajar pengguna. Apabila sesuatu tidak berfungsi, sayalah yang membaikinya.</p>');
-t('<p>Most of my client work is in Laravel because that is what those teams use. The problems underneath, like payments, AI, data and keeping systems running, are the same in any stack, and I pick up new tools when a project needs them: Uros is built with Flutter, React and Spring Boot, and the chatbot on this site runs on Node.js.</p>',
-  '<p>Kebanyakan kerja klien saya menggunakan Laravel kerana itulah yang digunakan oleh pasukan tersebut. Walau bagaimanapun, masalah asasnya, seperti pembayaran, AI, data dan memastikan sistem terus berjalan, tetap sama dalam mana-mana teknologi, dan saya mempelajari alat baharu apabila projek memerlukannya: Uros dibina dengan Flutter, React dan Spring Boot, manakala chatbot di laman ini dibina menggunakan Node.js.</p>');
+t('<p>I am not tied to one tool. I use whatever fits the project, and pick up new ones when it needs them.</p>',
+  '<p>Saya tidak terikat pada satu alat sahaja. Saya menggunakan apa-apa yang sesuai dengan projek, dan mempelajari alat baharu apabila diperlukan.</p>');
 t('<h3 class="history-title">Experience</h3>', '<h3 class="history-title">Pengalaman</h3>');
 t('<p class="history-when">May 2025 to now</p>', '<p class="history-when">Mei 2025 hingga kini</p>');
 t('<p class="history-what">Software developer (full-stack), Intensiti Elemen</p>', '<p class="history-what">Pembangun perisian (full-stack), Intensiti Elemen</p>');
