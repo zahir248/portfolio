@@ -1,0 +1,55 @@
+name: Update project screenshots
+
+# Takes a fresh screenshot of every live project once a day and stores them on the
+# `screenshots` branch. That branch is rewritten each run, so it only ever holds one
+# commit and main's history stays small.
+
+on:
+  schedule:
+    - cron: "0 20 * * *" # 04:00 Malaysia time
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [index.html]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: screenshots
+  cancel-in-progress: false
+
+jobs:
+  screenshots:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch current screenshots
+        run: |
+          mkdir -p shots
+          if git ls-remote --exit-code --heads origin screenshots >/dev/null; then
+            git fetch --depth 1 origin screenshots
+            git --work-tree=shots checkout FETCH_HEAD -- .
+          fi
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Capture live sites
+        env:
+          MICROLINK_API_KEY: ${{ secrets.MICROLINK_API_KEY }}
+        run: node scripts/update-screenshots.mjs index.html shots
+
+      - name: Publish to the screenshots branch
+        working-directory: shots
+        run: |
+          git init -q -b screenshots
+          git add -A
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "Update project screenshots"
+          git push -q --force \
+            "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" \
+            screenshots
