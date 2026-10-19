@@ -220,11 +220,13 @@ t('<p>A simple back office where staff without IT skills post news and change de
   '<p>Ruang pentadbiran ringkas yang membolehkan kakitangan tanpa kemahiran IT menyiarkan berita dan menukar maklumat sendiri, dan setiap pasukan hanya boleh mengubah halamannya sendiri.</p>');
 t('Used in MyGooners, SMK Seremban 3, EST Group', 'Digunakan dalam MyGooners, SMK Seremban 3, EST Group');
 t('<h3>Keep it running after launch</h3>', '<h3>Memastikan sistem terus berjalan selepas dilancarkan</h3>');
-t('<p>Putting systems online, updating them safely, backing up data, fixing problems quickly and training the people who use them.</p>',
-  '<p>Melancarkan sistem, mengemas kininya dengan selamat, membuat sandaran data, membaiki masalah dengan cepat dan melatih pengguna.</p>');
-t('Day to day at Intensiti Elemen · Linux, cPanel, GitHub Actions', 'Kerja harian di Intensiti Elemen · Linux, cPanel, GitHub Actions');
+t('<p>Putting systems online, moving them to new servers, updating them safely, backing up data, fixing problems quickly and training the people who use them.</p>',
+  '<p>Melancarkan sistem, memindahkannya ke pelayan baharu, mengemas kininya dengan selamat, membuat sandaran data, membaiki masalah dengan cepat dan melatih pengguna.</p>');
+t('Day to day at Intensiti Elemen · Linux, AWS, cPanel, GitHub Actions', 'Kerja harian di Intensiti Elemen · Linux, AWS, cPanel, GitHub Actions');
 t('For technical readers: the tools behind the work.', 'Untuk pembaca teknikal: alat yang digunakan dalam kerja saya.');
 t('<h3>Core, used in production</h3>', '<h3>Teras, digunakan dalam sistem sebenar</h3>');
+t('<h3>Servers and hosting, used at work</h3>', '<h3>Pelayan dan pengehosan, digunakan di tempat kerja</h3>');
+t('Bash scripts, Netdata</p>', 'skrip Bash, Netdata</p>');
 t('<h3>Integrations</h3>', '<h3>Integrasi</h3>');
 t('Google Gemini and OpenAI APIs', 'API Google Gemini dan OpenAI');
 t('SMTP email', 'e-mel SMTP');

@@ -12,12 +12,12 @@
   {
     "id": "skills-languages",
     "title": "Core skills (production)",
-    "text": "Zahir's core skills, used in production work: PHP, Laravel, MySQL, PostgreSQL, JavaScript, React, Flutter, Java, Spring Boot, HTML, CSS, Bootstrap, Linux (Ubuntu), cPanel, Git, GitHub Actions. Most of his client work is Laravel, PHP and MySQL. He built and published his own Flutter app, Uros, on Google Play, with a React web version and a Spring Boot backend. On MyGooners he built the website; the separate Flutter app was built by a teammate."
+    "text": "Zahir's core skills, used in production work: PHP, Laravel, MySQL, PostgreSQL, JavaScript, React, Flutter, Java, Spring Boot, HTML, CSS, Bootstrap, Git, GitHub Actions. Servers and hosting he uses at work: Linux (Ubuntu), Apache, cPanel, AWS (EC2, RDS, EFS, ElastiCache, S3, CloudFront), Moodle, Bash scripts and Netdata monitoring. On AWS he sets up and runs the application side (configuration, data moves, backups, monitoring, fixes from security testing); the AWS infrastructure itself is provisioned by a separate cloud vendor, so do not say he built it. Most of his client work is Laravel, PHP and MySQL. He built and published his own Flutter app, Uros, on Google Play, with a React web version and a Spring Boot backend. On MyGooners he built the website; the separate Flutter app was built by a teammate."
   },
   {
     "id": "skills-frameworks",
     "title": "Familiar skills (side projects and learning)",
-    "text": "Skills Zahir is familiar with from side projects, testing or learning (not his main production stack): Node.js, TypeScript, Next.js, Tailwind CSS, Docker, AWS (EC2, S3, RDS). Be honest that these are familiar rather than core if asked."
+    "text": "Skills Zahir is familiar with from side projects, testing or learning (not his main production stack): Node.js, TypeScript, Next.js, Tailwind CSS, Docker. Be honest that these are familiar rather than core if asked."
   },
   {
     "id": "skills-data-cloud",

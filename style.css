@@ -344,6 +344,7 @@ ol {
 
 .eyebrow-open {
     color: var(--accent-ink);
+    white-space: nowrap;
 }
 
 .hero > .facts {
@@ -1152,7 +1153,7 @@ ol {
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 0.18em;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
 }
 
 .contact-email:hover {
@@ -1468,8 +1469,11 @@ ol {
 
 /* Responsive */
 @media (max-width: 900px) {
+    /* One column: let the hero size to its content so tall tablets have no empty band */
     .hero {
         grid-template-columns: 1fr;
+        min-height: 0;
+        row-gap: var(--space-8);
     }
 
     .hero-index {
@@ -1588,6 +1592,18 @@ ol {
     /* Keep the last lines clear of the floating chat button */
     .site-footer {
         padding-bottom: 6rem;
+    }
+}
+
+/* Very narrow phones: the Malay menu words are longer, so tighten the header */
+@media (max-width: 360px) {
+    .nav-list,
+    .header-inner {
+        gap: var(--space-2);
+    }
+
+    .lang-switch {
+        padding: 0 var(--space-2);
     }
 }
 
