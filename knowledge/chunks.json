@@ -37,12 +37,12 @@
   {
     "id": "project-nujum",
     "title": "Project: NUJUM",
-    "text": "NUJUM is a web-based AI analysis platform (no mobile app). Live at https://iesb.com.my/nujum/. Stack: Laravel, MySQL, Google Gemini API, OpenAI API, ToyyibPay. Role: Full-stack, solo. Client: Intensiti Elemen. Timeline: Aug 2025 – Jul 2026. Users pick one of six kinds of analysis (prediction, trend topic, social profile, profile comparison, communication pack, fact check), answer a few questions, and get a report that names its sources, in Malay or English. It also has a document library with an Ask feature that answers from the user's own files with sources, a war room, a daily brief, stakeholder tracking, PDF export and shareable links, a free tier of 3 analyses, and monthly paid plans with usage allowances and team accounts."
+    "text": "NUJUM is a web-based AI analysis platform (no mobile app). Live at https://iesb.com.my/nujum/. Stack: Laravel, MySQL, Google Gemini API, OpenAI API, ToyyibPay. Role: Full-stack, solo. Built at Intensiti Elemen, Zahir's employer (an in-house product, not a client project). Timeline: Aug 2025 – Jul 2026. Users pick one of six kinds of analysis (prediction, trend topic, social profile, profile comparison, communication pack, fact check), answer a few questions, and get a report that names its sources, in Malay or English. It also has a document library with an Ask feature that answers from the user's own files with sources, a war room, a daily brief, stakeholder tracking, PDF export and shareable links, a free tier of 3 analyses, and monthly paid plans with usage allowances and team accounts."
   },
   {
     "id": "project-mygooners",
     "title": "Project: MyGooners",
-    "text": "MyGooners is a Malay-language Arsenal fan community and shop. Live at https://mygooners.my/. Zahir built the web side (Laravel, MySQL, ToyyibPay, Stripe) in a team of two; his teammate built the Flutter Android app. Client: Intensiti Elemen. Timeline: Jul 2025 – Jun 2026. Web features Zahir built: football news and video publishing, a directory of verified service providers, and a shop with checkout and order records, all run from one admin panel."
+    "text": "MyGooners is a Malay-language Arsenal fan community and shop. Live at https://mygooners.my/. Zahir built the web side (Laravel, MySQL, ToyyibPay, Stripe) in a team of two; his teammate built the Flutter Android app. Built at Intensiti Elemen, Zahir's employer (not a client). Timeline: Jul 2025 – Jun 2026. Web features Zahir built: football news and video publishing, a directory of verified service providers, and a shop with checkout and order records, all run from one admin panel."
   },
   {
     "id": "project-bina",
@@ -58,6 +58,11 @@
     "id": "project-smks3",
     "title": "Project: SMK Seremban 3",
     "text": "SMK Seremban 3 is the official Malay-language portal of a secondary school in Seremban. Live at https://iesb.com.my/smks3/. Stack: PHP, MySQL. Role: Full-stack, team of two. Client: SMK Seremban 3. Timeline: Mar 2026 – Jul 2026. Sections: school profile, management, curriculum, student affairs, co-curriculum, PIBG, school media and monthly bulletins. Staff update news, schedules and school info through a staff portal, and each unit edits only its own pages."
+  },
+  {
+    "id": "projects-overview",
+    "title": "All projects (overview)",
+    "text": "Zahir has eight live projects. His own products: mySekilas (interactive map of Malaysia's elected representatives and state news, Laravel and Gemini) and Uros (personal organiser on Google Play, Flutter app, React web version, Spring Boot backend). Built at his employer Intensiti Elemen: NUJUM (AI report writer for PR and communications teams, Laravel with Gemini and OpenAI) and MyGooners (Arsenal fan community and shop; he built the web side). Client work: BINA e-ticketing for CIDB IBS (conference ticketing, used again for 2026), EST Group (solar and EV charger company website) and SMK Seremban 3 (school website). Freelance: ENADD Logistics, a company website for a Singapore logistics firm. When asked what he has built, mention all eight briefly."
   },
   {
     "id": "project-mysekilas",
