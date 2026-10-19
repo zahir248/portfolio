@@ -20,8 +20,8 @@ function t(en, ms) {
 // ---------- Document and paths ----------
 t('<html lang="en">', '<html lang="ms">');
 t('<title>Zahir | Software developer</title>', '<title>Zahir | Pembangun perisian</title>');
-t('content="Muhammad Zahiruddin (Zahir), software developer in Petaling Jaya. Seven web systems live in production, from a civic map of Malaysia to an AI analysis platform."',
-  'content="Muhammad Zahiruddin (Zahir), pembangun perisian di Petaling Jaya. Tujuh sistem web sedang digunakan, daripada peta maklumat awam Malaysia hingga alat laporan AI."');
+t('content="Muhammad Zahiruddin (Zahir), software developer in Petaling Jaya. Eight web systems and apps in use, from a civic map of Malaysia to an organiser app on Google Play."',
+  'content="Muhammad Zahiruddin (Zahir), pembangun perisian di Petaling Jaya. Lapan sistem web dan aplikasi sedang digunakan, daripada peta maklumat awam Malaysia hingga aplikasi pengurus diri di Google Play."');
 t('href="style.css', 'href="../style.css');
 t('href="images/', 'href="../images/');
 t('src="images/', 'src="../images/');
@@ -43,13 +43,14 @@ t('<a class="lang-switch" href="ms/" lang="ms" hreflang="ms" aria-label="Baca da
 t('Muhammad Zahiruddin · Software developer · Petaling Jaya', 'Muhammad Zahiruddin · Pembangun perisian · Petaling Jaya');
 t('I build the websites and online systems that businesses use every day.',
   'Saya membina laman web dan sistem dalam talian untuk kegunaan harian perniagaan.');
-t('Seven are in use right now, including a map that shows Malaysians who their elected representatives are, an AI tool that writes reports for PR teams, a ticket shop for a big construction conference, and a website for a Singapore shipping company.',
-  'Tujuh sedang digunakan sekarang, termasuk peta wakil rakyat Malaysia, alat AI yang menulis laporan untuk pasukan perhubungan awam, kedai tiket persidangan pembinaan dan laman web syarikat perkapalan di Singapura.');
+t('Eight are in use right now, including a map that shows Malaysians who their elected representatives are, an organiser app on Google Play, an AI tool that writes reports for PR teams, and a ticket shop for a big construction conference.',
+  'Lapan sedang digunakan sekarang, termasuk peta wakil rakyat Malaysia, aplikasi pengurus diri di Google Play, alat AI yang menulis laporan untuk pasukan perhubungan awam dan kedai tiket persidangan pembinaan.');
 t('class="btn btn-primary">See the projects</a>', 'class="btn btn-primary">Lihat projek</a>');
 t('>Download résumé (PDF)</a>', '>Muat turun resume (PDF)</a>');
 t('<nav class="hero-index" aria-label="Projects">', '<nav class="hero-index" aria-label="Projek">');
 t('<p class="hero-index-title">Live now</p>', '<p class="hero-index-title">Sedang digunakan</p>');
 t('<span class="hero-index-kind">Who is my MP map</span>', '<span class="hero-index-kind">Peta wakil rakyat</span>');
+t('<span class="hero-index-kind">Organiser app</span>', '<span class="hero-index-kind">Aplikasi pengurus diri</span>');
 t('<span class="hero-index-kind">AI report writer</span>', '<span class="hero-index-kind">Penulis laporan AI</span>');
 t('<span class="hero-index-kind">Conference tickets</span>', '<span class="hero-index-kind">Tiket persidangan</span>');
 t('<span class="hero-index-kind">Shipping company site</span>', '<span class="hero-index-kind">Laman syarikat perkapalan</span>');
@@ -58,7 +59,7 @@ t('<dt>Full-time experience</dt>', '<dt>Pengalaman sepenuh masa</dt>');
 t('<span id="statExperience">1 yr 6 mo</span>', '<span id="statExperience">1 tahun 6 bulan</span>');
 t('<span class="fact-note">+ 6 mo internship</span>', '<span class="fact-note">+ 6 bulan latihan industri</span>');
 t('<dt>Projects in use</dt>', '<dt>Projek yang digunakan</dt>');
-t('<span class="fact-note">Including 1 freelance and 1 of my own</span>', '<span class="fact-note">Termasuk 1 kerja bebas dan 1 projek sendiri</span>');
+t('<span class="fact-note">Including 1 freelance and 2 of my own</span>', '<span class="fact-note">Termasuk 1 kerja bebas dan 2 projek sendiri</span>');
 t('<dt>Main tools</dt>', '<dt>Alat utama</dt>');
 
 // ---------- Plain words ----------
@@ -75,7 +76,7 @@ t('<p>I launch it, fix problems when they come up, add new features, and show st
 
 // ---------- Work ----------
 t('<p class="eyebrow">Selected work</p>', '<p class="eyebrow">Projek pilihan</p>');
-t('Seven projects, all in use today.', 'Tujuh projek, semuanya sedang digunakan.');
+t('Eight projects, all in use today.', 'Lapan projek, semuanya sedang digunakan.');
 t('Every one of these is real and running. Click a picture to open the actual site.',
   'Setiap projek ini nyata dan sedang beroperasi. Klik gambar untuk membuka laman yang sebenar.');
 t('<h4>The problem</h4>', '<h4>Masalah</h4>');
@@ -103,6 +104,24 @@ t('<li>News collected automatically from many Malaysian news sites, with the sam
   '<li>Berita yang dikumpulkan secara automatik daripada banyak laman berita Malaysia; berita yang sama daripada laman berlainan dipaparkan bersama dan disusun mengikut negeri dan topik</li>');
 t('<li>Short AI-written summaries of big stories, and a daily round-up</li>', '<li>Ringkasan berita utama yang ditulis oleh AI, dan rumusan harian</li>');
 t('<li>A guide to who to contact about a problem, and a short political history</li>', '<li>Panduan tentang pihak yang patut dihubungi bagi sesuatu masalah, dan sejarah politik ringkas</li>');
+
+// Uros
+t('alt="Uros on Google Play"', 'alt="Uros di Google Play"');
+t('<p class="project-kind">My own app · Personal organiser</p>', '<p class="project-kind">Aplikasi sendiri · Pengurus diri</p>');
+t('A private personal organiser: track spending against a monthly budget, keep notes and write a diary, all in one app. Published on Google Play, with a web version too, in English and Malay.',
+  'Aplikasi pengurus diri yang peribadi: menjejak perbelanjaan berbanding bajet bulanan, menyimpan nota dan menulis diari dalam satu aplikasi. Diterbitkan di Google Play, turut tersedia dalam versi web, dalam bahasa Inggeris dan bahasa Melayu.');
+t('<dt>Available on</dt><dd>Google Play and the web</dd>', '<dt>Tersedia di</dt><dd>Google Play dan web</dd>');
+t('<li>Spending tracked by category, monthly budgets, charts and PDF reports</li>', '<li>Perbelanjaan dijejak mengikut kategori, bajet bulanan, carta dan laporan PDF</li>');
+t('<li>Notes you can pin and search, with a private PIN for sensitive ones</li>', '<li>Nota yang boleh disemat dan dicari, dengan PIN peribadi bagi nota sulit</li>');
+t('<li>A daily diary with a calendar view</li>', '<li>Diari harian dengan paparan kalendar</li>');
+t('<li>Sign-in with Google or email, optional two-step verification, and a list of signed-in devices you can sign out remotely</li>',
+  '<li>Log masuk dengan Google atau e-mel, pengesahan dua langkah pilihan, dan senarai peranti yang sedang log masuk yang boleh dilog keluar dari jauh</li>');
+t('<li>Optional spending alerts on Telegram, plus light and dark themes</li>', '<li>Makluman perbelanjaan melalui Telegram (pilihan), serta tema cerah dan gelap</li>');
+t('<li>An Android app made with Flutter and published on Google Play, and a web version made with React, both running on a Spring Boot backend</li>',
+  '<li>Aplikasi Android yang dibina dengan Flutter dan diterbitkan di Google Play, serta versi web yang dibina dengan React; kedua-duanya menggunakan sistem belakang Spring Boot</li>');
+t('>Get it on Google Play <span aria-hidden="true">↗</span></a>', '>Dapatkan di Google Play <span aria-hidden="true">↗</span></a>');
+t('>Open the web version <span aria-hidden="true">↗</span></a>', '>Buka versi web <span aria-hidden="true">↗</span></a>');
+t('aria-label="Open Uros on Google Play"', 'aria-label="Buka Uros di Google Play"');
 
 // NUJUM
 t('alt="NUJUM dashboard"', 'alt="Papan pemuka NUJUM"');
@@ -175,6 +194,10 @@ t('<h3>Put AI to useful work</h3>', '<h3>Menggunakan AI untuk kerja yang berfaed
 t('<p>AI that writes reports from real sources, answers questions from a company\'s own documents, and summarises the news. The "Ask my AI" button on this page is another example.</p>',
   '<p>AI yang menulis laporan berdasarkan sumber sebenar, menjawab soalan berdasarkan dokumen syarikat sendiri dan meringkaskan berita. Butang "Tanya AI saya" pada halaman ini ialah satu lagi contoh.</p>');
 t('Used in NUJUM, mySekilas, this site · Google Gemini, OpenAI', 'Digunakan dalam NUJUM, mySekilas, laman ini · Google Gemini, OpenAI');
+t('<h3>Phone apps on Google Play</h3>', '<h3>Aplikasi telefon di Google Play</h3>');
+t('<p>An Android app published on Google Play, with a matching web version, so people can use it on their phone or computer.</p>',
+  '<p>Aplikasi Android yang diterbitkan di Google Play, berserta versi web yang sepadan, supaya pengguna boleh menggunakannya di telefon atau komputer.</p>');
+t('<p class="cap-proof">Used in Uros · Flutter, React, Spring Boot</p>', '<p class="cap-proof">Digunakan dalam Uros · Flutter, React, Spring Boot</p>');
 t('<h3>Maps and up-to-date information</h3>', '<h3>Peta dan maklumat terkini</h3>');
 t('<p>An interactive map, official figures checked against their source, and news gathered from many sites automatically.</p>',
   '<p>Peta interaktif, angka rasmi yang disemak dengan sumbernya, dan berita yang dikumpulkan secara automatik daripada banyak laman.</p>');
@@ -202,12 +225,12 @@ t('<p class="eyebrow">About</p>', '<p class="eyebrow">Tentang</p>');
 t("Hi, I'm Zahir.", 'Hai, saya Zahir.');
 t('<p>I studied software development at UTeM and went straight into production work: six months as an intern at VX Ventures, then full-time at Intensiti Elemen since May 2025.</p>',
   '<p>Saya mempelajari pembangunan perisian di UTeM dan terus bekerja dengan sistem sebenar: enam bulan sebagai pelatih di VX Ventures, kemudian bekerja sepenuh masa di Intensiti Elemen sejak Mei 2025.</p>');
-t('<p>I also take freelance work, most recently the website for ENADD Logistics in Singapore, and I build my own products like mySekilas.</p>',
-  '<p>Saya juga menerima kerja bebas, yang terbaharu ialah laman web ENADD Logistics di Singapura, dan membina produk sendiri seperti mySekilas.</p>');
+t('<p>I also take freelance work, most recently the website for ENADD Logistics in Singapore, and I build my own products like mySekilas and Uros.</p>',
+  '<p>Saya juga menerima kerja bebas, yang terbaharu ialah laman web ENADD Logistics di Singapura, dan membina produk sendiri seperti mySekilas dan Uros.</p>');
 t('<p>I handle the whole job, not just the code: I find out what is needed, build it, put it online, and teach people to use it. When something stops working, I am the one who fixes it.</p>',
   '<p>Saya mengendalikan keseluruhan kerja, bukan sekadar menulis kod: mengenal pasti keperluan, membinanya, melancarkannya dan mengajar pengguna. Apabila sesuatu tidak berfungsi, sayalah yang membaikinya.</p>');
-t('<p>Most of my client work is in Laravel because that is what those teams use. The problems underneath, like payments, AI, data and keeping systems running, are the same in any stack, and I pick up new tools when a project needs them: the chatbot on this site runs on Node.js.</p>',
-  '<p>Kebanyakan kerja klien saya menggunakan Laravel kerana itulah yang digunakan oleh pasukan tersebut. Walau bagaimanapun, masalah asasnya, seperti pembayaran, AI, data dan memastikan sistem terus berjalan, tetap sama dalam mana-mana teknologi, dan saya mempelajari alat baharu apabila projek memerlukannya: chatbot di laman ini dibina menggunakan Node.js.</p>');
+t('<p>Most of my client work is in Laravel because that is what those teams use. The problems underneath, like payments, AI, data and keeping systems running, are the same in any stack, and I pick up new tools when a project needs them: Uros is built with Flutter, React and Spring Boot, and the chatbot on this site runs on Node.js.</p>',
+  '<p>Kebanyakan kerja klien saya menggunakan Laravel kerana itulah yang digunakan oleh pasukan tersebut. Walau bagaimanapun, masalah asasnya, seperti pembayaran, AI, data dan memastikan sistem terus berjalan, tetap sama dalam mana-mana teknologi, dan saya mempelajari alat baharu apabila projek memerlukannya: Uros dibina dengan Flutter, React dan Spring Boot, manakala chatbot di laman ini dibina menggunakan Node.js.</p>');
 t('<h3 class="history-title">Experience</h3>', '<h3 class="history-title">Pengalaman</h3>');
 t('<p class="history-when">May 2025 to now</p>', '<p class="history-when">Mei 2025 hingga kini</p>');
 t('<p class="history-what">Software developer (full-stack), Intensiti Elemen</p>', '<p class="history-what">Pembangun perisian (full-stack), Intensiti Elemen</p>');

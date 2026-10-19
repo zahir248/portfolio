@@ -2,7 +2,7 @@
   {
     "id": "identity",
     "title": "Identity",
-    "text": "Muhammad Zahiruddin is a software developer known online as Zahir or zahir248. He builds and maintains production web systems end to end: requirements, implementation, deployment, and support. He has seven live projects: his own civic map mySekilas, an AI analysis platform (NUJUM), conference ticketing (BINA), a freelance website for ENADD Logistics in Singapore, a fan community and shop (MyGooners, web side), and company and school websites (EST Group, SMK Seremban 3). He takes freelance work. Portfolio: https://zahir248.github.io/portfolio/"
+    "text": "Muhammad Zahiruddin is a software developer known online as Zahir or zahir248. He builds and maintains production web systems and apps end to end: requirements, implementation, deployment, and support. He has eight live projects: his own civic map mySekilas, his own organiser app Uros on Google Play, an AI analysis platform (NUJUM), conference ticketing (BINA), a freelance website for ENADD Logistics in Singapore, a fan community and shop (MyGooners, web side), and company and school websites (EST Group, SMK Seremban 3). He takes freelance work. Portfolio: https://zahir248.github.io/portfolio/"
   },
   {
     "id": "plain-explainer",
@@ -12,12 +12,12 @@
   {
     "id": "skills-languages",
     "title": "Core skills (production)",
-    "text": "Zahir's core skills, used in production work: PHP, Laravel, MySQL, PostgreSQL, JavaScript, HTML, CSS, Bootstrap, Linux (Ubuntu), cPanel, Git, GitHub Actions. His main stack is Laravel, PHP and MySQL for web systems. He has not built a production Flutter app himself; Flutter is a familiar skill."
+    "text": "Zahir's core skills, used in production work: PHP, Laravel, MySQL, PostgreSQL, JavaScript, React, Flutter, Java, Spring Boot, HTML, CSS, Bootstrap, Linux (Ubuntu), cPanel, Git, GitHub Actions. Most of his client work is Laravel, PHP and MySQL. He built and published his own Flutter app, Uros, on Google Play, with a React web version and a Spring Boot backend. On MyGooners he built the web side and a teammate built that project's Flutter app."
   },
   {
     "id": "skills-frameworks",
     "title": "Familiar skills (side projects and learning)",
-    "text": "Skills Zahir is familiar with from side projects, testing or learning (not his main production stack): Node.js, Flutter, TypeScript, React, Next.js, Tailwind CSS, Java, Spring Boot, Docker, AWS (EC2, S3, RDS). Be honest that these are familiar rather than core if asked."
+    "text": "Skills Zahir is familiar with from side projects, testing or learning (not his main production stack): Node.js, TypeScript, Next.js, Tailwind CSS, Docker, AWS (EC2, S3, RDS). Be honest that these are familiar rather than core if asked."
   },
   {
     "id": "skills-data-cloud",
@@ -28,6 +28,11 @@
     "id": "skills-integrations",
     "title": "Integrations and tools",
     "text": "Integrations Zahir has worked with: ToyyibPay, Stripe, AI APIs (Google Gemini, OpenAI), Google OAuth, Google reCAPTCHA, SMTP email, OneSignal, Telegram Bot API. Tools: GitHub, GitLab, Postman, Figma, VS Code, Android Studio. Languages spoken: Malay and English."
+  },
+  {
+    "id": "project-uros",
+    "title": "Project: Uros (Google Play app)",
+    "text": "Uros is Zahir's own app, built solo: a private personal organiser for finance, notes and a diary, published on Google Play (https://play.google.com/store/apps/details?id=com.uros.zahir) with a web version at https://uros-mu.vercel.app/. The Android app is built with Flutter and the web version with React and Vite (hosted on Vercel); both run on a Spring Boot (Java) backend hosted on Render. Features: expenses by category, monthly budgets, spending charts and PDF reports; notes that can be pinned, searched and locked with a private PIN; a daily diary with a calendar view; sign-in with Google or email, optional two-factor authentication, session management with remote sign-out, and account deletion; optional Telegram alerts for spending; light and dark themes; English and Malay."
   },
   {
     "id": "project-nujum",

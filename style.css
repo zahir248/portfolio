@@ -621,10 +621,11 @@ ol {
     color: var(--ink-2);
 }
 
+/* Each item takes the width of its own text, so a single item stays on one line */
 .project-meta {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: var(--space-4);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4) var(--space-7);
     margin-top: var(--space-5);
     padding: var(--space-4) 0;
     border-top: 1px solid var(--rule);
@@ -692,6 +693,12 @@ ol {
     font-family: var(--font-mono);
     font-size: var(--step--1);
     color: var(--muted);
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-5);
 }
 
 .more-title {
@@ -1344,9 +1351,6 @@ ol {
         width: 100%;
     }
 
-    .project-meta {
-        grid-template-columns: 1fr 1fr;
-    }
 
     .plain-steps,
     .more-grid,

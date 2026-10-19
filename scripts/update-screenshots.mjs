@@ -15,7 +15,7 @@ const MIN_BYTES = 15_000; // smaller than this is a Microlink placeholder, not a
 
 const html = await readFile(htmlPath, 'utf8');
 const shots = [...html.matchAll(/src="[^"]*\/screenshots\/([a-z0-9-]+)\.jpg"\s+data-screenshot="([^"]+)"/g)]
-    .map(([, slug, url]) => ({ slug, url }));
+    .map(([, slug, url]) => ({ slug, url: url.replace(/&amp;/g, '&') }));
 
 if (shots.length === 0) {
     console.error('No screenshot images found in', htmlPath);
