@@ -18,6 +18,7 @@
 
     /* Type scale (1.25) */
     --step--1: 0.9375rem;
+    --step-small: 1.0625rem;
     --step-0: 1.125rem;
     --step-1: 1.25rem;
     --step-2: 1.5rem;
@@ -35,7 +36,9 @@
     --space-8: 4.5rem;
     --space-9: 7rem;
 
+    --radius-sm: 4px;
     --radius: 6px;
+    --radius-lg: 12px;
     --max: 1200px;
     --header-h: 64px;
     --shadow: 0 1px 0 rgba(26, 23, 20, 0.04), 0 12px 28px -14px rgba(60, 40, 25, 0.28);
@@ -118,7 +121,7 @@ ol {
 :focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 3px;
-    border-radius: 2px;
+    border-radius: var(--radius-sm);
 }
 
 .visually-hidden {
@@ -275,7 +278,7 @@ ol {
     display: inline-flex;
     align-items: center;
     min-height: 44px;
-    font-size: 1.0625rem;
+    font-size: var(--step-small);
     font-weight: 500;
     color: var(--ink-2);
     text-decoration: none;
@@ -324,28 +327,32 @@ ol {
 }
 
 /* Hero */
+/* The hero fills the first screen, with the facts row resting at the bottom */
 .hero {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(300px, 400px);
+    grid-template-rows: 1fr auto;
     column-gap: var(--space-8);
-    padding-top: var(--space-7);
-    padding-bottom: var(--space-8);
+    min-height: calc(100dvh - var(--header-h));
+    padding-top: var(--space-6);
+    padding-bottom: var(--space-6);
+}
+
+.hero-main {
+    align-self: center;
+}
+
+.eyebrow-open {
+    color: var(--accent-ink);
 }
 
 .hero > .facts {
     grid-column: 1 / -1;
 }
 
-.hero-open {
-    margin-top: var(--space-3);
-    font-size: var(--step--1);
-    font-weight: 500;
-    color: var(--accent-ink);
-}
-
 /* Project index beside the headline */
 .hero-index {
-    align-self: end;
+    align-self: center;
 }
 
 .hero-index-title {
@@ -490,11 +497,9 @@ ol {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: var(--space-6);
     margin-top: var(--space-6);
-    counter-reset: step;
 }
 
 .plain-steps li {
-    counter-increment: step;
     padding-top: var(--space-4);
     border-top: 1px solid var(--ink);
 }
@@ -503,11 +508,6 @@ ol {
     font-size: var(--step-1);
     font-weight: 600;
     line-height: 1.3;
-}
-
-.plain-steps h3::before {
-    content: counter(step) ". ";
-    color: var(--accent-ink);
 }
 
 .plain-steps p {
@@ -590,8 +590,8 @@ ol {
     border-radius: 999px;
     background: var(--white);
     border: 1px solid var(--rule);
-    font-size: 0.8125rem;
-    line-height: 1.4;
+    font-size: var(--step--1);
+    line-height: 1.3;
     color: var(--muted);
     white-space: nowrap;
     overflow: hidden;
@@ -621,7 +621,7 @@ ol {
     height: auto;
     aspect-ratio: 240 / 427;
     object-fit: cover;
-    border-radius: 16px;
+    border-radius: 16px; /* phone bezel: outer radius of a real device */
     border: 4px solid var(--ink);
     background: var(--ink);
     box-shadow: var(--shadow);
@@ -730,7 +730,7 @@ ol {
 
 .project-meta dd {
     margin-top: 2px;
-    font-size: 1.0625rem;
+    font-size: var(--step-small);
     font-weight: 500;
     line-height: 1.35;
 }
@@ -754,7 +754,7 @@ ol {
 
 .project-story p,
 .project-story li {
-    font-size: 1.0625rem;
+    font-size: var(--step-small);
     color: var(--ink-2);
 }
 
@@ -801,20 +801,28 @@ ol {
     letter-spacing: -0.015em;
 }
 
+/* Also live: one row per project, small framed screenshot on the left */
 .more-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: var(--space-8) var(--space-6);
-    margin-top: var(--space-6);
+    margin-top: var(--space-5);
+    border-top: 1px solid var(--rule);
 }
 
 .mini {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+    column-gap: var(--space-7);
+    align-items: start;
+    padding: var(--space-6) 0;
+    border-bottom: 1px solid var(--rule);
 }
 
-.mini-shot {
-    margin-bottom: var(--space-5);
+.mini > * {
+    grid-column: 2;
+}
+
+.mini > .mini-shot {
+    grid-column: 1;
+    grid-row: 1 / span 7;
 }
 
 .mini-name {
@@ -833,7 +841,7 @@ ol {
 
 .mini-meta {
     margin-top: var(--space-4);
-    font-size: 1.0625rem;
+    font-size: var(--step-small);
     font-weight: 500;
 }
 
@@ -842,8 +850,7 @@ ol {
 }
 
 .mini .text-link {
-    margin-top: auto;
-    align-self: flex-start;
+    justify-self: start;
 }
 
 /* Capabilities */
@@ -912,7 +919,7 @@ ol {
 }
 
 .toolkit-row p {
-    font-size: 1.0625rem;
+    font-size: var(--step-small);
     color: var(--ink-2);
 }
 
@@ -1001,7 +1008,7 @@ ol {
 
 .history-detail {
     margin-top: var(--space-1);
-    font-size: 1.0625rem;
+    font-size: var(--step-small);
     color: var(--ink-2);
 }
 
@@ -1027,11 +1034,20 @@ ol {
     color: var(--ink-2);
 }
 
+/* Same pattern as the hero facts: small label, text, thin rules above and below */
 .contact-intro .contact-open {
-    padding: var(--space-3) var(--space-4);
-    border-left: 2px solid var(--accent);
-    background: var(--paper-2);
+    padding: var(--space-4) 0;
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--rule);
     color: var(--ink);
+}
+
+.contact-open-label {
+    display: block;
+    margin-bottom: var(--space-1);
+    font-size: var(--step--1);
+    font-weight: 500;
+    color: var(--muted);
 }
 
 .contact-email {
@@ -1059,7 +1075,7 @@ ol {
 }
 
 .contact-intro .contact-place {
-    font-size: 1.0625rem;
+    font-size: var(--step-small);
     color: var(--muted);
 }
 
@@ -1069,7 +1085,7 @@ ol {
     padding: var(--space-6);
     background: var(--white);
     border: 1px solid var(--rule);
-    border-radius: 10px;
+    border-radius: var(--radius-lg);
 }
 
 .field {
@@ -1078,7 +1094,7 @@ ol {
 }
 
 .field label {
-    font-size: 1.0625rem;
+    font-size: var(--step-small);
     font-weight: 500;
 }
 
@@ -1090,7 +1106,7 @@ ol {
     color: var(--ink);
     background: var(--paper);
     border: 1px solid var(--rule-strong);
-    border-radius: 4px;
+    border-radius: var(--radius-sm);
     transition: border-color 0.15s ease, background-color 0.15s ease;
 }
 
@@ -1150,7 +1166,7 @@ ol {
     border-radius: 999px;
     background: var(--ink);
     color: var(--paper);
-    font: 500 0.9375rem / 1 var(--font-body);
+    font: 500 var(--step--1) / 1 var(--font-body);
     cursor: pointer;
     box-shadow: var(--shadow);
     transition: background-color 0.15s ease;
@@ -1182,7 +1198,7 @@ ol {
     flex-direction: column;
     background: var(--white);
     border: 1px solid var(--rule-strong);
-    border-radius: 12px;
+    border-radius: var(--radius-lg);
     box-shadow: 0 24px 48px -20px rgba(60, 40, 25, 0.4);
     overflow: hidden;
 }
@@ -1256,8 +1272,8 @@ ol {
 .chatbot-msg {
     max-width: 88%;
     padding: var(--space-3) var(--space-4);
-    border-radius: 10px;
-    font-size: 1.0625rem;
+    border-radius: var(--radius-lg);
+    font-size: var(--step-small);
     line-height: 1.5;
     white-space: pre-wrap;
     overflow-wrap: anywhere;
@@ -1327,9 +1343,9 @@ ol {
     min-width: 0;
     padding: var(--space-3);
     font: inherit;
-    font-size: 1.0625rem;
+    font-size: var(--step-small);
     border: 1px solid var(--rule-strong);
-    border-radius: 6px;
+    border-radius: var(--radius);
     background: var(--paper);
     color: var(--ink);
 }
@@ -1343,10 +1359,10 @@ ol {
 .chatbot-send {
     padding: 0 var(--space-4);
     border: 0;
-    border-radius: 6px;
+    border-radius: var(--radius);
     background: var(--ink);
     color: var(--paper);
-    font: 500 0.9375rem / 1 var(--font-body);
+    font: 500 var(--step--1) / 1 var(--font-body);
     cursor: pointer;
 }
 
@@ -1398,9 +1414,6 @@ ol {
         max-width: 260px;
     }
 
-    .more-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 @media (max-width: 640px) {
@@ -1418,7 +1431,7 @@ ol {
     }
 
     .nav-link {
-        font-size: 1rem;
+        font-size: var(--step--1);
     }
 
     .header-inner {
@@ -1449,8 +1462,20 @@ ol {
     }
 
 
+    .mini {
+        grid-template-columns: 1fr;
+    }
+
+    .mini > .mini-shot {
+        grid-row: auto;
+        margin-bottom: var(--space-4);
+    }
+
+    .mini > * {
+        grid-column: 1;
+    }
+
     .plain-steps,
-    .more-grid,
     .toolkit {
         grid-template-columns: 1fr;
     }

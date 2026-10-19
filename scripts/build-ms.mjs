@@ -40,11 +40,12 @@ t('<a class="lang-switch" href="ms/" lang="ms" hreflang="ms" aria-label="Baca da
   '<a class="lang-switch" href="../" lang="en" hreflang="en" aria-label="Read in English">EN</a>');
 
 // ---------- Hero ----------
-t('Muhammad Zahiruddin · Software developer · Petaling Jaya', 'Muhammad Zahiruddin · Pembangun perisian · Petaling Jaya');
+t('Muhammad Zahiruddin · Software developer · Petaling Jaya · <span class="eyebrow-open">Open to full-stack roles</span>',
+  'Muhammad Zahiruddin · Pembangun perisian · Petaling Jaya · <span class="eyebrow-open">Mencari jawatan full-stack</span>');
 t('I build websites and mobile apps that businesses use every day.',
   'Saya membina laman web dan aplikasi mudah alih untuk kegunaan harian perniagaan.');
-t('Eight are in use right now, including a map that shows Malaysians who their elected representatives are, a personal organiser app for Android on Google Play, an AI tool that writes reports for PR teams, and a ticket shop for a big construction conference.',
-  'Lapan sedang digunakan sekarang, termasuk peta wakil rakyat Malaysia, aplikasi pengurus diri untuk Android di Google Play, alat AI yang menulis laporan untuk pasukan perhubungan awam dan kedai tiket persidangan pembinaan.');
+t('Eight are in use right now, including a map of Malaysia\'s elected representatives, an Android organiser app on Google Play, an AI report writer for PR teams and a conference ticket shop.',
+  'Lapan sedang digunakan sekarang, termasuk peta wakil rakyat Malaysia, aplikasi pengurus diri Android di Google Play, penulis laporan AI untuk pasukan perhubungan awam dan kedai tiket persidangan.');
 t('class="btn btn-primary">See the projects</a>', 'class="btn btn-primary">Lihat projek</a>');
 t('>Download résumé (PDF)</a>', '>Muat turun resume (PDF)</a>');
 t('<nav class="hero-index" aria-label="Projects">', '<nav class="hero-index" aria-label="Projek">');
@@ -62,10 +63,8 @@ t('<dt>Projects in use</dt>', '<dt>Projek yang digunakan</dt>');
 t('<span class="fact-note">Including 1 freelance and 2 of my own</span>', '<span class="fact-note">Termasuk 1 kerja bebas dan 2 projek sendiri</span>');
 t('<dt>Main tools</dt>', '<dt>Alat utama</dt>');
 
-t('<p class="hero-open">Open to full-stack roles in the Klang Valley, hybrid or remote, and freelance work.</p>',
-  '<p class="hero-open">Terbuka kepada jawatan full-stack di Lembah Klang (hibrid atau jarak jauh) dan kerja bebas.</p>');
-t('<p class="contact-open"><strong>Open to</strong> full-stack developer roles, or other roles that use web and mobile development, in the Klang Valley, hybrid or remote. I also take on freelance projects.</p>',
-  '<p class="contact-open"><strong>Terbuka kepada</strong> jawatan pembangun full-stack, atau jawatan lain yang melibatkan pembangunan web dan aplikasi mudah alih, di Lembah Klang, secara hibrid atau jarak jauh. Saya juga menerima projek kerja bebas.</p>');
+t('<p class="contact-open"><span class="contact-open-label">Open to</span>Full-stack developer roles, or other roles that use web and mobile development, in the Klang Valley, hybrid or remote. I also take on freelance projects.</p>',
+  '<p class="contact-open"><span class="contact-open-label">Terbuka kepada</span>Jawatan pembangun full-stack, atau jawatan lain yang melibatkan pembangunan web dan aplikasi mudah alih, di Lembah Klang, secara hibrid atau jarak jauh. Saya juga menerima projek kerja bebas.</p>');
 
 // ---------- Plain words ----------
 t('<h2 id="plainTitle" class="plain-title">How I work</h2>', '<h2 id="plainTitle" class="plain-title">Cara saya bekerja</h2>');
@@ -80,7 +79,6 @@ t('<p>I launch it, fix problems when they come up, add new features, and show st
   '<p>Saya melancarkannya, membaiki masalah apabila timbul, menambah ciri baharu dan mengajar kakitangan cara menggunakannya.</p>');
 
 // ---------- Work ----------
-t('<p class="eyebrow">Selected work</p>', '<p class="eyebrow">Projek pilihan</p>');
 t('Eight projects, all in use today.', 'Lapan projek, semuanya sedang digunakan.');
 t('Every one of these is real and running. Click a picture to open the actual site.',
   'Setiap projek ini nyata dan sedang beroperasi. Klik gambar untuk membuka laman yang sebenar.');
@@ -192,7 +190,6 @@ t('<p class="mini-meta">SMK Seremban 3</p>', '<p class="mini-meta">SMK Seremban 
 
 
 // ---------- Capabilities ----------
-t('<p class="eyebrow">Capabilities</p>', '<p class="eyebrow">Keupayaan</p>');
 t('What I can do for a business, and where I have done it.', 'Apa yang boleh saya lakukan untuk perniagaan anda, dan di mana saya pernah melakukannya.');
 t('<h3>Take payments online</h3>', '<h3>Menerima bayaran dalam talian</h3>');
 t('<p>Customers pay by online banking or card and get a receipt, and the business sees every order. Monthly subscriptions too.</p>',
@@ -229,8 +226,7 @@ t('<p>Malay, English</p>', '<p>Bahasa Melayu, bahasa Inggeris</p>');
 
 // ---------- About ----------
 t('alt="Portrait of Zahir"', 'alt="Potret Zahir"');
-t('<p class="eyebrow">About</p>', '<p class="eyebrow">Tentang</p>');
-t("Hi, I'm Zahir.", 'Hai, saya Zahir.');
+t('Shipping production software since October 2024.', 'Membina perisian untuk pengguna sebenar sejak Oktober 2024.');
 t('<p>I studied software development at UTeM and went straight into production work: six months as an intern at VX Ventures, then full-time at Intensiti Elemen since May 2025.</p>',
   '<p>Saya mempelajari pembangunan perisian di UTeM dan terus bekerja dengan sistem sebenar: enam bulan sebagai pelatih di VX Ventures, kemudian bekerja sepenuh masa di Intensiti Elemen sejak Mei 2025.</p>');
 t('<p>I also take freelance work, most recently the website for ENADD Logistics in Singapore, and I build my own products like mySekilas and Uros.</p>',
@@ -256,7 +252,6 @@ t('<p class="history-what">Meta Front-End Developer and Meta Back-End Developer 
 t('>Download the full résumé (PDF)</a>', '>Muat turun resume penuh (PDF)</a>');
 
 // ---------- Contact ----------
-t('<p class="eyebrow">Contact</p>', '<p class="eyebrow">Hubungi</p>');
 t('Need a website or mobile app built, or hiring a developer?', 'Perlukan laman web atau aplikasi mudah alih, atau sedang mencari pembangun?');
 t('<p>Email is the fastest way to reach me. Messages from this form go to the same inbox.</p>',
   '<p>E-mel ialah cara paling cepat untuk menghubungi saya. Mesej daripada borang ini dihantar ke peti masuk yang sama.</p>');
