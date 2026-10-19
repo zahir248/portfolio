@@ -173,7 +173,8 @@ t('alt="MyGooners fan community home page"', 'alt="Laman utama komuniti peminat 
 t('<p class="project-kind">Fan website and online shop</p>', '<p class="project-kind">Laman peminat dan kedai dalam talian</p>');
 t('A Malay-language website for Arsenal fans with news, videos, a list of trusted service providers and an online shop. I built the website and the back office the team uses to run it.',
   'Laman web berbahasa Melayu untuk peminat Arsenal yang memaparkan berita, video, senarai penyedia perkhidmatan yang dipercayai dan kedai dalam talian. Saya membina laman web ini serta ruang pentadbiran yang digunakan oleh pasukan untuk mengendalikannya.');
-t('<p class="mini-meta">Intensiti Elemen</p>', '<p class="mini-meta">Intensiti Elemen</p>');
+t('<p class="mini-meta">Built at Intensiti Elemen, my employer</p>', '<p class="mini-meta">Dibina di Intensiti Elemen, majikan saya</p>');
+t('<div><dt>Built at</dt><dd>Intensiti Elemen, my employer</dd></div>', '<div><dt>Dibina di</dt><dd>Intensiti Elemen, majikan saya</dd></div>');
 t('alt="EST Group website"', 'alt="Laman web EST Group"');
 t('<p class="project-kind">Company website</p>', '<p class="project-kind">Laman web syarikat</p>');
 t('Website for a company that installs solar panels and electric car chargers. Staff can update the site themselves, and messages from the contact form go straight to their email.',
