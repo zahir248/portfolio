@@ -165,8 +165,8 @@ t('<li>A page for each event in the conference</li>', '<li>Halaman bagi setiap a
 t('<li>Online sign-up and payment by online banking or card</li>', '<li>Pendaftaran dan bayaran dalam talian melalui perbankan dalam talian atau kad</li>');
 t('<li>Tickets sent to buyers digitally, with a record of what they bought</li>', '<li>Tiket dihantar kepada pembeli secara digital, berserta rekod pembelian</li>');
 t('<li>A back office where organisers see every order and ticket</li>', '<li>Ruang pentadbiran tempat penganjur melihat setiap pesanan dan tiket</li>');
-t('<p>Signing up, paying and getting a ticket all happen online now, and organisers manage everything from one place. They came back to use it again for the 2026 conference.</p>',
-  '<p>Pendaftaran, bayaran dan penerimaan tiket kini dibuat sepenuhnya dalam talian, dan penganjur menguruskan semuanya dari satu tempat. Mereka kembali menggunakannya untuk persidangan 2026.</p>');
+t('<p>Signing up, paying and getting a ticket all happen online now, and organisers manage everything from one place.</p>',
+  '<p>Pendaftaran, bayaran dan penerimaan tiket kini dibuat sepenuhnya dalam talian, dan penganjur menguruskan semuanya dari satu tempat.</p>');
 
 // ENADD
 t('alt="ENADD Logistics home page with container port photo"', 'alt="Laman utama ENADD Logistics dengan foto pelabuhan kontena"');

@@ -67,7 +67,7 @@
   {
     "id": "projects-overview",
     "title": "All projects (overview)",
-    "text": "Zahir has eight live projects. His own products: mySekilas (interactive map of Malaysia's elected representatives and state news, Laravel and Gemini) and Uros (personal organiser on Google Play, Flutter app, React web version, Spring Boot backend). Built at his employer Intensiti Elemen: NUJUM (AI report writer for PR and communications teams, Laravel with Gemini and OpenAI) and MyGooners (Arsenal fan community and shop; he built the website). Client work: BINA e-ticketing for CIDB IBS (conference ticketing, used again for 2026), EST Group (solar and EV charger company website) and SMK Seremban 3 (school website). Freelance: ENADD Logistics, a company website for a Singapore logistics firm. When asked what he has built, mention all eight briefly."
+    "text": "Zahir has eight live projects. His own products: mySekilas (interactive map of Malaysia's elected representatives and state news, Laravel and Gemini) and Uros (personal organiser on Google Play, Flutter app, React web version, Spring Boot backend). Built at his employer Intensiti Elemen: NUJUM (AI report writer for PR and communications teams, Laravel with Gemini and OpenAI) and MyGooners (Arsenal fan community and shop; he built the website). Client work: BINA e-ticketing for CIDB IBS (conference ticketing), EST Group (solar and EV charger company website) and SMK Seremban 3 (school website). Freelance: ENADD Logistics, a company website for a Singapore logistics firm. When asked what he has built, mention all eight briefly."
   },
   {
     "id": "project-mysekilas",
