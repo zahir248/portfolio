@@ -5,6 +5,11 @@
     "text": "Muhammad Zahiruddin is a software developer known online as Zahir or zahir248. He builds and maintains production web systems end to end: requirements, implementation, deployment, and support. He has seven live projects: his own civic map mySekilas, an AI analysis platform (NUJUM), conference ticketing (BINA), a freelance website for ENADD Logistics in Singapore, a fan community and shop (MyGooners, web side), and company and school websites (EST Group, SMK Seremban 3). He takes freelance work. Portfolio: https://zahir248.github.io/portfolio/"
   },
   {
+    "id": "plain-explainer",
+    "title": "What Zahir does, in plain words",
+    "text": "In plain words, Zahir builds the websites and online systems that businesses use every day, such as the page where people buy a conference ticket, an online shop, or the login staff use to update their company website. His work has three parts: he finds out what the business needs, he builds the website or system (the pages people see and the parts behind the scenes that store information, take payments and send emails), and he puts it online and keeps it running, fixing problems and training staff. When a visitor does not seem technical, explain things in this simple way and avoid jargon."
+  },
+  {
     "id": "skills-languages",
     "title": "Core skills (production)",
     "text": "Zahir's core skills, used in production work: PHP, Laravel, MySQL, PostgreSQL, JavaScript, HTML, CSS, Bootstrap, Linux (Ubuntu), cPanel, Git, GitHub Actions. His main stack is Laravel, PHP and MySQL for web systems. He has not built a production Flutter app himself; Flutter is a familiar skill."
