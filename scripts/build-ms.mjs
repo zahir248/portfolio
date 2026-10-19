@@ -42,8 +42,8 @@ t('<a class="lang-switch" href="ms/" lang="ms" hreflang="ms" aria-label="Baca da
 // ---------- Hero ----------
 t('Muhammad Zahiruddin · Software developer · Petaling Jaya · <span class="eyebrow-open">Open to full-stack roles</span>',
   'Muhammad Zahiruddin · Pembangun perisian · Petaling Jaya · <span class="eyebrow-open">Mencari jawatan full-stack</span>');
-t('I build websites and mobile apps that businesses use every day.',
-  'Saya membina laman web dan aplikasi mudah alih untuk kegunaan harian perniagaan.');
+t('I build websites and mobile apps that people use every day.',
+  'Saya membina laman web dan aplikasi mudah alih untuk kegunaan harian.');
 t('Eight are in use right now, including a map of Malaysia\'s elected representatives, an Android organiser app on Google Play, an AI report writer for PR teams and a conference ticket shop.',
   'Lapan sedang digunakan sekarang, termasuk peta wakil rakyat Malaysia, aplikasi pengurus diri Android di Google Play, penulis laporan AI untuk pasukan perhubungan awam dan kedai tiket persidangan.');
 t('class="btn btn-primary">See the projects</a>', 'class="btn btn-primary">Lihat projek</a>');
@@ -245,7 +245,7 @@ t('<p>I am not tied to one tool. I use whatever fits the project, and pick up ne
   '<p>Saya tidak terikat pada satu alat sahaja. Saya menggunakan apa-apa yang sesuai dengan projek, dan mempelajari alat baharu apabila diperlukan.</p>');
 t('<h3 class="history-title">Experience</h3>', '<h3 class="history-title">Pengalaman</h3>');
 t('<p class="history-when">May 2025 to now</p>', '<p class="history-when">Mei 2025 hingga kini</p>');
-t('<p class="history-what">Software developer (full-stack), Intensiti Elemen</p>', '<p class="history-what">Pembangun perisian (full-stack), Intensiti Elemen</p>');
+t('<p class="history-what">Software developer, Intensiti Elemen</p>', '<p class="history-what">Pembangun perisian, Intensiti Elemen</p>');
 t("<p class=\"history-detail\">Build and maintain the company's web products in Laravel, PHP, MySQL and PostgreSQL. Handle payments, AI features, automated builds with GitHub Actions, deploys, migrations, production support and the team's NAS backups.</p>",
   '<p class="history-detail">Membina dan menyelenggara produk web syarikat menggunakan Laravel, PHP, MySQL dan PostgreSQL. Mengendalikan sistem pembayaran, ciri AI, binaan automatik dengan GitHub Actions, pelancaran, migrasi pangkalan data, sokongan sistem dan sandaran NAS pasukan.</p>');
 t('<p class="history-when">Oct 2024 to Mar 2025</p>', '<p class="history-when">Oktober 2024 hingga Mac 2025</p>');
