@@ -72,7 +72,7 @@
   {
     "id": "project-mysekilas",
     "title": "Project: mySekilas",
-    "text": "mySekilas is Zahir's own personal project, built solo (design, build, data and deploy). Live at https://mysekilas.onrender.com/. Stack: Laravel, Vite, Google Gemini API, hosted on Render. It is an interactive map of Malaysia in Malay and English that shows each state's government, members of parliament and state assemblymen, and current issues. Features: search by area, postcode or name; a 'Who is my YB?' button that matches the user's location inside the browser without sending it to the server; Dewan Rakyat seat counts checked against official portals; live headlines from many Malaysian news portals, grouped when several cover the same story and tagged by state and topic; story summaries and a daily round-up written with Google Gemini; a guide to who to contact for a problem; a political history section."
+    "text": "mySekilas is Zahir's own personal project, built solo (design, build, data and deploy). Live at https://iesb.com.my/mysekilas/. Stack: Laravel, Vite, Google Gemini API. It is an interactive map of Malaysia in Malay and English that shows each state's government, members of parliament and state assemblymen, and current issues. Features: search by area, postcode or name; a 'Who is my YB?' button that matches the user's location inside the browser without sending it to the server; Dewan Rakyat seat counts checked against official portals; live headlines from many Malaysian news portals, grouped when several cover the same story and tagged by state and topic; story summaries and a daily round-up written with Google Gemini; a guide to who to contact for a problem; a political history section."
   },
   {
     "id": "mysekilas-how",
