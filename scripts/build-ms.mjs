@@ -63,8 +63,8 @@ t('<dt>Projects in use</dt>', '<dt>Projek yang digunakan</dt>');
 t('<span class="fact-note">Including 1 freelance and 2 of my own</span>', '<span class="fact-note">Termasuk 1 kerja bebas dan 2 projek sendiri</span>');
 t('<dt>Main tools</dt>', '<dt>Alat utama</dt>');
 
-t('<p class="contact-open"><span class="contact-open-label">Open to</span>Full-stack developer roles, or other roles that use web and mobile development, in the Klang Valley, hybrid or remote. I also take on freelance projects.</p>',
-  '<p class="contact-open"><span class="contact-open-label">Terbuka kepada</span>Jawatan pembangun full-stack, atau jawatan lain yang melibatkan pembangunan web dan aplikasi mudah alih, di Lembah Klang, secara hibrid atau jarak jauh. Saya juga menerima projek kerja bebas.</p>');
+t('<p class="contact-open"><span class="contact-open-label">Open to</span>Full-stack developer roles, or other roles that use web and mobile development, in the Klang Valley, in the office, hybrid or remote. I also take on freelance projects.</p>',
+  '<p class="contact-open"><span class="contact-open-label">Terbuka kepada</span>Jawatan pembangun full-stack, atau jawatan lain yang melibatkan pembangunan web dan aplikasi mudah alih, di Lembah Klang, sama ada di pejabat, secara hibrid atau jarak jauh. Saya juga menerima projek kerja bebas.</p>');
 
 // ---------- Plain words ----------
 t('<h2 id="plainTitle" class="plain-title">How I work</h2>', '<h2 id="plainTitle" class="plain-title">Cara saya bekerja</h2>');
@@ -220,8 +220,8 @@ t('<p>A simple back office where staff without IT skills post news and change de
   '<p>Ruang pentadbiran ringkas yang membolehkan kakitangan tanpa kemahiran IT menyiarkan berita dan menukar maklumat sendiri, dan setiap pasukan hanya boleh mengubah halamannya sendiri.</p>');
 t('Used in MyGooners, SMK Seremban 3, EST Group', 'Digunakan dalam MyGooners, SMK Seremban 3, EST Group');
 t('<h3>Keep it running after launch</h3>', '<h3>Memastikan sistem terus berjalan selepas dilancarkan</h3>');
-t('<p>Putting systems online, moving them to new servers, updating them safely, backing up data, fixing problems quickly and training the people who use them.</p>',
-  '<p>Melancarkan sistem, memindahkannya ke pelayan baharu, mengemas kininya dengan selamat, membuat sandaran data, membaiki masalah dengan cepat dan melatih pengguna.</p>');
+t('<p>Testing with real users before launch, putting systems online, moving them to new servers, updating them safely, backing up data, writing user guides and training the people who use them.</p>',
+  '<p>Menguji sistem bersama pengguna sebelum dilancarkan, melancarkannya, memindahkannya ke pelayan baharu, mengemas kininya dengan selamat, membuat sandaran data, menulis panduan pengguna dan melatih pengguna.</p>');
 t('Day to day at Intensiti Elemen · Linux, AWS, cPanel, GitHub Actions', 'Kerja harian di Intensiti Elemen · Linux, AWS, cPanel, GitHub Actions');
 t('For technical readers: the tools behind the work.', 'Untuk pembaca teknikal: alat yang digunakan dalam kerja saya.');
 t('<h3>Core, used in production</h3>', '<h3>Teras, digunakan dalam sistem sebenar</h3>');

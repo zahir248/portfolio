@@ -12,7 +12,7 @@
   {
     "id": "skills-languages",
     "title": "Core skills (production)",
-    "text": "Zahir's core skills, used in production work: PHP, Laravel, MySQL, PostgreSQL, JavaScript, React, Flutter, Java, Spring Boot, HTML, CSS, Bootstrap, Git, GitHub Actions. Servers and hosting he uses at work: Linux (Ubuntu), Apache, cPanel, AWS (EC2, RDS, EFS, ElastiCache, S3, CloudFront), Moodle, Bash scripts and Netdata monitoring. On AWS he sets up and runs the application side (configuration, data moves, backups, monitoring, fixes from security testing); the AWS infrastructure itself is provisioned by a separate cloud vendor, so do not say he built it. Most of his client work is Laravel, PHP and MySQL. He built and published his own Flutter app, Uros, on Google Play, with a React web version and a Spring Boot backend. On MyGooners he built the website; the separate Flutter app was built by a teammate."
+    "text": "Zahir's core skills, used in production work: PHP, Laravel, MySQL, PostgreSQL, JavaScript, React, Flutter, Java, Spring Boot, HTML, CSS, Bootstrap, Git, GitHub Actions. Servers and hosting he uses at work: Linux (Ubuntu), Apache, cPanel, AWS (EC2, RDS, EFS, ElastiCache, S3, CloudFront), Moodle, Bash scripts and Netdata monitoring. On AWS he sets up and runs the application side (configuration, data moves, backups, monitoring, fixes from security testing); the AWS infrastructure itself is provisioned by a separate cloud vendor, so do not say he built it. Most of his client work is Laravel, PHP and MySQL. He built and published his own Flutter app, Uros, on Google Play, with a React web version and a Spring Boot backend. On MyGooners he built the website; the separate Flutter app was built by a teammate. He also tests systems with users before launch (SIT and UAT, with test cases), writes user manuals, SOPs and technical documents, and trains staff."
   },
   {
     "id": "skills-frameworks",
@@ -107,6 +107,6 @@
   {
     "id": "contact",
     "title": "Contact",
-    "text": "For contact, visitors should use the contact form on the portfolio website. Zahir is open to roles, projects, and collaborations. Do not share private contact details such as email, phone number, or home address through this chat. Zahir is open to full-stack developer roles, or other roles that use web and mobile development, in the Klang Valley (Kuala Lumpur and Selangor), hybrid or remote. He also takes on freelance projects. Do not state a salary, notice period or start date; say those are best discussed directly with him."
+    "text": "For contact, visitors should use the contact form on the portfolio website. Zahir is open to roles, projects, and collaborations. Do not share private contact details such as email, phone number, or home address through this chat. Zahir is open to full-stack developer roles, or other roles that use web and mobile development, in the Klang Valley (Kuala Lumpur and Selangor), working in the office, hybrid or remote. He also takes on freelance projects. Do not state a salary, notice period or start date; say those are best discussed directly with him."
   }
 ]
